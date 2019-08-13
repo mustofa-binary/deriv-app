@@ -1,0 +1,342 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic&display=fallback);
+/*------------------------------------*
+ *  # Reset SCSS
+ *  - to make browsers render all elements more consistently
+ *  - Reference:  https://github.com/AdamMarsden/simple-typography/blob/master/_reset.scss
+ *------------------------------------*/
+/* stylelint-disable */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, input,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html {
+  height: 100%; }
+
+body {
+  line-height: 1;
+  height: 100%; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* stylelint-enable */
+/*------------------------------------*
+ *  # Constants
+ *------------------------------------*/
+/* stylelint-disable color-no-hex */
+/* stylelint-enable color-no-hex */
+/*------------------------------------*
+ *  # SASS Mixins and Functions
+ *------------------------------------*/
+/*
+ * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
+ * Generate typefaces key-value pair of variable name and config
+ * Example:
+   --paragraph-center-bold-black: (14px, center, bold, black)
+ */
+/*
+ * Sets font-size, font-weight, color, text-transform, text-align and line-height
+ * Usage example:
+   @include setTypeface(16px, bold, black, uppercase);
+ */
+/*
+ * Set typefaces by passing a typeface variable name
+ * @param $var   - typeface variable
+ * @param $tt    - text-transform property
+ * @param $align - text-align property
+ * Usage example:
+   @include typeface(--paragraph-bold-black, uppercase, center);
+ */
+/*
+ * Range Slider Thumb styling is set here
+ */
+/*
+ * SVG icons colors
+ */
+/*
+ * Bar Spinner Animation
+ * @param $count    - number of bars
+ * @param $duration - duration of animation
+ * @param $phase    - each bar phase change delay
+ * Usage example:
+   @include createBarspinnerAnimation(5, 1.2s, 0,1);
+ */
+/*
+ * Implementation of themes
+ * generate sets of themes keys object property (dark / light)
+ * @param $themes - themes property
+ * Usage example:
+   @include themify($themes) { color: themed('background_color') }
+ */
+/*
+ * Generate typefaces key-value pair of themefy object
+ * Should be inside themify mixins
+ * Example:
+   @include themify($themes) { border-color: 1px solid themed('background_color') }
+ */
+/*
+ * Tooltip colors
+ * @param $color - color property
+ * Usage example:
+   @include tooltipColor($COLOR_RED);
+ */
+/*
+ * Themified Tooltip colors
+ * @param $color - color property
+ * Usage example:
+   @include tooltipColor($COLOR_RED);
+ */
+/*------------------------------------*
+ *  # Typography
+ *  - Indrek Pass also has a fantastic mixin here: http://sassmeister.com/gist/7f22e44ace49b5124eec
+ *------------------------------------*/
+/*
+    Constants
+*/
+/*
+    Variables
+*/
+/*
+    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
+    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
+    Variables name example: --title-center-semibold-red
+ */
+/*
+    Typography
+*/
+/* postcss-bem-linter: ignore */
+html {
+  font-size: 62.5%;
+  /** TODO: define breakpoints */ }
+
+/** @define body */
+.body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+/* postcss-bem-linter: ignore */
+*, html, .body {
+  font-family: roboto, sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  box-sizing: border-box; }
+
+/** @define select */
+.select {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  padding: 2px 3px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 4px; }
+
+/** @define input */
+.input {
+  font-family: inherit;
+  font-style: inherit;
+  padding: 2px 3px; }
+  .theme--light .input {
+    color: rgba(0, 0, 0, 0.8); }
+  .theme--dark .input {
+    color: #ffffff; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(0, 0, 0, 0.16); }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.16); }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(0, 0, 0, 0.16); }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(0, 0, 0, 0.16); }
+
+/* Multiple properties with same values */
+/** @define theme */
+.theme--light {
+  background: #f4f4f6; }
+
+.theme--dark {
+  background: #0b0e18; }
+
+/** @define container */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+/** @define hidden */
+.hidden {
+  visibility: hidden !important;
+  transition: none !important; }
+
+/** @define absolute-center-v */
+.absolute-center-v {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0; }
+
+/** @define link */
+.link {
+  color: #ff9933;
+  font-weight: bold;
+  text-decoration: none; }
+  .link:hover {
+    text-decoration: underline; }
+  .link--white {
+    color: #ffffff; }
+
+/** @define icon */
+.icon--centered {
+  top: 0.8em;
+  left: 5%; }
+
+/** @define center-text */
+.center-text {
+  text-align: center; }
+
+/** @define no-margin */
+.no-margin {
+  margin: 0; }
+
+/** @define hr */
+.hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  margin: 0.5em 0;
+  padding: 0; }
+  .theme--light .hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.04); }
+  .theme--dark .hr {
+    border-top: 1px solid #2a3052; }
+
+/** @define deriv-app */
+.deriv-app {
+  height: 100%;
+  overflow: hidden; }
+
+/** @define work-in-progress */
+.work-in-progress {
+  height: 100%;
+  justify-content: center;
+  display: flex; }
+  .theme--light .work-in-progress {
+    background: #ffffff; }
+  .theme--dark .work-in-progress {
+    background: #191c31; }
+  .work-in-progress__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.6em; }
+  .work-in-progress__header {
+    font-size: 2.8em;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    text-transform: none;
+    text-align: center;
+    line-height: unset;
+    margin: 0.8em 0 0.4em; }
+    .theme--light .work-in-progress__header {
+      color: #2a3052; }
+    .theme--dark .work-in-progress__header {
+      color: #ffffff; }
+  .work-in-progress__text {
+    font-size: 1.6em;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    text-transform: none;
+    text-align: center;
+    line-height: 1.75;
+    margin: 0 1.6em 2.4em;
+    line-height: 1.3;
+    width: 200px; }
+    .theme--light .work-in-progress__text {
+      color: #2a3052; }
+    .theme--dark .work-in-progress__text {
+      color: #ffffff; }
+  .work-in-progress__btn {
+    height: 42px;
+    cursor: pointer; }
+    .theme--light .work-in-progress__btn {
+      background: #2a3052; }
+    .theme--dark .work-in-progress__btn {
+      background: #ffffff; }
+    .work-in-progress__btn--span {
+      font-weight: normal;
+      font-size: 1.6em;
+      text-transform: none; }
+      .theme--light .work-in-progress__btn--span {
+        color: #ffffff; }
+      .theme--dark .work-in-progress__btn--span {
+        color: #101320; }
+
