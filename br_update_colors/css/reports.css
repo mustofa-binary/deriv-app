@@ -58,9 +58,9 @@
     --fill-active: var(--brand-secondary);
     --fill-disabled: #eaeced;
     --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
+    --status-danger: #ec3f3f;
     --status-success: #4bb4b3;
+    --status-warning: #ffad3a;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
     --transparent-success: transparentize(#4bb4b3, 0.92); }
@@ -107,12 +107,12 @@
     --fill-active: var(--brand-secondary);
     --fill-disabled: #1d1f20;
     --status-default: #eaeced;
-    --status-danger: #ec3f3f;
+    --status-danger: #cc2e3d;
     --status-warning: #ffad3a;
     --status-success: #00a79e;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: transparentize(#4bb4b3, 0.92); }
+    --transparent-success: transparentize(#00a79e, 0.92); }
 
 /* Preserve legacy variables */
 /* Primary */
@@ -279,9 +279,9 @@
   --fill-active: var(--brand-secondary);
   --fill-disabled: #eaeced;
   --status-default: #eaeced;
-  --status-danger: #cc2e3d;
-  --status-warning: #ffad3a;
+  --status-danger: #ec3f3f;
   --status-success: #4bb4b3;
+  --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
   --transparent-success: transparentize(#4bb4b3, 0.92); }
@@ -329,12 +329,12 @@
   --fill-active: var(--brand-secondary);
   --fill-disabled: #1d1f20;
   --status-default: #eaeced;
-  --status-danger: #ec3f3f;
+  --status-danger: #cc2e3d;
   --status-warning: #ffad3a;
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: transparentize(#4bb4b3, 0.92); }
+  --transparent-success: transparentize(#00a79e, 0.92); }
 
 .dc-label {
   font-size: 14px;
@@ -492,9 +492,9 @@
     --fill-active: var(--brand-secondary);
     --fill-disabled: #eaeced;
     --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
+    --status-danger: #ec3f3f;
     --status-success: #4bb4b3;
+    --status-warning: #ffad3a;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
     --transparent-success: transparentize(#4bb4b3, 0.92); }
@@ -541,12 +541,12 @@
     --fill-active: var(--brand-secondary);
     --fill-disabled: #1d1f20;
     --status-default: #eaeced;
-    --status-danger: #ec3f3f;
+    --status-danger: #cc2e3d;
     --status-warning: #ffad3a;
     --status-success: #00a79e;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: transparentize(#4bb4b3, 0.92); }
+    --transparent-success: transparentize(#00a79e, 0.92); }
 
 /* Preserve legacy variables */
 /* Primary */
