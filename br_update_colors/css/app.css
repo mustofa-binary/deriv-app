@@ -7991,7 +7991,11 @@ table {
   justify-content: flex-start;
   width: 100%; }
   .market-symbol-icon .color1-fill {
-    fill: var(--text-prominent); }
+    fill: #ff444f;
+    fill: var(--brand-red-coral); }
+  .market-symbol-icon .color2-fill {
+    fill: #85acb0;
+    fill: var(--brand-secondary); }
   .market-symbol-icon-name, .market-symbol-icon-category {
     display: flex;
     justify-content: flex-start;
