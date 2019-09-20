@@ -2369,9 +2369,9 @@ html {
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
     .digits__pie-progress .progress__bg {
-      stroke: var(--general-section-1); }
+      stroke: var(--general-disabled); }
     .digits__pie-progress .progress__value {
-      stroke: var(--fill-hover);
+      stroke: var(--text-less-prominent);
       /* postcss-bem-linter: ignore */
       /* postcss-bem-linter: ignore */ }
       .digits__pie-progress .progress__value--is-max {
@@ -5884,9 +5884,11 @@ table {
     height: 100%;
     content: '';
     background-color: var(--overlay-outside-dialog); }
-  .footer--is-disabled:after {
-    opacity: 1;
-    pointer-events: auto; }
+  .footer--is-disabled {
+    border-top: none; }
+    .footer--is-disabled:after {
+      opacity: 1;
+      pointer-events: auto; }
   .footer__links {
     display: flex;
     justify-content: space-evenly;
