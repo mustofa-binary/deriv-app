@@ -5885,7 +5885,8 @@ table {
     content: '';
     background-color: var(--overlay-outside-dialog); }
   .footer--is-disabled {
-    border-top: none; }
+    border-top: none;
+    height: 36px; }
     .footer--is-disabled:after {
       opacity: 1;
       pointer-events: auto; }
