@@ -1752,6 +1752,9 @@ html {
   border-color: #85acb0;
   border-color: var(--brand-secondary); }
 
+.dc-input:hover:not(.dc-input__disabled) {
+  border-color: var(--border-hover); }
+
 .dc-input__field {
   background: none;
   color: var(--text-prominent);
@@ -4655,6 +4658,9 @@ html {
 .dc-input:focus-within {
   border-color: #85acb0;
   border-color: var(--brand-secondary); }
+
+.dc-input:hover:not(.dc-input__disabled) {
+  border-color: var(--border-hover); }
 
 .dc-input__field {
   background: none;
@@ -9393,7 +9399,7 @@ table {
     margin: 8px 0 0;
     border-bottom: 1px solid var(--general-section-1); }
   .progress-slider__track {
-    background: var(--state-hover);
+    background: var(--text-disabled);
     position: relative;
     margin: 2px 0 8px;
     height: 6px;
@@ -9425,7 +9431,7 @@ table {
         top: 0;
         height: 6px;
         width: 100%;
-        background-color: var(--state-active); }
+        background-color: var(--text-less-prominent); }
       .progress-slider__ticks-step--marked:before {
         transform: scale3d(1, 1, 1); }
       .progress-slider__ticks-step:first-child {
