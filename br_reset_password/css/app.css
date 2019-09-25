@@ -2902,7 +2902,7 @@ html {
   --transparent-success: transparentize(#00a79e, 0.92); }
 
 .btn {
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: inline-block;
   touch-action: manipulation;
   cursor: pointer;
@@ -9199,7 +9199,7 @@ html {
 */
 /** @define btn */
 .btn {
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: inline-block;
   touch-action: manipulation;
   cursor: pointer;
