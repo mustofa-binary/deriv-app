@@ -749,6 +749,9 @@ html {
   color: var(--text-general);
   max-width: 448px; }
 
+.dc-dialog__content .dc-input__label {
+  background-color: var(--general-main-2); }
+
 .dc-dialog__footer {
   display: flex;
   justify-content: flex-end;

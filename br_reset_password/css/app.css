@@ -1820,8 +1820,7 @@ html {
 
 .dc-input__field:focus ~ label, .dc-input__field:disabled ~ label, .dc-input__field:not(:focus):valid ~ label {
   transform: translate(0, -1.6rem) scale(0.75);
-  padding: 0 4px;
-  background-color: var(--fill-normal); }
+  padding: 0 4px; }
 
 .dc-input__field:disabled {
   color: var(--text-disabled); }
@@ -1881,6 +1880,7 @@ html {
   color: var(--text-less-prominent);
   font-size: 1.4rem;
   font-size: var(--text-size-xs);
+  background-color: var(--fill-normal);
   position: absolute;
   pointer-events: none;
   left: 1rem;
@@ -4740,8 +4740,7 @@ html {
 
 .dc-input__field:focus ~ label, .dc-input__field:disabled ~ label, .dc-input__field:not(:focus):valid ~ label {
   transform: translate(0, -1.6rem) scale(0.75);
-  padding: 0 4px;
-  background-color: var(--fill-normal); }
+  padding: 0 4px; }
 
 .dc-input__field:disabled {
   color: var(--text-disabled); }
@@ -4801,6 +4800,7 @@ html {
   color: var(--text-less-prominent);
   font-size: 1.4rem;
   font-size: var(--text-size-xs);
+  background-color: var(--fill-normal);
   position: absolute;
   pointer-events: none;
   left: 1rem;
@@ -14939,7 +14939,10 @@ table {
   .reset-password__residence-field {
     width: 30rem; }
   .reset-password__password-field {
-    width: 30rem; }
+    width: 30rem;
+    /* postcss-bem-linter: ignore */ }
+    .reset-password__password-field > label {
+      background-color: var(--general-main-2); }
 
 /** @define cashier */
 .cashier {
