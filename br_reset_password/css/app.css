@@ -14022,6 +14022,8 @@ table {
   .side-menu__header--active {
     background-color: var(--general-main-1);
     /* postcss-bem-linter: ignore */ }
+    .side-menu__header--active:hover {
+      background-color: var(--general-main-1) !important; }
     .side-menu__header--active div {
       font-weight: bold; }
   .side-menu__icon {
