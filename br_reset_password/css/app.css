@@ -2902,7 +2902,7 @@ html {
   --transparent-success: transparentize(#00a79e, 0.92); }
 
 .btn {
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: inline-block;
   touch-action: manipulation;
   cursor: pointer;
@@ -9199,7 +9199,7 @@ html {
 */
 /** @define btn */
 .btn {
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: inline-block;
   touch-action: manipulation;
   cursor: pointer;
@@ -11931,13 +11931,12 @@ table {
   display: flex;
   font-size: 1.4rem;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  color: var(--text-general); }
   .multistep__btn-icon {
     margin-right: 8px; }
-    .theme--light .multistep__btn-icon .color1-fill {
-      color: rgba(0, 0, 0, 0.8); }
-    .theme--dark .multistep__btn-icon .color1-fill {
-      color: #ffffff; }
+    .multistep__btn-icon .color1-fill {
+      fill: var(--text-general); }
 
 .multistep__component {
   width: 100%;
@@ -11947,17 +11946,15 @@ table {
 .send-email-template {
   padding: 0 16px; }
   .send-email-template__title {
+    color: var(--text-prominent);
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 0.8rem;
     line-height: 1.5; }
-    .theme--light .send-email-template__title {
-      color: rgba(0, 0, 0, 0.8); }
-    .theme--dark .send-email-template__title {
-      color: #7f8397; }
   .send-email-template__subtitle {
     font-size: 1.4rem;
-    margin-bottom: 1.6rem; }
+    margin-bottom: 1.6rem;
+    color: var(--text-general); }
   .send-email-template__icon {
     margin-top: 5.6rem;
     margin-bottom: 1.6rem; }
@@ -14930,7 +14927,8 @@ table {
     margin: 0;
     background-color: var(--button-primary-default);
     font-weight: bold;
-    color: var(--text-colored-background); }
+    color: var(--text-colored-background);
+    font-size: 1.2rem; }
     .reset-password__btn:hover {
       background-color: var(--button-primary-hover); }
     .reset-password__btn--disabled {
