@@ -1273,7 +1273,10 @@ html {
 
 /** @define dc-modal; */
 .dc-modal__container_modal-settings {
-  width: 736px; }
+  width: 736px;
+  /* postcss-bem-linter: ignore */ }
+  .dc-modal__container_modal-settings .dc-modal-header {
+    border-bottom-width: 0; }
 
 /*------------------------------------*
  *  # Constants
@@ -1896,19 +1899,26 @@ html {
   transition: 0.25s ease all;
   transform: translateZ(0); }
 
-.dc-input--no-placeholder label {
-  transform: translate(0, -1.6rem) scale(0.75);
-  color: #85acb0;
-  color: var(--brand-secondary);
-  padding: 0 4px;
-  background-color: var(--fill-normal); }
-
 .dc-input__hint {
   color: var(--text-less-prominent);
   font-size: 1.2rem;
   margin-left: 1.2rem;
   position: absolute;
   top: 4rem; }
+
+.dc-input--no-placeholder label {
+  transform: translate(0, -1.6rem) scale(0.75);
+  color: var(--text-less-prominent);
+  padding: 0 4px;
+  background-color: var(--fill-normal); }
+
+.dc-input--error {
+  border-color: #ff444f !important;
+  border-color: var(--brand-red-coral) !important; }
+
+.dc-input--error label {
+  color: #ff444f !important;
+  color: var(--brand-red-coral) !important; }
 
 .dc-input__error {
   color: var(--text-loss-danger); }
@@ -3560,6 +3570,22 @@ html {
 .secondary.dc-dropdown__select-arrow .color1-stroke {
   stroke: var(--text-less-prominent); }
 
+.dc-dropdown__label {
+  position: absolute;
+  font-size: 1.4rem;
+  font-size: var(--text-size-xs);
+  transform: translate(0.5rem, -1rem) scale(0.75);
+  z-index: 2;
+  color: var(--text-less-prominent);
+  padding: 0 4px;
+  background-color: var(--fill-normal);
+  pointer-events: none;
+  transition: 0.25s ease all; }
+
+.dc-dropdown__label--clicked {
+  color: #85acb0;
+  color: var(--brand-secondary); }
+
 .dc-dropdown__display {
   cursor: pointer;
   border-radius: 4px;
@@ -3580,6 +3606,7 @@ html {
 
 .dc-dropdown__display-text {
   padding-left: 1em;
+  padding-right: 2.5em;
   font-size: 1.4em;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
@@ -3605,7 +3632,7 @@ html {
   justify-content: flex-start; }
 
 .dc-dropdown__display--is-left-text .dc-dropdown__display-text {
-  padding-left: 1em; }
+  padding-left: 1.2rem; }
 
 .dc-dropdown__display--has-symbol {
   justify-content: unset; }
@@ -3886,7 +3913,6 @@ html {
   max-height: 200px;
   overflow-y: auto;
   z-index: 2;
-  cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 2px 8px 0 var(--shadow-menu);
   background: var(--state-normal); }
@@ -3902,18 +3928,19 @@ html {
   text-align: center; }
 
 .dc-list__label {
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.8);
-  font-weight: 700;
-  text-transform: capitalize;
-  text-align: center;
-  line-height: 1.5;
-  padding: 6.25px;
-  color: var(--text-prominent);
-  display: block; }
+  padding: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff444f;
+  color: var(--brand-red-coral);
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .dc-list__item {
-  width: 100%; }
+  width: 100%;
+  cursor: pointer; }
 
 .dc-list__item-text, .dc-list__item-symbol {
   font-size: 1.4em;
@@ -3928,7 +3955,7 @@ html {
   justify-content: center;
   pointer-events: none;
   vertical-align: middle;
-  padding: 6.25px 0;
+  padding: 0.6rem 0;
   padding-left: 1.6em; }
 
 .dc-list__item-text--left {
@@ -3966,12 +3993,18 @@ html {
   text-align: left;
   line-height: 1.5;
   width: 100%;
-  padding: 6.25px 0;
+  padding: 0.6rem 0;
   margin: 0;
   text-align: center;
   justify-content: center;
   display: flex;
   color: var(--text-general); }
+
+.dc-list__separator {
+  display: flex;
+  width: calc(100% - 3.2rem);
+  border-bottom: 1px solid var(--general-section-2);
+  margin: 1.6rem; }
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
@@ -4819,19 +4852,26 @@ html {
   transition: 0.25s ease all;
   transform: translateZ(0); }
 
-.dc-input--no-placeholder label {
-  transform: translate(0, -1.6rem) scale(0.75);
-  color: #85acb0;
-  color: var(--brand-secondary);
-  padding: 0 4px;
-  background-color: var(--fill-normal); }
-
 .dc-input__hint {
   color: var(--text-less-prominent);
   font-size: 1.2rem;
   margin-left: 1.2rem;
   position: absolute;
   top: 4rem; }
+
+.dc-input--no-placeholder label {
+  transform: translate(0, -1.6rem) scale(0.75);
+  color: var(--text-less-prominent);
+  padding: 0 4px;
+  background-color: var(--fill-normal); }
+
+.dc-input--error {
+  border-color: #ff444f !important;
+  border-color: var(--brand-red-coral) !important; }
+
+.dc-input--error label {
+  color: #ff444f !important;
+  color: var(--brand-red-coral) !important; }
 
 .dc-input__error {
   color: var(--text-loss-danger); }
@@ -14703,7 +14743,7 @@ table {
     text-transform: none;
     text-align: center;
     line-height: 1.75;
-    line-height: 2em;
+    line-height: 1.65;
     color: var(--text-general);
     padding: 16px;
     display: flex;
@@ -15025,7 +15065,7 @@ table {
     line-height: 1.43; }
     .cashier__drop-down-display {
       justify-content: left;
-      min-height: 3.8rem;
+      min-height: 4rem;
       height: auto; }
       .cashier__drop-down-display-span {
         font-size: 1.4rem;
@@ -15036,12 +15076,9 @@ table {
         display: flex;
         align-items: center; }
     .cashier__drop-down-items, .cashier__drop-down-label {
-      text-transform: none !important;
-      text-align: left !important;
-      font-size: 1.4rem !important;
-      justify-content: left;
-      padding-left: 1.4rem;
-      align-items: center; }
+      justify-content: left; }
+    .cashier__drop-down-label {
+      margin-left: 1.6rem; }
   .cashier__transferred-amount {
     color: var(--text-profit-success);
     font-size: 3.2rem;
@@ -15283,6 +15320,9 @@ table {
   width: auto;
   margin-bottom: 3.4rem; }
 
+.account-transfer__currency, .account-transfer__balance {
+  line-height: 1.43; }
+
 .account-transfer__currency {
   margin: 0 0.4rem; }
   .account-transfer__currency-icon {
@@ -15316,7 +15356,7 @@ table {
   margin-top: 3.2rem; }
 
 .account-transfer__amount-symbol {
-  top: 1.1rem; }
+  top: 0.9rem; }
 
 /** @define dc-modal; */
 .dc-modal__container_modal-cashier {
@@ -15326,9 +15366,11 @@ table {
 .dc-modal-header__modal-cashier {
   box-shadow: inset 0 -1px 0 0 var(--general-section-1); }
 
-.dc-modal-header__title--modal-cashier {
-  min-width: 24rem;
-  border-bottom: 1px solid var(--general-section-1); }
+.dc-modal-header__title {
+  line-height: 1.65; }
+  .dc-modal-header__title--modal-cashier {
+    min-width: 24rem;
+    border-bottom: 1px solid var(--general-section-1); }
 
 .contract-container {
   font-size: 1.4em;
