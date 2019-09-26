@@ -1801,19 +1801,19 @@ html {
   transition: opacity 0.25s; }
 
 .dc-input__field--placeholder-visible::-webkit-input-placeholder {
-  opacity: 0.7; }
+  opacity: 0.2; }
 
 .dc-input__field--placeholder-visible::-moz-placeholder {
-  opacity: 0.7; }
+  opacity: 0.2; }
 
 .dc-input__field--placeholder-visible:-ms-input-placeholder {
-  opacity: 0.7; }
+  opacity: 0.2; }
 
 .dc-input__field--placeholder-visible::-ms-input-placeholder {
-  opacity: 0.7; }
+  opacity: 0.2; }
 
 .dc-input__field--placeholder-visible::placeholder {
-  opacity: 0.7; }
+  opacity: 0.2; }
 
 .dc-input__field:focus, .dc-input__field:disabled, .dc-input__field:not(:focus):valid {
   outline: none; }
@@ -1839,19 +1839,19 @@ html {
   color: var(--brand-secondary); }
 
 .dc-input__field:focus::-webkit-input-placeholder {
-  opacity: 0.7; }
+  opacity: 0.4; }
 
 .dc-input__field:focus::-moz-placeholder {
-  opacity: 0.7; }
+  opacity: 0.4; }
 
 .dc-input__field:focus:-ms-input-placeholder {
-  opacity: 0.7; }
+  opacity: 0.4; }
 
 .dc-input__field:focus::-ms-input-placeholder {
-  opacity: 0.7; }
+  opacity: 0.4; }
 
 .dc-input__field:focus::placeholder {
-  opacity: 0.7; }
+  opacity: 0.4; }
 
 .dc-input__field:not(.dc-input--no-placeholder):not(:focus):valid ~ label {
   color: var(--text-general); }
@@ -1862,7 +1862,7 @@ html {
 
 .dc-input__leading-icon {
   margin-left: 1rem;
-  top: 1.1rem;
+  top: 1rem;
   position: absolute;
   left: 0;
   pointer-events: none;
@@ -4721,19 +4721,19 @@ html {
   transition: opacity 0.25s; }
 
 .dc-input__field--placeholder-visible::-webkit-input-placeholder {
-  opacity: 0.7; }
+  opacity: 0.2; }
 
 .dc-input__field--placeholder-visible::-moz-placeholder {
-  opacity: 0.7; }
+  opacity: 0.2; }
 
 .dc-input__field--placeholder-visible:-ms-input-placeholder {
-  opacity: 0.7; }
+  opacity: 0.2; }
 
 .dc-input__field--placeholder-visible::-ms-input-placeholder {
-  opacity: 0.7; }
+  opacity: 0.2; }
 
 .dc-input__field--placeholder-visible::placeholder {
-  opacity: 0.7; }
+  opacity: 0.2; }
 
 .dc-input__field:focus, .dc-input__field:disabled, .dc-input__field:not(:focus):valid {
   outline: none; }
@@ -4759,19 +4759,19 @@ html {
   color: var(--brand-secondary); }
 
 .dc-input__field:focus::-webkit-input-placeholder {
-  opacity: 0.7; }
+  opacity: 0.4; }
 
 .dc-input__field:focus::-moz-placeholder {
-  opacity: 0.7; }
+  opacity: 0.4; }
 
 .dc-input__field:focus:-ms-input-placeholder {
-  opacity: 0.7; }
+  opacity: 0.4; }
 
 .dc-input__field:focus::-ms-input-placeholder {
-  opacity: 0.7; }
+  opacity: 0.4; }
 
 .dc-input__field:focus::placeholder {
-  opacity: 0.7; }
+  opacity: 0.4; }
 
 .dc-input__field:not(.dc-input--no-placeholder):not(:focus):valid ~ label {
   color: var(--text-general); }
@@ -4782,7 +4782,7 @@ html {
 
 .dc-input__leading-icon {
   margin-left: 1rem;
-  top: 1.1rem;
+  top: 1rem;
   position: absolute;
   left: 0;
   pointer-events: none;
@@ -14936,6 +14936,8 @@ table {
     .reset-password__btn--disabled {
       opacity: 0.32;
       cursor: not-allowed !important; }
+  .reset-password__fiedlset {
+    position: relative; }
   .reset-password__residence-field {
     width: 30rem; }
   .reset-password__password-field {
@@ -15145,11 +15147,12 @@ table {
 .payment-agent__available-selector {
   margin-bottom: 16px;
   display: flex; }
-  .payment-agent__available-selector .payment-agent__drop-down {
-    margin-left: 8px;
-    margin-bottom: 0;
-    min-width: 19.6rem;
-    width: auto; }
+
+.payment-agent__drop-down {
+  margin-left: 8px;
+  min-width: 20rem;
+  width: auto;
+  margin-bottom: 0; }
 
 .payment-agent__accordion-content-line {
   margin-bottom: 8px; }
@@ -15166,9 +15169,29 @@ table {
   line-height: 1.42; }
 
 .payment-agent__radio {
-  margin-bottom: 16px; }
+  display: none; }
   .payment-agent__radio-group {
     display: block; }
+  .payment-agent__radio-wrapper {
+    display: flex; }
+    .payment-agent__radio-wrapper:not(:last-child) {
+      margin-bottom: 1.6rem; }
+    .payment-agent__radio-wrapper:last-child {
+      margin-bottom: 2.7rem; }
+  .payment-agent__radio-circle {
+    border: 2px solid var(--text-general);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 0 #ffffff;
+    width: 16px;
+    height: 16px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 8px;
+    align-self: center;
+    display: inline-flex; }
+    .payment-agent__radio-circle--selected {
+      border-width: 4px;
+      border-color: #ff444f;
+      border-color: var(--brand-red-coral); }
 
 .payment-agent__receipt {
   text-align: center; }
@@ -15213,9 +15236,14 @@ table {
     font-size: 1.4rem;
     padding: 10px 12px !important;
     height: 4rem; }
+  .payment-agent__input-error {
+    white-space: nowrap; }
 
 .payment-agent__paragraph {
   align-self: flex-start; }
+
+.payment-agent__amount-symbol {
+  top: 0.9rem; }
 
 /** @define account-transfer */
 .account-transfer__notes {
@@ -15272,6 +15300,9 @@ table {
 .account-transfer__no-balance-button {
   height: 4rem;
   margin-top: 3.2rem; }
+
+.account-transfer__amount-symbol {
+  top: 1.1rem; }
 
 /** @define dc-modal; */
 .dc-modal__container_modal-cashier {
