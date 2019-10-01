@@ -344,9 +344,9 @@
   border-bottom-width: 1px; }
 
 .dc-accordion__item {
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-normal);
   border-bottom-width: 0;
-  color: var(--text-color-3);
+  color: var(--text-general);
   font-size: 1.4rem; }
 
 .dc-accordion__item--first {
@@ -354,7 +354,7 @@
   border-top-left-radius: 4px; }
 
 .dc-accordion__item--open .dc-accordion__item-header {
-  border-bottom: 1px solid #eaeaea; }
+  border-bottom: 1px solid var(--border-normal); }
 
 .dc-accordion__item--open .dc-accordion__item-content {
   display: block; }
@@ -373,6 +373,9 @@
 .dc-accordion__item-header-icon-wrapper {
   float: right;
   padding-left: 16px; }
+
+.dc-accordion__item-header-icon path {
+  fill: var(--text-general); }
 
 .dc-accordion__item-content {
   padding: 16px; }

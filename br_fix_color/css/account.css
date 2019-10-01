@@ -239,7 +239,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -261,23 +261,23 @@ html {
   font-family: inherit;
   font-style: inherit;
   padding: 2px 3px;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 /** @define theme */
 .theme--light {
@@ -355,14 +355,15 @@ html {
       font-size: 1.4rem;
       line-height: 1.5;
       margin-right: 8px;
-      color: var(--text-prominent); }
+      color: var(--text-less-prominent); }
   .account__inset_header-icon {
     width: 24px;
     height: 24px; }
   .account__tab_container {
     padding: 0 8px;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
   .account__scrollbars_container {
     height: 100%;
     padding-top: 24px;
@@ -461,12 +462,12 @@ html {
       line-height: unset;
       color: var(--text-general); }
     .account__text--grey {
-      color: var(--text-prominent); }
+      color: var(--text-less-prominent); }
   .account .account-management__message {
     margin: 1em 0;
     font-weight: bold;
     font-size: 1.6em;
-    color: var(--text-prominent); }
+    color: var(--text-less-prominent); }
     .account .account-management__message-content {
       display: flex;
       width: 100%;
@@ -510,7 +511,7 @@ html {
         text-transform: none;
         text-align: left;
         line-height: 1.5;
-        color: var(--text-general); }
+        color: var(--text-prominent); }
     .account .account-management-table__divider {
       position: relative;
       display: block; }
@@ -544,6 +545,10 @@ html {
     align-items: center; }
   .account .account-limit-info * {
     padding-left: 8px; }
+  .account-address__details-section {
+    margin-top: 0.5em; }
+    .account-address__details-section .account-form__fieldset {
+      margin-bottom: 3em; }
 
 /** @define forgot-password; weak */
 .forgot-password {
