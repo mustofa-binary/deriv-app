@@ -7718,8 +7718,7 @@ html {
   flex-direction: row;
   height: 100%;
   justify-content: center;
-  margin: 0 0 0 1.6em;
-  padding: 0 1.6em; }
+  padding: 0 1.6em 0 1.7em; }
   .acc-info__container {
     align-items: center;
     -webkit-box-align: center;
@@ -7730,23 +7729,16 @@ html {
     flex-direction: row;
     height: 100%;
     justify-content: center;
-    position: relative; }
-  .acc-info__id {
-    font-size: 1.6em;
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 700;
-    text-transform: default;
-    text-align: center;
-    line-height: 1.75;
-    pointer-events: none;
-    color: var(--text-prominent); }
-    .acc-info__id:after {
-      content: attr(title);
-      display: block;
-      font-weight: 500;
-      height: 0;
-      overflow: hidden;
-      visibility: hidden; }
+    position: relative;
+    margin-right: 0.8rem; }
+  .acc-info__id-icon {
+    vertical-align: middle;
+    margin-right: 0.8rem; }
+  .acc-info__separator {
+    border-right: 1px solid var(--general-section-1);
+    width: 2rem;
+    height: 3.2rem;
+    margin-right: -0.1rem; }
   .acc-info__balance {
     font-size: 1.6em;
     color: #39b19d;
@@ -7754,7 +7746,7 @@ html {
     text-transform: default;
     text-align: center;
     line-height: 1.75;
-    padding: 5px;
+    padding: 0.5em;
     color: var(--text-profit-success);
     pointer-events: none; }
   .acc-info__select-arrow {
@@ -7768,24 +7760,10 @@ html {
       background: transparent; }
   .acc-info--is-virtual .acc-info__balance {
     color: var(--text-profit-success); }
-  .acc-info--is-virtual:before {
-    font-size: 1.2em;
-    color: #39b19d;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: left;
-    line-height: 1.25;
-    padding: 1.66667px 6.66667px;
-    margin-right: 6.66667px;
-    color: var(--text-profit-success);
-    border: 1px solid var(--text-profit-success);
-    border-radius: 16px;
-    content: 'demo';
-    pointer-events: none; }
   .acc-info--show .acc-info__select-arrow {
     transform: rotate(180deg); }
   .acc-info__button {
-    margin: 0 1.6em; }
+    margin: 0 1.6em 0 0 !important; }
     .acc-info__button:not(:last-child) {
       margin-right: 1em; }
 
@@ -7797,7 +7775,7 @@ html {
   box-shadow: 0 2px 8px 0 var(--shadow-menu);
   right: 0;
   top: calc(100% + 4px);
-  width: 240px;
+  width: 246px;
   background: var(--general-main-2); }
   .acc-switcher__wrapper--enter-done {
     opacity: 1;
@@ -7808,13 +7786,11 @@ html {
 
 .acc-switcher__new-account {
   align-items: center;
-  background-color: #ff444f;
-  background-color: var(--brand-red-coral);
+  background-color: transparent;
   border-radius: 4px;
   display: flex;
   height: 40px;
-  justify-content: center;
-  margin: 0.8em 0 1.6em; }
+  margin: 0 0 0.8em; }
   .acc-switcher__new-account-link {
     background-color: transparent;
     margin: 0;
@@ -7825,38 +7801,29 @@ html {
       padding: 0; }
       .acc-switcher__new-account-link .btn__text {
         color: #ffffff; }
-  .acc-switcher__new-account--outlined {
+  .acc-switcher__new-account:hover {
+    background-color: rgba(255, 68, 79, 0.08) !important; }
+  .acc-switcher__new-account .btn__text {
+    color: #ff444f;
+    color: var(--brand-red-coral); }
+  .acc-switcher__new-account .btn {
+    align-items: center;
     background-color: transparent;
-    border: 1px solid var(--button-secondary-default); }
-    .acc-switcher__new-account--outlined:hover {
-      background-color: var(--button-secondary-hover) !important; }
-      .acc-switcher__new-account--outlined:hover .btn__text {
-        color: var(--text-general); }
-    .acc-switcher__new-account--outlined .btn__text {
-      color: var(--text-general); }
-    .acc-switcher__new-account--outlined .btn {
-      align-items: center;
-      background-color: transparent;
-      display: flex;
-      justify-content: space-around;
-      margin: 0;
-      padding: 0 0 0 1rem;
-      width: 100%; }
-      .acc-switcher__new-account--outlined .btn > * {
-        display: block;
-        margin-right: 1rem; }
-      .acc-switcher__new-account--outlined .btn svg circle {
-        fill: transparent; }
-      .acc-switcher__new-account--outlined .btn svg path {
-        fill: var(--text-general); }
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 0.8rem;
+    justify-content: left; }
+    .acc-switcher__new-account .btn > * {
+      display: block;
+      margin-right: 1rem; }
 
 .acc-switcher__list {
   border-radius: 4px;
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
-  padding: 1.6em;
-  background: var(--general-section-1); }
+  padding: 1.6em 0.8em;
+  background: var(--general-main-1); }
   .acc-switcher__list-title {
     font-size: 1.4em;
     color: rgba(0, 0, 0, 0.8);
@@ -7865,10 +7832,9 @@ html {
     text-align: left;
     line-height: 1.5;
     padding-bottom: 0.8em;
+    margin-left: 0.8rem;
     display: block;
     color: var(--text-prominent); }
-  .acc-switcher__list-group {
-    padding-bottom: 16px; }
 
 .acc-switcher__accounts {
   border-radius: 4px;
@@ -7876,9 +7842,11 @@ html {
   .acc-switcher__accounts .acc-switcher__account {
     background: var(--state-normal); }
     .acc-switcher__accounts .acc-switcher__account:hover:not(.acc-switcher__account--selected) {
-      background-color: var(--state-hover); }
+      background-color: var(--state-hover);
+      border-radius: 4px; }
     .acc-switcher__accounts .acc-switcher__account .acc-switcher__id {
-      color: var(--text-general); }
+      color: var(--text-general);
+      width: 100%; }
     .acc-switcher__accounts .acc-switcher__account--selected {
       background: var(--state-active); }
       .acc-switcher__accounts .acc-switcher__account--selected .acc-switcher__id {
@@ -7887,27 +7855,15 @@ html {
         .acc-switcher__accounts .acc-switcher__account--selected .acc-switcher__id--virtual:before {
           color: var(--text-prominent);
           border: 1px solid var(--text-prominent); }
-    .acc-switcher__accounts .acc-switcher__account:first-child {
-      border-bottom: none;
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px; }
-    .acc-switcher__accounts .acc-switcher__account:last-child {
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-top: none; }
     .acc-switcher__accounts .acc-switcher__account:only-child {
       border-radius: 4px; }
-    .acc-switcher__accounts .acc-switcher__account:not(:last-child):not(:only-child) {
-      border-bottom: 1px solid var(--general-main-2);
-      border-right: none;
-      border-left: none; }
 
 .acc-switcher__account {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  padding: 0.8em 1.6em;
+  padding: 0.8em;
   position: relative;
   background-color: var(--state-normal); }
   .acc-switcher__account .acc-switcher__id {
@@ -7921,24 +7877,12 @@ html {
     display: flex;
     color: var(--text-prominent); }
     .acc-switcher__account .acc-switcher__id-icon {
-      margin-right: 16px; }
-    .acc-switcher__account .acc-switcher__id--virtual:before {
-      font-size: 0.6em;
-      color: #ff9933;
-      font-weight: 400;
-      text-transform: uppercase;
-      text-align: left;
-      line-height: unset;
-      padding: 1.66667px 3.33333px;
-      margin-right: 13.33333px;
-      content: 'demo';
-      color: var(--text-profit-success);
-      border: 1px solid var(--text-profit-success);
-      border-radius: 16px; }
+      margin-right: 8px; }
   .acc-switcher__account:hover:not(.acc-switcher__account--selected) {
     background: var(--state-hover); }
   .acc-switcher__account--selected {
-    background: var(--state-active); }
+    background: var(--state-active);
+    border-radius: 4px; }
     .acc-switcher__account--selected .acc-switcher__id {
       font-size: 1.4em;
       color: #ffffff;
@@ -7956,10 +7900,7 @@ html {
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
-  margin-top: 1.6em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content; }
+  margin-top: 1.6em; }
   .acc-switcher__logout-text {
     font-size: 1.4em;
     color: rgba(0, 0, 0, 0.8);
@@ -7972,6 +7913,25 @@ html {
     height: auto;
     margin-left: 8px;
     width: 1.6em; }
+
+.acc-switcher__balance {
+  color: var(--status-success);
+  margin-left: auto; }
+  .acc-switcher__balance--virtual {
+    color: var(--text-prominent); }
+
+.acc-switcher__separator {
+  height: 4px;
+  background-color: var(--general-section-1);
+  width: calc(100% + 1.6rem);
+  margin-left: -0.8rem; }
+
+.acc-switcher__total {
+  font-size: 1.4rem;
+  margin: 1.6rem 0.8rem;
+  font-weight: bold;
+  display: flex;
+  color: var(--text-prominent); }
 
 /*------------------------------------*
  *  # Constants

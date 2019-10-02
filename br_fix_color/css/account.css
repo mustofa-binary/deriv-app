@@ -224,6 +224,67 @@
             @extend %inline-icon.active;
         }
 */
+.account .account-limit-popover {
+  /* postcss-bem-linter: ignore */
+  /* postcss-bem-linter: ignore */
+  /* postcss-bem-linter: ignore */
+  /* postcss-bem-linter: ignore */ }
+  .account .account-limit-popover .color1-fill {
+    fill: var(--text-general); }
+  .account .account-limit-popover .color1-stroke {
+    stroke: var(--text-general); }
+  .account .account-limit-popover .color2-fill {
+    fill: none; }
+  .account .account-limit-popover .color2-stroke {
+    stroke: none; }
+  .account .active.account-limit-popover {
+    /* postcss-bem-linter: ignore */
+    /* postcss-bem-linter: ignore */
+    /* postcss-bem-linter: ignore */
+    /* postcss-bem-linter: ignore */ }
+    .account .active.account-limit-popover .color1-fill {
+      fill: var(--text-prominent); }
+    .account .active.account-limit-popover .color1-stroke {
+      stroke: var(--text-prominent); }
+    .account .active.account-limit-popover .color2-fill {
+      fill: none; }
+    .account .active.account-limit-popover .color2-stroke {
+      stroke: none; }
+  .account .disabled.account-limit-popover {
+    /* postcss-bem-linter: ignore */
+    /* postcss-bem-linter: ignore */
+    /* postcss-bem-linter: ignore */
+    /* postcss-bem-linter: ignore */ }
+    .account .disabled.account-limit-popover .color1-fill {
+      fill: var(--text-disabled); }
+    .account .disabled.account-limit-popover .color1-stroke {
+      stroke: var(--text-disabled); }
+    .account .disabled.account-limit-popover .color2-fill {
+      fill: none; }
+    .account .disabled.account-limit-popover .color2-stroke {
+      stroke: none; }
+  .account .white.account-limit-popover {
+    /* postcss-bem-linter: ignore */
+    /* postcss-bem-linter: ignore */ }
+    .account .white.account-limit-popover .color1-fill {
+      fill: var(--text-prominent); }
+    .account .white.account-limit-popover .color1-stroke {
+      stroke: var(--text-prominent); }
+  .account .border_hover_color.account-limit-popover {
+    /* postcss-bem-linter: ignore */
+    /* postcss-bem-linter: ignore */ }
+    .account .border_hover_color.account-limit-popover .color1-fill {
+      fill: var(--text-prominent); }
+    .account .border_hover_color.account-limit-popover .color1-stroke {
+      stroke: var(--text-prominent); }
+  .account .secondary.account-limit-popover {
+    /* postcss-bem-linter: ignore */
+    /* postcss-bem-linter: ignore */ }
+    .account .secondary.account-limit-popover .color1-fill {
+      fill: var(--text-less-prominent); }
+    .account .secondary.account-limit-popover .color1-stroke {
+      stroke: var(--text-less-prominent); }
+
 /* postcss-bem-linter: ignore */
 html {
   font-size: 62.5%;
