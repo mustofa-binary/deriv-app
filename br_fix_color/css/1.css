@@ -374,7 +374,7 @@
   float: right;
   padding-left: 16px; }
 
-.dc-accordion__item-header-icon path {
+.dc-accordion__item-header-icon path, .dc-accordion__item-header-icon rect {
   fill: var(--text-general); }
 
 .dc-accordion__item-content {
