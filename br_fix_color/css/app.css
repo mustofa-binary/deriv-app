@@ -14719,7 +14719,7 @@ table {
     grid-auto-columns: 1fr;
     z-index: 2;
     border-radius: 4px;
-    background: var(--general-section-1);
+    background: var(--general-main-2);
     box-shadow: 0 2px 8px 0 var(--shadow-menu); }
   .contracts-type-dialog--enter, .contracts-type-dialog--exit {
     transform: translate3d(20%, 0, 0);
@@ -14814,7 +14814,8 @@ table {
 
 /** @define contract-type-list; */
 .contract-type-list {
-  padding: 1.6em 1.6em 0em; }
+  padding: 1.6em 1.6em 0em;
+  border-bottom: 4px solid var(--general-section-2); }
   .contract-type-list__label {
     font-size: 1.4em;
     color: rgba(0, 0, 0, 0.8);
@@ -14825,19 +14826,9 @@ table {
     color: var(--text-prominent);
     margin-bottom: 0.6em; }
   .contract-type-list:last-child {
-    padding-bottom: 1.6em; }
-  .contract-type-list__contracts-wrapper:first-child {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
     border-bottom: none; }
-  .contract-type-list__contracts-wrapper:last-child {
-    border-top: none;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px; }
-  .contract-type-list__contracts-wrapper:only-child {
-    border-radius: 4px; }
-  .contract-type-list__contracts-wrapper:hover:not(.selected) {
-    background: var(--state-hover); }
+  .contract-type-list__contracts-wrapper {
+    margin-bottom: 1.4rem; }
 
 /** @define contract-type-item */
 .contract-type-item {
@@ -14851,7 +14842,8 @@ table {
   margin-bottom: 0.1em;
   transition: transform 0.3s opacity 0.3s;
   background-color: var(--state-normal);
-  color: var(--text-general); }
+  color: var(--text-general);
+  border-radius: 4px; }
   .contract-type-item:hover {
     background-color: var(--state-hover); }
     .contract-type-item:hover .contract-type-item__icon {
@@ -14959,7 +14951,7 @@ table {
     box-shadow: 0 2px 8px 0 var(--shadow-menu);
     display: flex;
     flex-direction: column;
-    background: var(--general-section-1); }
+    background: var(--general-main-2); }
   .trade-type-info-dialog__choose-button {
     margin: 1.6em 0;
     width: 100%;
