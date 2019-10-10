@@ -289,7 +289,7 @@
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -339,7 +339,7 @@
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .dc-popover__target__icon--disabled .info .color1-fill {
   fill: var(--text-disabled); }
@@ -742,7 +742,7 @@
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -792,7 +792,7 @@
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .dc-modal-header__close .color1-fill {
   fill: var(--text-prominent); }
@@ -1593,7 +1593,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -1643,7 +1643,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .barspinner {
   margin: auto;
@@ -1788,7 +1788,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -1838,7 +1838,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .btn {
   font-size: 1rem;
@@ -2407,7 +2407,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -2457,7 +2457,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .dc-label {
   font-size: 14px;
@@ -2844,7 +2844,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -2894,7 +2894,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 /*------------------------------------*
  *  # Constants
@@ -4366,7 +4366,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -4416,7 +4416,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .barspinner {
   margin: auto;
@@ -4789,7 +4789,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -4839,7 +4839,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .dc-dropdown__select-arrow .color1-fill {
   fill: var(--text-general); }
@@ -5183,7 +5183,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -5233,7 +5233,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .dc-list {
   position: absolute;
@@ -5406,7 +5406,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -5456,7 +5456,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .dc-popover__target__icon--disabled .info .color1-fill {
   fill: var(--text-disabled); }
@@ -5859,7 +5859,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -5909,7 +5909,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .dc-field-error {
   position: absolute;
@@ -5984,7 +5984,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -6034,7 +6034,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .dc-input {
   position: relative;
@@ -7320,7 +7320,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.08); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -7370,7 +7370,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.08); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .dc-checkbox {
   display: flex;
