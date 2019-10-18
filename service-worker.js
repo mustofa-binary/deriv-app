@@ -11,11 +11,8 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("/workbox-v4.3.1/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "/workbox-v4.3.1"});
-
 importScripts(
-  "/precache-manifest.f7c85dfa8d81656f6c00ebfdaf3617b5.js"
+  "/precache-manifest.52dd66f6078790b0fea5d4b5cfa49359.js"
 );
 
 workbox.core.skipWaiting();

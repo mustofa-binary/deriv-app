@@ -66,7 +66,7 @@
     --status-warning: #ffad3a;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.08); }
+    --transparent-success: rgba(75, 180, 179, 0.92); }
   :root .theme--dark {
     --general-main-1: #0e0e0e;
     --general-main-2: #151717;
@@ -115,7 +115,7 @@
     --status-success: #00a79e;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.08); }
+    --transparent-success: rgba(0, 167, 158, 0.92); }
 
 /* Preserve legacy variables */
 /* Primary */
@@ -353,12 +353,13 @@ html {
   flex-direction: column;
   justify-content: flex-start; }
   .dc-modal__container_mt5-password-modal h2 {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
     line-height: 1.5;
+    color: var(--text-prominent);
     text-transform: none;
     margin-bottom: 3em; }
   .dc-modal__container_mt5-password-modal form {
@@ -369,8 +370,8 @@ html {
     justify-content: space-between;
     padding: 2em; }
   .dc-modal__container_mt5-password-modal__description {
-    font-size: 1.2em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.2rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
@@ -408,36 +409,39 @@ html {
     justify-content: space-around;
     align-items: center; }
   .dc-modal__container_top-up-virtual__description {
-    font-size: 1.2em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.2rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
     line-height: 1.25;
-    text-transform: none; }
+    text-transform: none;
+    color: var(--text-general); }
   .dc-modal__container_top-up-virtual--h4 {
-    font-size: 1.2em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.2rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
     line-height: 1.25;
-    text-transform: none; }
+    text-transform: none;
+    color: var(--text-prominent); }
   .dc-modal__container_top-up-virtual--balance {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
     line-height: 1.5;
     color: var(--text-profit-success); }
   .dc-modal__container_top-up-virtual--balance-descriptor {
-    font-size: 1.2em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.2rem;
+    color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
-    line-height: 1.25; }
+    line-height: 1.25;
+    color: var(--text-general); }
   .dc-modal__container_top-up-virtual--button {
     height: 4rem;
     width: 27rem;
@@ -448,12 +452,15 @@ html {
     padding: 0;
     margin: 1.6rem; }
     .dc-modal__container_top-up-virtual--button .btn {
-      font-size: 1.4em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.4rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: center;
       line-height: 1.5;
+      background-color: #ff444f;
+      background-color: var(--brand-red-coral);
+      color: var(--text-colored-background);
       text-transform: none; }
       .dc-modal__container_top-up-virtual--button .btn--disabled {
         background-color: #ff444f;
@@ -470,31 +477,35 @@ html {
       flex-grow: 1; }
 
 .dc-modal-header__section--top-up-virtual {
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  color: var(--text-general);
   font-weight: 700;
   text-transform: capitalize;
   text-align: center;
   line-height: 1.5;
+  color: var(--text-prominent);
   text-transform: none; }
 
 .mt5-success-topup__heading {
-  font-size: 1.2em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  color: var(--text-general);
   font-weight: 700;
   text-transform: capitalize;
   text-align: center;
   line-height: 1.25;
+  color: var(--text-prominent);
   text-transform: none;
-  margin-top: 2em; }
+  margin-top: 2em;
+  padding: 0 1.6em; }
 
 .mt5-success-topup__description p {
-  font-size: 1.2em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  color: var(--text-general);
   font-weight: 400;
   text-transform: capitalize;
   text-align: center;
   line-height: 1.25;
+  color: var(--text-general);
   text-transform: none; }
 
 .dc-tooltip {
@@ -503,8 +514,8 @@ html {
   .dc-tooltip:hover .dc-tooltiptext {
     visibility: visible; }
   .dc-tooltip .dc-tooltiptext {
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: capitalize;
     text-align: left;
@@ -601,7 +612,7 @@ html {
     --status-warning: #ffad3a;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.08); }
+    --transparent-success: rgba(75, 180, 179, 0.92); }
   :root .theme--dark {
     --general-main-1: #0e0e0e;
     --general-main-2: #151717;
@@ -650,7 +661,7 @@ html {
     --status-success: #00a79e;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.08); }
+    --transparent-success: rgba(0, 167, 158, 0.92); }
 
 /* Preserve legacy variables */
 /* Primary */
@@ -800,11 +811,11 @@ html {
   --button-secondary-default: #999;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
-  --button-tertiary-hover: rgba(255,68,79,0.0784314);
-  --overlay-outside-dialog: rgba(0,0,0,0.721569);
-  --overlay-inside-dialog: rgba(255,255,255,0.960784);
-  --shadow-menu: rgba(0,0,0,0.160784);
+  --button-secondary-hover: rgba(0,0,0,0.08);
+  --button-tertiary-hover: rgba(255,68,79,0.08);
+  --overlay-outside-dialog: rgba(0,0,0,0.72);
+  --overlay-inside-dialog: rgba(255,255,255,0.96);
+  --shadow-menu: rgba(0,0,0,0.16);
   --state-normal: #fff;
   --state-hover: #e6e9e9;
   --state-active: #d6dadb;
@@ -823,7 +834,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: transparentize(#4bb4b3, 0.92); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -850,11 +861,11 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: transparentize(#fff, 0.92);
-  --button-tertiary-hover: rgba(255,68,79,0.0784314);
-  --overlay-outside-dialog: rgba(0,0,0,0.721569);
-  --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.839216);
+  --button-secondary-hover: rgba(255,255,255,0.08);
+  --button-tertiary-hover: rgba(255,68,79,0.08);
+  --overlay-outside-dialog: rgba(0,0,0,0.72);
+  --overlay-inside-dialog: rgba(14,14,14,0.96);
+  --shadow-menu: rgba(0,0,0,0.84);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -873,7 +884,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: transparentize(#00a79e, 0.92); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .dc-tabs {
   position: relative; }
@@ -995,7 +1006,7 @@ html {
     --status-warning: #ffad3a;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.08); }
+    --transparent-success: rgba(75, 180, 179, 0.92); }
   :root .theme--dark {
     --general-main-1: #0e0e0e;
     --general-main-2: #151717;
@@ -1044,7 +1055,7 @@ html {
     --status-success: #00a79e;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.08); }
+    --transparent-success: rgba(0, 167, 158, 0.92); }
 
 /* Preserve legacy variables */
 /* Primary */
@@ -1280,8 +1291,8 @@ html {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  color: var(--text-general);
   font-weight: 400;
   text-transform: default;
   text-align: center;
@@ -1301,9 +1312,17 @@ html {
     grid-auto-rows: max-content;
     padding: 0 1.6em;
     box-sizing: border-box;
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative; }
     .table__row, .table__row:active, .table__row:visited {
       color: var(--text-general); }
+    .table__row--preloader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      max-height: 64px;
+      width: 100%; }
   .table__head {
     border-bottom: 2px solid var(--general-section-1);
     height: 52px; }
@@ -1317,7 +1336,7 @@ html {
     display: flex;
     flex-direction: column; }
     .table__body .table__row-link:hover {
-      background-color: var(--general-hover);
+      background-color: var(--state-hover);
       cursor: pointer; }
     .table__body .table__row:last-child {
       border-bottom: none; }
@@ -1348,8 +1367,8 @@ html {
       display: flex;
       justify-content: space-between; }
     .mt5-dashboard__welcome-message--heading {
-      font-size: 1.6em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.6rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: left;
@@ -1357,16 +1376,16 @@ html {
       color: var(--text-prominent);
       line-height: 1.5em; }
     .mt5-dashboard__welcome-message--paragraph {
-      font-size: 1.4em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.4rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
       line-height: 1.5;
       color: var(--text-general); }
     .mt5-dashboard__welcome-message--hint {
-      font-size: 1em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
@@ -1384,10 +1403,10 @@ html {
     align-items: center;
     padding-left: 1.6rem;
     background-color: var(--general-section-1);
-    margin-bottom: 3.2em; }
+    margin: 2.4em 0; }
     .mt5-dashboard__missing-real--heading {
-      font-size: 1.6em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.6rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: left;
@@ -1411,28 +1430,39 @@ html {
         flex-flow: column nowrap;
         align-items: center; }
       .mt5-dashboard__download-center-options--desktop {
-        margin-left: 7em; }
+        margin-left: 7em;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start; }
         .mt5-dashboard__download-center-options--desktop-devices {
-          width: 24em;
+          width: 200px;
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
-          margin-bottom: 1.6em; }
+          margin-right: 1.6em;
+          flex-wrap: wrap; }
+          .mt5-dashboard__download-center-options--desktop-devices svg:first-child {
+            margin-right: 0.4em; }
+          .mt5-dashboard__download-center-options--desktop-devices svg:not(:last-child) {
+            margin-bottom: 1.6em; }
         .mt5-dashboard__download-center-options--desktop-links {
-          width: 43em;
+          height: 142px;
           display: flex;
+          flex-flow: column nowrap;
           justify-content: space-between; }
       .mt5-dashboard__download-center-options--mobile {
         margin-right: 7em; }
         .mt5-dashboard__download-center-options--mobile-devices {
           margin-bottom: 1.6em; }
+          .mt5-dashboard__download-center-options--mobile-devices svg:first-child {
+            margin-right: 0.8em; }
         .mt5-dashboard__download-center-options--mobile-links {
           width: 27.1em;
           display: flex;
           justify-content: space-between; }
     .mt5-dashboard__download-center--heading {
-      font-size: 1.6em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.6rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: left;
@@ -1442,19 +1472,18 @@ html {
       margin-left: 1.3em;
       margin-bottom: 1.5em; }
     .mt5-dashboard__download-center--hint {
-      font-size: 1em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
       line-height: unset;
       color: var(--text-less-prominent);
-      margin-top: 1.6em;
       margin-left: 7.05em; }
 
 .mt5-attribute-describer {
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  color: var(--text-general);
   font-weight: 700;
   text-transform: none;
   text-align: left;
@@ -1505,8 +1534,8 @@ html {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
     border: solid 1px var(--general-main-1); }
   .mt5-account-card--heading {
-    font-size: 1.6em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.6rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: none;
     text-align: left;
@@ -1514,8 +1543,8 @@ html {
     color: var(--text-prominent);
     line-height: 1.5em; }
   .mt5-account-card--paragraph {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: none;
     text-align: left;
@@ -1523,8 +1552,8 @@ html {
     color: var(--text-general);
     line-height: 1.45em; }
   .mt5-account-card--balance {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: capitalize;
     text-align: left;
@@ -1559,8 +1588,8 @@ html {
       .mt5-account-card__specs-table-attribute .mt5-account-card--paragraph {
         color: var(--text-general); }
     .mt5-account-card__specs-table-data .mt5-account-card--paragraph {
-      font-size: 1.4em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.4rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: left;
@@ -1580,8 +1609,8 @@ html {
     text-decoration: none;
     padding: 0;
     margin: 1.6rem;
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: none;
     text-align: center;
@@ -1597,8 +1626,8 @@ html {
       .mt5-account-card__account-selection--secondary:hover {
         background-color: var(--button-secondary-hover); }
   .mt5-account-card__login {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
@@ -1618,8 +1647,8 @@ html {
     display: flex;
     justify-content: space-between; }
     .mt5-account-card__manage .btn {
-      font-size: 1.2em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.2rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: center;
@@ -1633,16 +1662,16 @@ html {
   margin: 5.6rem auto 0;
   width: 400px; }
   .mt5-password-manager--paragraph {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-general); }
   .mt5-password-manager--error-message {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: none;
     text-align: left;

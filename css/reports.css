@@ -66,7 +66,7 @@
     --status-warning: #ffad3a;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.08); }
+    --transparent-success: rgba(75, 180, 179, 0.92); }
   :root .theme--dark {
     --general-main-1: #0e0e0e;
     --general-main-2: #151717;
@@ -115,7 +115,7 @@
     --status-success: #00a79e;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.08); }
+    --transparent-success: rgba(0, 167, 158, 0.92); }
 
 /* Preserve legacy variables */
 /* Primary */
@@ -399,8 +399,8 @@ html {
     border-bottom: none; }
   .composite-calendar__prepopulated-list {
     padding-top: 50px;
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
@@ -425,8 +425,8 @@ html {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  color: var(--text-general);
   font-weight: 400;
   text-transform: default;
   text-align: center;
@@ -446,9 +446,17 @@ html {
     grid-auto-rows: max-content;
     padding: 0 1.6em;
     box-sizing: border-box;
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative; }
     .table__row, .table__row:active, .table__row:visited {
       color: var(--text-general); }
+    .table__row--preloader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      max-height: 64px;
+      width: 100%; }
   .table__head {
     border-bottom: 2px solid var(--general-section-1);
     height: 52px; }
@@ -462,7 +470,7 @@ html {
     display: flex;
     flex-direction: column; }
     .table__body .table__row-link:hover {
-      background-color: var(--general-hover);
+      background-color: var(--state-hover);
       cursor: pointer; }
     .table__body .table__row:last-child {
       border-bottom: none; }
@@ -486,8 +494,8 @@ html {
     justify-content: space-between;
     padding: 0 24px 16px; }
     .reports__meta-description--heading {
-      font-size: 1.6em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.6rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: left;
@@ -495,8 +503,8 @@ html {
       color: var(--text-prominent);
       line-height: 1.55; }
     .reports__meta-description--paragraph {
-      font-size: 1.4em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.4rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
@@ -532,10 +540,15 @@ html {
     /*                     icon   refId tr_time  transaction cred/debt  balance */
     grid-template-columns: 0.8fr  1.2fr 1fr      0.8fr         1fr        1fr; }
     .statement__row--detail {
+      overflow: hidden;
+      max-height: 63px;
       display: flex;
+      align-items: center;
+      padding: 0;
       justify-content: center;
-      padding: 1.12em;
       background-color: var(--general-section-1); }
+      .statement__row--detail-text {
+        padding: 1.12em; }
     .statement__row .date {
       text-align: left; }
   .statement .amount, .statement .balance {
@@ -717,6 +730,7 @@ html {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
   margin: auto; }
   .empty-trade-history__icon {
     width: 96px;

@@ -66,7 +66,7 @@
     --status-warning: #ffad3a;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.08); }
+    --transparent-success: rgba(75, 180, 179, 0.92); }
   :root .theme--dark {
     --general-main-1: #0e0e0e;
     --general-main-2: #151717;
@@ -115,7 +115,7 @@
     --status-success: #00a79e;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.08); }
+    --transparent-success: rgba(0, 167, 158, 0.92); }
 
 /* Preserve legacy variables */
 /* Primary */
@@ -508,30 +508,39 @@ html {
       border-top: 1px solid var(--general-section-1);
       border-width: 1px;
       background-color: var(--general-main-1); }
+      .account-form__footer-note {
+        color: var(--text-prominent);
+        font-size: 1.2rem;
+        font-size: var(--text-size-xxs);
+        height: 4rem;
+        line-height: 1.5;
+        text-align: right;
+        width: 27.6rem; }
       .account-form__footer-btn {
+        height: 4em;
         margin-top: 0;
         margin-bottom: 0;
-        margin-right: 0; }
+        margin-right: 1.6rem; }
   .account__intial-loader {
     height: calc(100vh - 240px); }
   .account__text {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-general); }
     .account__text--small {
-      font-size: 1.2em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.2rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
       line-height: 1.25; }
     .account__text--xsmall {
-      font-size: 1em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
@@ -593,8 +602,8 @@ html {
       .account .account-management-table thead tr {
         padding-bottom: 8px; }
       .account .account-management-table thead th {
-        font-size: 1.4em;
-        color: rgba(0, 0, 0, 0.8);
+        font-size: 1.4rem;
+        color: var(--text-general);
         font-weight: 700;
         text-transform: none;
         text-align: left;
