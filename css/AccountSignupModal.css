@@ -5,118 +5,7 @@
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -176,26 +65,7 @@
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -309,7 +179,6 @@ html {
 
 /** @define link */
 .link {
-  color: #ff444f;
   color: var(--brand-red-coral);
   font-weight: bold;
   text-decoration: none; }
