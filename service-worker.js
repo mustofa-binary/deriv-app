@@ -12,7 +12,7 @@
  */
 
 importScripts(
-  "/precache-manifest.12dba5a6703c831ad60c4fdaa62b289c.js"
+  "/precache-manifest.09629e7e4e1d47e22b9b44a46ab1a0b7.js"
 );
 
 workbox.core.skipWaiting();
