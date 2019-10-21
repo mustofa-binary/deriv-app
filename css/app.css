@@ -9122,6 +9122,8 @@ table {
     text-align: center; }
   .send-email-template__cta-btn {
     margin-top: 3.2rem; }
+  .send-email-template__btn {
+    margin: 0 auto; }
 
 /** @define drawer */
 .drawer {
