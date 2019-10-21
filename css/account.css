@@ -517,10 +517,10 @@ html {
         text-align: right;
         width: 27.6rem; }
       .account-form__footer-btn {
-        height: 4em;
+        height: 4rem;
         margin-top: 0;
         margin-bottom: 0;
-        margin-right: 1.6rem; }
+        margin-left: 1.6rem; }
   .account__intial-loader {
     height: calc(100vh - 240px); }
   .account__text {
