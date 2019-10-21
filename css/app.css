@@ -9121,7 +9121,7 @@ table {
   .send-email-template__sent, .send-email-template__cta {
     text-align: center; }
   .send-email-template__cta-btn {
-    margin-top: 3.2rem; }
+    margin: 3.2rem auto 0; }
   .send-email-template__btn {
     margin: 0 auto; }
 
