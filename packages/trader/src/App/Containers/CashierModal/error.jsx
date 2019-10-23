@@ -91,7 +91,7 @@ class Error extends React.Component {
                         header={localize('Our terms and conditions have changed')}
                         message={
                             <Localize
-                                i18n_default_text='Please accept our updated <0>terms and conditions</0> to continue.'
+                                i18n_default_text='Please accept our updated <0>terms and conditions</0> to proceed.'
                                 components={[ (
                                     <a
                                         key={0}
