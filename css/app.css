@@ -12175,14 +12175,7 @@ table {
     .cashier__form-error-small-icon {
       margin: 2rem 1.6rem 4.4rem 2.4rem; }
   .cashier__form-submit-button {
-    width: 9.8rem;
-    min-width: 9.8rem;
-    display: inline-block;
     height: 4rem;
-    font-size: 1.4rem;
-    padding: 1rem 1.6rem;
-    font-weight: bold;
-    color: #ffffff;
     margin: 1.6rem 2.4rem 2.4rem; }
   .cashier__input-long {
     display: inline-block !important;
