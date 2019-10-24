@@ -1164,6 +1164,9 @@ html {
 .dc-dropdown-list__item:hover {
   background-color: var(--state-hover); }
 
+.dc-dropdown-list__item--active {
+  background-color: var(--state-active); }
+
 .dc-autocomplete {
   width: 100%;
   position: relative; }
@@ -12277,9 +12280,8 @@ table {
     line-height: 1.5;
     margin-bottom: 0.8rem; }
   .cashier-error__button {
-    margin-top: 3.2rem;
-    height: 4rem;
-    margin-bottom: 1.6rem; }
+    margin: 3.2rem auto 1.6rem;
+    height: 4rem; }
   .cashier-error__footer {
     font-size: 1.2rem; }
 

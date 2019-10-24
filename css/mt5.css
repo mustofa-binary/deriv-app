@@ -825,7 +825,8 @@ html {
     overflow: hidden;
     flex-grow: 1;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    flex-basis: 0; }
     .table__body .table__row-link:hover {
       background-color: var(--state-hover);
       cursor: pointer; }
@@ -986,16 +987,15 @@ html {
 .mt5-compare-accounts {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center; }
-  .mt5-compare-accounts__data {
-    width: 845px; }
-    .mt5-compare-accounts__data__table {
-      flex: 1; }
-    .mt5-compare-accounts__data__row {
-      /*                     attribute   standard advanced synthetic */
-      grid-template-columns: 2.7fr       1fr      1fr      1fr; }
-    .mt5-compare-accounts__data .attribute, .mt5-compare-accounts__data .standard, .mt5-compare-accounts__data .advanced, .mt5-compare-accounts__data .synthetic {
-      justify-content: flex-start; }
+  flex-grow: 1; }
+  .mt5-compare-accounts__data__table {
+    flex: 1;
+    padding: 0px 30px; }
+  .mt5-compare-accounts__data__row {
+    /*                     attribute   standard advanced synthetic */
+    grid-template-columns: 2.7fr       1fr      1fr      1fr; }
+  .mt5-compare-accounts__data .attribute, .mt5-compare-accounts__data .standard, .mt5-compare-accounts__data .advanced, .mt5-compare-accounts__data .synthetic {
+    justify-content: flex-start; }
   .mt5-compare-accounts-modal__wrapper {
     margin-top: 1.6rem;
     display: flex;
