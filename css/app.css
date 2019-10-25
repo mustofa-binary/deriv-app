@@ -2229,14 +2229,9 @@ html {
       .details-form__elements .dc-dropdown__display-placeholder-text {
         background-color: var(--general-main-2); }
   .details-form__description {
-    font-size: 1.4rem;
-    color: var(--text-general);
-    font-weight: 400;
-    text-transform: capitalize;
     text-align: center;
-    line-height: 1.5;
-    text-transform: none;
-    margin: 2em 0;
+    font-size: var(--text-size-xxs);
+    margin: 1.6rem 0;
     color: var(--text-general); }
   .details-form .address-state__fieldset {
     margin-bottom: 3.2rem;
@@ -5557,13 +5552,17 @@ html {
     flex-direction: column;
     height: 128px;
     justify-content: space-around;
-    margin: 0.5em 2em 0;
+    margin: 1.6rem 2rem 0;
     width: 128px; }
     .currency-list__item:hover:not(.currency-list__item--selected) {
       cursor: pointer;
       border: 1px solid var(--border-hover); }
     .currency-list__item--current {
-      opacity: 0.5; }
+      pointer-events: none; }
+      .currency-list__item--current svg {
+        opacity: 0.08; }
+      .currency-list__item--current .label {
+        color: var(--text-disabled); }
     .currency-list__item--selected {
       border: 2px solid var(--border-active); }
       .currency-list__item--selected p.label {
@@ -5597,18 +5596,15 @@ html {
 
 .currency-hr {
   height: 2px;
-  margin: 1rem 0 0;
+  margin: 1.6rem 0 0;
   width: 100%;
   border-top: 1px solid var(--general-section-2); }
 
-.currency-selector {
+.currency-selector__radio-group {
   display: flex;
-  flex-direction: column; }
-  .currency-selector__radio-group {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-around; }
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around; }
 
 /*------------------------------------*
  *  # Constants
@@ -5831,7 +5827,7 @@ html {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  margin: 0 8rem; }
+  margin: 0 8rem 0.8rem; }
   .terms-of-use .dc-checkbox__label {
     font-size: 1.4rem;
     color: var(--text-general);
@@ -6083,17 +6079,11 @@ html {
   overflow: hidden; }
 
 .add-or-manage {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  flex-shrink: 0; }
-  .add-or-manage > * {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
+  flex-direction: row;
+  /* fix for Safari */
+  flex-wrap: wrap; }
+  .add-or-manage form {
+    flex-direction: column; }
 
 .success-change {
   display: flex;
@@ -6107,7 +6097,7 @@ html {
     width: 60%;
     justify-content: space-between;
     position: relative;
-    margin-top: 2em; }
+    margin-top: 3rem; }
     .success-change__icon-area .bottom-right-overlay {
       position: absolute;
       bottom: 0;
@@ -6115,8 +6105,8 @@ html {
       width: 3rem;
       height: 3rem; }
     .success-change__icon-area svg.inline-icon {
-      width: 60px;
-      height: 60px; }
+      width: 90px;
+      height: 120px; }
     .success-change__icon-area svg {
       display: block; }
     .success-change__icon-area--xlarge, .success-change__icon-area--large {
@@ -7016,13 +7006,20 @@ html {
   flex-direction: column;
   transition: all 0.3s ease-in-out; }
   .dc-modal__container_real-account-signup-modal--success {
-    max-height: 365px;
+    max-height: 380px;
     border-radius: 4px;
     overflow: hidden;
     max-width: 478px; }
   .dc-modal__container_real-account-signup-modal .dc-modal-header__title {
     text-transform: none;
     border-top-left-radius: 1em; }
+  .dc-modal__container_real-account-signup-modal--error .account-wizard--error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; }
   .dc-modal__container_real-account-signup-modal--error > svg {
     width: 128px;
     height: 128px;
@@ -7037,7 +7034,7 @@ html {
     line-height: 1.75;
     text-transform: none;
     color: var(--text-general);
-    margin: 2em 0 1em; }
+    margin: 1.6rem; }
   .dc-modal__container_real-account-signup-modal--error p {
     font-size: 1.4rem;
     color: var(--text-general);
@@ -7046,7 +7043,8 @@ html {
     text-align: center;
     line-height: 1.5;
     text-transform: none;
-    color: var(--text-prominent); }
+    color: var(--text-prominent);
+    width: 80%; }
   .dc-modal__container_real-account-signup-modal--error a {
     font-size: 1.4rem;
     color: var(--text-general);
@@ -7069,7 +7067,8 @@ html {
 .account-wizard {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex: 1 1 0;
+  /* fix for Safari */
   width: 100%; }
   .account-wizard h1 {
     font-size: 1.6rem;
@@ -7089,7 +7088,7 @@ html {
     text-align: center;
     line-height: 1.75;
     text-transform: none;
-    margin-top: 2rem;
+    margin-top: 2.4rem;
     color: var(--text-less-prominent); }
   .account-wizard h3 {
     font-size: 1.2rem;
@@ -7103,20 +7102,17 @@ html {
     margin-bottom: 1.6rem; }
   .account-wizard form {
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-evenly;
+    flex: 1 1 0;
+    /* fix for Safari */
     width: 100%;
-    padding: 0 2em 2em; }
+    padding: 0 2.4rem 3.2rem; }
   .account-wizard__body {
-    align-items: center;
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: flex-start;
+    flex: 1 1 0;
+    /* fix for Safari */
     width: 100%; }
   .account-wizard__set-currency p {
-    margin-top: 1em;
+    margin-top: 2.4rem;
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
@@ -7138,16 +7134,18 @@ html {
     align-items: center;
     justify-content: flex-end;
     align-self: flex-end;
-    margin-top: 2em;
+    padding-top: 2.4em;
     width: 100%; }
     .account-wizard__btn-area .btn:not(:last-child) {
       margin: 0 1em; }
     .account-wizard__btn-area .btn:last-child {
       margin: 0; }
     .account-wizard__btn-area--absolute {
-      bottom: 16px;
+      bottom: 0;
       position: absolute;
-      right: 16px; }
+      left: 0;
+      padding: 2.4em;
+      border-top: 1px solid var(--general-section-1); }
     .account-wizard__btn-area--center {
       justify-content: center;
       width: 100%; }
@@ -7178,6 +7176,32 @@ html {
       text-align: left;
       line-height: 1.5;
       text-transform: none; }
+  .account-wizard--disabled {
+    position: relative; }
+    .account-wizard--disabled h1, .account-wizard--disabled h2, .account-wizard--disabled h3, .account-wizard--disabled p {
+      color: var(--text-disabled); }
+    .account-wizard--disabled .currency-list__item {
+      pointer-events: none; }
+      .account-wizard--disabled .currency-list__item svg {
+        opacity: 0.08; }
+      .account-wizard--disabled .currency-list__item .label {
+        color: var(--text-disabled); }
+    .account-wizard--disabled-message {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .account-wizard--disabled-message p {
+        color: var(--text-general);
+        font-size: var(--text-size-s);
+        line-height: 1.5;
+        width: 78%;
+        text-align: center; }
 
 /*------------------------------------*
  *  # Constants
@@ -7397,23 +7421,16 @@ html {
   overflow: hidden; }
 
 .form-progress {
-  height: 100%;
-  max-height: 122px;
   width: 100%; }
   .form-progress__header {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 -24px;
-    padding-bottom: 20px; }
+    margin-bottom: 3.2em; }
     .form-progress__header h2 {
-      font-size: 1.4rem;
-      color: var(--text-general);
-      font-weight: 700;
-      text-transform: capitalize;
-      text-align: center;
-      line-height: 1.5;
+      font-size: var(--text-size-s);
+      font-weight: bold;
       color: var(--text-general);
       text-transform: none; }
   .form-progress__step {
@@ -7484,10 +7501,8 @@ html {
       top: 1.7em;
       transition: width 0.3s ease; }
 
-.modal__container.modal__real-account-signup-modal {
-  width: 900px; }
-  .modal__container.modal__real-account-signup-modal .vertical-tab__content {
-    padding: 0 !important; }
+.modal__container.modal__real-account-signup-modal .vertical-tab__content {
+  padding: 0 !important; }
 
 /*------------------------------------*
  *  # Constants
