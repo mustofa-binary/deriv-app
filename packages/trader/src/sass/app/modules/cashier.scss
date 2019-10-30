@@ -499,6 +499,11 @@
     }
 }
 
+/** @define otc-payment */
+.otc-payment {
+    display: flex;
+}
+
 /** @define dc-modal-header; */
 .dc-modal-header {
     &__modal-cashier {

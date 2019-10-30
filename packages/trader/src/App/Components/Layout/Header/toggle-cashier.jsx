@@ -12,6 +12,7 @@ const Withdrawal           = () => import('App/Containers/CashierModal/withdrawa
 const PaymentAgent         = () => import('App/Containers/CashierModal/payment-agent.jsx');
 const AccountTransfer      = () => import('App/Containers/CashierModal/account-transfer.jsx');
 const PaymentAgentTransfer = () => import('App/Containers/CashierModal/payment-agent-transfer.jsx');
+const OtcPayment           = () => import('App/Containers/CashierModal/otc-payment.jsx');
 
 const modal_content = [
     {
@@ -70,6 +71,18 @@ const modal_content = [
         value    : () => (
             <Lazy
                 ctor={PaymentAgentTransfer}
+                should_load={true}
+                has_progress={true}
+            />
+        ),
+    }, {
+        container: 'otc_payment',
+        icon     : 'OtcPayment',
+        label    : localize('OTC payments'),
+        // eslint-disable-next-line react/display-name
+        value    : () => (
+            <Lazy
+                ctor={OtcPayment}
                 should_load={true}
                 has_progress={true}
             />

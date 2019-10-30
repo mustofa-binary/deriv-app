@@ -58,6 +58,12 @@ class ConfigPaymentAgentTransfer {
     @observable transfer_limit         = {};
 }
 
+class OtcPayment {
+    @observable container              = 'otc_payment';
+    @observable error                  = new ConfigError();
+}
+
+
 class ConfigAccountTransfer {
     @observable accounts_list           = [];
     @observable container               = 'account_transfer';
@@ -94,6 +100,7 @@ export default class CashierStore extends BaseStore {
         },
         payment_agent         : new ConfigPaymentAgent(),
         payment_agent_transfer: new ConfigPaymentAgentTransfer(),
+        otc_payment           : new OtcPayment(),
         withdraw              : {
             ...(toJS(new Config({ container: 'withdraw' }))),
             error       : new ConfigError(),
