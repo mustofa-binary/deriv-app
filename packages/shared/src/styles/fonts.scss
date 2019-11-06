@@ -19,12 +19,13 @@ $FONT_SIZES: (
 );
 
 $FONT_COLORS: (
-    'active'   var(--text-colored-background),
-    'black'    var(--text-general),
-    'grey'     var(--text-less-prominent),
-    'disabled' var(--text-disabled),
-    'green'    var(--text-profit-success),
-    'red'      var(--text-loss-danger),
+    'active'    var(--text-colored-background),
+    'prominent' var(--text-prominent),
+    'general'   var(--text-general),
+    'less-prom' var(--text-less-prominent),
+    'disabled'  var(--text-disabled),
+    'green'     var(--text-profit-success),
+    'red'       var(--text-loss-danger),
 );
 
 $FONT_WEIGHTS: (
