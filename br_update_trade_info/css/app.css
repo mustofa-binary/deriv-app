@@ -11171,7 +11171,7 @@ table {
     flex-direction: column;
     background: var(--general-main-2); }
   .trade-type-info-dialog__choose-button {
-    margin: 1.6em 0;
+    margin: 1.6rem 0 1rem;
     width: 100%;
     /* postcss-bem-linter: ignore */ }
     .trade-type-info-dialog__choose-button span {
@@ -11257,7 +11257,7 @@ table {
     background-color: var(--text-disabled); }
     .trade-type-info-navigation__circle-button--active {
       position: absolute;
-      top: 0;
+      top: 1px;
       left: 0;
       cursor: auto;
       cursor: initial;
