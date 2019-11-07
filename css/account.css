@@ -279,7 +279,8 @@ html {
 .account {
   margin: 0 16px; }
   .account .vertical-tab {
-    height: calc(100vh - 83px); }
+    height: calc(100vh - 83px);
+    max-width: calc(100vw - 32px); }
     .account .vertical-tab__tab {
       min-width: 240px; }
   .account__inset_header {
@@ -447,7 +448,8 @@ html {
     line-height: 1.5; }
   .account .account-management__text-container {
     margin-top: 10px;
-    max-width: 467px; }
+    max-width: 467px;
+    margin-bottom: 2em; }
   .account .account-management-flex-wrapper {
     display: flex; }
     .account .account-management-flex-wrapper--space-between {

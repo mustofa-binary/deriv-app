@@ -4430,6 +4430,242 @@ html {
             @extend %inline-icon.active;
         }
 */
+  .notifications-toggle:hover .notifications-toggle__icon {
+    /* postcss-bem-linter: ignore */
+    /* postcss-bem-linter: ignore */
+    /* postcss-bem-linter: ignore */
+    /* postcss-bem-linter: ignore */ }
+    .notifications-toggle:hover .notifications-toggle__icon .color1-fill {
+      fill: var(--text-prominent); }
+    .notifications-toggle:hover .notifications-toggle__icon .color1-stroke {
+      stroke: var(--text-prominent); }
+    .notifications-toggle:hover .notifications-toggle__icon .color2-fill {
+      fill: none; }
+    .notifications-toggle:hover .notifications-toggle__icon .color2-stroke {
+      stroke: none; }
+
+.notifications {
+  /** @define notifications-toggle; weak */
+  /** @define notifications-dialog; weak */
+  /** @define notifications-empty; weak */
+  /** @define notifications-item; weak */ }
+  .notifications-toggle {
+    position: relative;
+    margin-right: 24px; }
+    .notifications-toggle__icon {
+      width: 26px;
+      height: 26px;
+      pointer-events: none; }
+      .notifications-toggle__icon-wrapper {
+        cursor: pointer; }
+        .notifications-toggle__icon-wrapper--active {
+          cursor: default; }
+      .notifications-toggle__icon .color1-fill {
+        fill: var(--text-general); }
+      .notifications-toggle__icon .color1-stroke {
+        stroke: var(--text-general); }
+    .notifications-toggle__step {
+      position: absolute;
+      left: 1rem;
+      top: -2px;
+      pointer-events: none; }
+      .notifications-toggle__step-count {
+        background: #ec3f3f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 5px;
+        border-radius: 1rem;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: bold; }
+    .notifications-toggle--active .dc-popover {
+      pointer-events: none; }
+  .notifications-dialog {
+    position: absolute;
+    top: 48px;
+    left: calc(-50% - 10rem);
+    width: 264px;
+    height: 525px;
+    background: var(--general-main-2);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 2px var(--shadow-menu);
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.25s linear; }
+    .notifications-dialog__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border-normal); }
+      .notifications-dialog__header-text {
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin: 1rem 0;
+        color: var(--text-prominent); }
+    .notifications-dialog__content {
+      padding: 8px 0;
+      height: calc(100% - 37px);
+      border-radius: 4px; }
+      .notifications-dialog__content--empty {
+        display: flex;
+        height: 100%;
+        max-height: 400px; }
+    .notifications-dialog--enter-done {
+      opacity: 1;
+      transform: translate3d(0, 0, 0); }
+    .notifications-dialog--enter, .notifications-dialog--exit {
+      opacity: 0;
+      transform: translate3d(0, -20px, 0); }
+  .notifications-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .notifications-empty__container {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .notifications-empty__icon {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 8px; }
+      .notifications-empty__icon .color1-fill {
+        fill: var(--text-less-prominent); }
+    .notifications-empty__header {
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-align: center;
+      color: var(--text-less-prominent);
+      padding: 8px; }
+    .notifications-empty__message {
+      line-height: 1.5;
+      font-size: 1.2rem;
+      text-align: center;
+      color: var(--text-less-prominent); }
+  .notifications-item {
+    padding: 8px;
+    margin-left: 32px; }
+    .notifications-item__title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 4px;
+      color: var(--text-prominent);
+      position: relative;
+      line-height: 1.5; }
+      .notifications-item__title-icon {
+        position: absolute;
+        left: -26px;
+        top: 2px;
+        height: 16px;
+        width: 16px;
+        pointer-events: none; }
+    .notifications-item__message {
+      font-size: 1.2rem;
+      color: var(--text-prominent);
+      line-height: 1.5;
+      padding-right: 8px; }
+      .notifications-item__message a {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--text-prominent); }
+
+/*------------------------------------*
+ *  # Constants
+ *------------------------------------*/
+/* stylelint-disable color-no-hex */
+/* COLOR PALETTE */
+/* colors */
+/* alpha colors */
+/* gradient colors */
+/* Preserve legacy variables */
+/* Primary */
+/* stylelint-enable color-no-hex */
+/*------------------------------------*
+ *  # SASS Mixins and Functions
+ *------------------------------------*/
+/*
+ * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
+ * Generate typefaces key-value pair of variable name and config
+ * Example:
+   --paragraph-center-bold-black: (14px, center, bold, black)
+ */
+/*
+ * Sets font-size, font-weight, color, text-transform, text-align and line-height
+ * Usage example:
+   @include setTypeface(16px, bold, black, uppercase);
+ */
+/*
+ * Set typefaces by passing a typeface variable name
+ * @param $var   - typeface variable
+ * @param $tt    - text-transform property
+ * @param $align - text-align property
+ * Usage example:
+   @include typeface(--paragraph-bold-black, uppercase, center);
+ */
+/*
+ * Range Slider Thumb styling is set here
+ */
+/*
+ * SVG icons colors
+ */
+/*
+ * Bar Spinner Animation
+ * @param $count    - number of bars
+ * @param $duration - duration of animation
+ * @param $phase    - each bar phase change delay
+ * Usage example:
+   @include createBarspinnerAnimation(5, 1.2s, 0,1);
+ */
+/*
+ * Tooltip colors
+ * @param $color - color property
+ * Usage example:
+   @include tooltipColor($COLOR_RED);
+ */
+/*
+ * Convert Tooltip colors
+ * @param $color - css color property
+ * Usage example:
+   @include convertTooltipColor(var(--status-default));
+ */
+/*
+    Constants
+*/
+/*
+    Variables
+*/
+/*
+    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
+    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
+    Variables name example: --title-center-semibold-red
+ */
+/*
+    to use styles without modifier class on .inline-icon
+    use @extend
+
+    e.g. style icon on parent hover:
+        a:hover .inline-icon {
+            @extend %inline-icon.active;
+        }
+*/
 .acc-info__select-arrow, .acc-switcher__logout-icon {
   /* postcss-bem-linter: ignore */
   /* postcss-bem-linter: ignore */
@@ -4668,174 +4904,189 @@ html {
       margin-right: 1em; }
 
 /** @define acc-switcher; weak */
-.acc-switcher__wrapper {
-  border-radius: 4px;
-  position: absolute;
-  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.25s linear;
-  box-shadow: 0 8px 16px 0 var(--shadow-menu);
-  right: 0;
-  top: calc(100% + 4px);
-  width: 246px;
-  background-color: var(--general-main-2); }
-  .acc-switcher__wrapper--enter-done {
-    opacity: 1;
-    transform: translate3d(0, 0, 0); }
-  .acc-switcher__wrapper--enter, .acc-switcher__wrapper--exit {
-    opacity: 0;
-    transform: translate3d(0, -20px, 0); }
-
-.acc-switcher__new-account {
-  background-color: transparent;
-  border-radius: 4px; }
-  .acc-switcher__new-account-link {
-    background-color: transparent;
-    margin: 0 0 0.8em;
-    padding: 0 0 0 0.8em;
-    display: flex;
-    text-decoration: none;
-    width: 100%;
-    height: 4rem;
-    align-items: center; }
-    .acc-switcher__new-account-link .btn {
-      background-color: transparent;
-      padding: 0; }
-      .acc-switcher__new-account-link .btn__text {
-        color: var(--general-main-1); }
-  .acc-switcher__new-account:hover {
-    background-color: rgba(255, 68, 79, 0.08) !important; }
-  .acc-switcher__new-account .btn__text {
-    color: var(--brand-red-coral); }
-  .acc-switcher__new-account .btn {
-    align-items: center;
-    background-color: transparent;
-    display: flex;
-    margin: 0 0 0.8em;
-    padding: 0 0 0 0.8rem;
-    height: 4rem;
-    justify-content: left; }
-
-.acc-switcher__list {
-  border-radius: 4px;
-  display: flex;
-  flex-flow: column nowrap;
-  height: 100%;
-  padding: 1.6em 0.8em;
-  background: var(--general-main-2); }
-  .acc-switcher__list-title {
-    font-size: 1.4rem;
-    color: var(--text-general);
-    font-weight: 700;
-    text-transform: capitalize;
-    text-align: left;
-    line-height: 1.5;
-    padding-bottom: 0.8em;
-    margin-left: 0.8rem;
-    display: block;
-    color: var(--text-prominent); }
-  .acc-switcher__list-group {
-    margin-bottom: 0.8rem; }
-
-.acc-switcher__accounts {
-  border-radius: 4px;
-  background: var(--general-main-2); }
-  .acc-switcher__accounts .acc-switcher__account {
-    background: var(--general-main-2); }
-    .acc-switcher__accounts .acc-switcher__account:hover:not(.acc-switcher__account--selected) {
-      background-color: var(--state-hover);
-      border-radius: 4px; }
-    .acc-switcher__accounts .acc-switcher__account.acc-switcher__account--disabled:hover {
-      background-color: var(--general-main-2); }
-    .acc-switcher__accounts .acc-switcher__account .acc-switcher__id {
-      color: var(--text-general);
-      width: 100%; }
-    .acc-switcher__accounts .acc-switcher__account--selected {
-      background: var(--state-active); }
-      .acc-switcher__accounts .acc-switcher__account--selected .acc-switcher__id {
-        color: var(--text-prominent);
-        font-weight: 700; }
-        .acc-switcher__accounts .acc-switcher__account--selected .acc-switcher__id--virtual:before {
-          color: var(--text-prominent);
-          border: 1px solid var(--text-prominent); }
-    .acc-switcher__accounts .acc-switcher__account--disabled {
-      opacity: 0.5;
-      cursor: default; }
-    .acc-switcher__accounts .acc-switcher__account:only-child {
-      border-radius: 4px; }
-
-.acc-switcher__account {
+.acc-switcher {
+  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  padding: 0.8em;
-  position: relative;
-  background: var(--general-main-2); }
-  .acc-switcher__account .acc-switcher__id {
-    font-size: 1.4rem;
-    color: var(--text-general);
-    font-weight: 400;
-    text-transform: capitalize;
-    text-align: left;
-    line-height: 1.5;
-    align-items: center;
-    display: flex;
-    color: var(--text-prominent); }
-    .acc-switcher__account .acc-switcher__id-icon {
-      margin-right: 8px; }
-  .acc-switcher__account:hover:not(.acc-switcher__account--selected) {
-    background: var(--state-hover); }
-  .acc-switcher__account--selected {
-    background: var(--state-active);
+  margin: 0 0.8rem;
+  height: 4rem; }
+  .acc-switcher__wrapper {
+    border-radius: 4px;
+    position: absolute;
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.25s linear;
+    box-shadow: 0 8px 16px 0 var(--shadow-menu);
+    right: 0;
+    top: calc(100% + 4px);
+    width: 278px;
+    background-color: var(--general-main-2); }
+    .acc-switcher__wrapper--enter-done {
+      opacity: 1;
+      transform: translate3d(0, 0, 0); }
+    .acc-switcher__wrapper--enter, .acc-switcher__wrapper--exit {
+      opacity: 0;
+      transform: translate3d(0, -20px, 0); }
+    .acc-switcher__wrapper .acc-switcher__button {
+      max-width: calc(100% - 1.6rem);
+      margin: 0.2rem 0.8rem 0.8rem;
+      height: 4rem; }
+  .acc-switcher__new-account {
+    background-color: transparent;
     border-radius: 4px; }
-    .acc-switcher__account--selected .acc-switcher__id {
-      font-size: 1.4rem;
-      color: var(--text-colored-background);
+    .acc-switcher__new-account-link {
+      background-color: transparent;
+      margin: 0 0 0.8em;
+      padding: 0 0 0 0.8em;
+      display: flex;
+      text-decoration: none;
+      width: 100%;
+      height: 4rem;
+      align-items: center; }
+      .acc-switcher__new-account-link .btn {
+        background-color: transparent;
+        padding: 0; }
+        .acc-switcher__new-account-link .btn__text {
+          color: var(--general-main-1); }
+    .acc-switcher__new-account:hover {
+      background-color: rgba(255, 68, 79, 0.08) !important; }
+    .acc-switcher__new-account .btn__text {
+      font-weight: normal;
+      color: var(--brand-red-coral); }
+    .acc-switcher__new-account .btn {
+      align-items: center;
+      background-color: transparent;
+      display: flex;
+      margin: 0;
+      padding: 0 0 0 0.8rem;
+      height: 4rem;
+      justify-content: left; }
+  .acc-switcher__list {
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    background: var(--general-main-2); }
+    .acc-switcher__list-title {
+      font-size: 1.6rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: capitalize;
       text-align: left;
-      line-height: 1.5; }
-      .acc-switcher__account--selected .acc-switcher__id--virtual:before {
-        color: var(--text-prominent);
-        border: 1px solid var(--text-prominent); }
-
-.acc-switcher__logout {
-  align-items: center;
-  align-self: flex-end;
-  cursor: pointer;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1.6em; }
-  .acc-switcher__logout-text {
+      line-height: 1.75;
+      display: block;
+      color: var(--text-prominent);
+      flex: 1; }
+    .acc-switcher__list-wrapper {
+      padding: 0.4em 0.8em 0.8em; }
+  .acc-switcher__accounts {
+    border-radius: 4px;
+    background: var(--general-main-2); }
+    .acc-switcher__accounts .acc-switcher__account {
+      background: var(--general-main-2); }
+      .acc-switcher__accounts .acc-switcher__account:hover:not(.acc-switcher__account--selected) {
+        background-color: var(--state-hover);
+        border-radius: 4px; }
+      .acc-switcher__accounts .acc-switcher__account.acc-switcher__account--disabled:hover {
+        background-color: var(--general-main-2); }
+      .acc-switcher__accounts .acc-switcher__account .acc-switcher__id {
+        color: var(--text-general);
+        width: 100%;
+        line-height: 1.43; }
+      .acc-switcher__accounts .acc-switcher__account--selected {
+        background: var(--state-active); }
+        .acc-switcher__accounts .acc-switcher__account--selected .acc-switcher__id {
+          color: var(--text-prominent);
+          font-weight: 700; }
+          .acc-switcher__accounts .acc-switcher__account--selected .acc-switcher__id--virtual:before {
+            color: var(--text-prominent);
+            border: 1px solid var(--text-prominent); }
+      .acc-switcher__accounts .acc-switcher__account--disabled {
+        opacity: 0.5;
+        cursor: default; }
+      .acc-switcher__accounts .acc-switcher__account:only-child {
+        border-radius: 4px; }
+  .acc-switcher__account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0.8em;
+    position: relative;
+    background: var(--general-main-2);
+    text-decoration: none; }
+    .acc-switcher__account .acc-switcher__id {
+      font-size: 1.4rem;
+      color: var(--text-general);
+      font-weight: 400;
+      text-transform: capitalize;
+      text-align: left;
+      line-height: 1.5;
+      align-items: center;
+      display: flex;
+      color: var(--text-prominent); }
+      .acc-switcher__account .acc-switcher__id-icon {
+        margin-right: 8px; }
+    .acc-switcher__account:hover:not(.acc-switcher__account--selected) {
+      background: var(--state-hover); }
+    .acc-switcher__account--selected {
+      background: var(--state-active);
+      border-radius: 4px; }
+      .acc-switcher__account--selected .acc-switcher__id {
+        font-size: 1.4rem;
+        color: var(--text-colored-background);
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: left;
+        line-height: 1.5; }
+        .acc-switcher__account--selected .acc-switcher__id--virtual:before {
+          color: var(--text-prominent);
+          border: 1px solid var(--text-prominent); }
+    .acc-switcher__account--demo-text {
+      padding-top: 0.3em;
+      padding-bottom: 0.3em; }
+  .acc-switcher__logout {
+    align-items: center;
+    align-self: flex-end;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.6em 1.3em; }
+    .acc-switcher__logout-text {
+      font-size: 1.4rem;
+      color: var(--text-general);
+      font-weight: 400;
+      text-transform: none;
+      text-align: left;
+      line-height: 1.5;
+      color: var(--text-prominent); }
+    .acc-switcher__logout-icon {
+      margin-left: 8px; }
+  .acc-switcher__balance {
+    color: var(--status-success);
+    margin-left: auto; }
+    .acc-switcher__balance--virtual {
+      color: var(--text-prominent); }
+  .acc-switcher__separator {
+    height: 4px;
+    background-color: var(--general-section-2); }
+  .acc-switcher__total {
     font-size: 1.4rem;
-    color: var(--text-general);
-    font-weight: 400;
-    text-transform: none;
-    text-align: left;
-    line-height: 1.5;
+    height: 4rem;
+    margin: 0.4rem 1.6rem;
+    align-items: center;
+    font-weight: bold;
+    display: flex;
     color: var(--text-prominent); }
-  .acc-switcher__logout-icon {
-    height: auto;
-    margin-left: 8px;
-    width: 1.6em; }
-
-.acc-switcher__balance {
-  color: var(--status-success);
-  margin-left: auto; }
-  .acc-switcher__balance--virtual {
-    color: var(--text-prominent); }
-
-.acc-switcher__separator {
-  height: 4px;
-  background-color: var(--general-section-2);
-  width: calc(100% + 1.6rem);
-  margin-left: -0.8rem; }
-
-.acc-switcher__total {
-  font-size: 1.4rem;
-  margin: 1.6rem 0.8rem;
-  font-weight: bold;
-  display: flex;
-  color: var(--text-prominent); }
+    .acc-switcher__total-icon {
+      margin: 0 0.4rem; }
+      .acc-switcher__total-icon .color1-fill {
+        fill: var(--text-prominent) !important; }
+  .acc-switcher__demo-text {
+    font-size: 1rem;
+    color: var(--text-less-prominent);
+    line-height: 1.4; }
+  .acc-switcher__loader {
+    margin: 1rem auto !important;
+    font-size: 0.8rem; }
 
 /** @define set-currency; weak */
 .set-currency .btn {
@@ -8145,6 +8396,9 @@ table {
 .icons-underlying__ic-R_10:before {
   content: url(/public/images/app/portfolio/underlying-icons/ic-R_10.svg); }
 
+.icons-underlying__ic-1HZ10V:before {
+  content: url(/public/images/app/portfolio/underlying-icons/ic-1HZ10V.svg); }
+
 .icons-underlying__ic-R_25:before {
   content: url(/public/images/app/portfolio/underlying-icons/ic-R_25.svg); }
 
@@ -8156,6 +8410,9 @@ table {
 
 .icons-underlying__ic-R_100:before {
   content: url(/public/images/app/portfolio/underlying-icons/ic-R_100.svg); }
+
+.icons-underlying__ic-1HZ100V:before {
+  content: url(/public/images/app/portfolio/underlying-icons/ic-1HZ100V.svg); }
 
 .icons-underlying__ic-RDBEAR:before {
   content: url(/public/images/app/portfolio/underlying-icons/ic-RDBEAR.svg); }
@@ -10373,8 +10630,8 @@ table {
         cursor: default; }
 
 .account-settings-toggle svg {
-  height: 24px;
-  width: 24px; }
+  height: 20px;
+  width: 20px; }
 
 .amount--profit {
   color: var(--text-profit-success); }
