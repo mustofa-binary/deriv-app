@@ -16,23 +16,6 @@
  * SASS interpolation
  */
 /*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -190,7 +173,7 @@ html {
 
 /** @define icon */
 .icon--centered {
-  top: 0.8em;
+  top: 0.8rem;
   left: 5%; }
 
 /** @define center-text */
@@ -207,7 +190,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -219,12 +202,12 @@ html {
 .mobile-widget {
   border: 1px solid var(--border-normal);
   border-radius: 4px;
-  padding: 1em 0.5em;
+  padding: 1rem 0.5rem;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
   grid-template-areas: 'a b' 'c d';
-  font-size: 0.7em; }
+  font-size: 0.7rem; }
   .mobile-widget:hover, .mobile-widget:focus, .mobile-widget:active {
     cursor: pointer;
     border: solid 1px var(--border-active); }
@@ -234,7 +217,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0.5em;
+  padding: 0.5rem;
   white-space: pre-line; }
   .fieldset-minimized__amount {
     grid-area: c; }
@@ -243,10 +226,10 @@ html {
   .fieldset-minimized__barrier2 {
     grid-area: d; }
   .fieldset-minimized__currency:before {
-    margin-right: 0.1em;
+    margin-right: 0.1rem;
     position: static;
     display: inline;
-    font-size: 1em; }
+    font-size: 1rem; }
   .fieldset-minimized__basis {
     font-weight: bold;
     color: var(--text-prominent); }

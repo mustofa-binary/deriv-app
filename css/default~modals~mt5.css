@@ -16,23 +16,6 @@
  * SASS interpolation
  */
 /*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -98,15 +81,15 @@
 */
 .barspinner {
   margin: auto;
-  width: 6em;
-  height: 2em;
+  width: 6rem;
+  height: 2rem;
   white-space: nowrap; }
 
 .barspinner__rect {
-  margin: 0.4em;
+  margin: 0.4rem;
   border-radius: 20px;
   height: 60%;
-  width: 0.6em;
+  width: 0.6rem;
   display: inline-block;
   -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
           animation: sk-stretchdelay 1.2s infinite ease-in-out; }
@@ -160,7 +143,7 @@
   height: 100vh; }
 
 .initial-loader__barspinner {
-  margin: 5em auto; }
+  margin: 5rem auto; }
 
 .initial-loader__barspinner--rect {
   background-color: var(--brand-secondary); }
@@ -210,7 +193,7 @@
   max-height: 320px;
   min-width: 480px;
   min-height: 176px;
-  padding: 1.6em;
+  padding: 1.6rem;
   border-radius: 4px;
   box-sizing: border-box;
   display: flex;
@@ -228,7 +211,7 @@
   text-transform: none;
   text-align: left;
   line-height: 1.75;
-  margin-bottom: 10px;
+  margin-bottom: 1.6rem;
   color: var(--text-prominent); }
 
 .dc-dialog__content {
@@ -239,7 +222,7 @@
   text-transform: unset;
   text-align: left;
   line-height: 1.5;
-  margin-bottom: 22.85714px;
+  margin-bottom: 3.2rem;
   color: var(--text-general);
   max-width: 448px; }
 
@@ -256,7 +239,7 @@
   width: 100%; }
 
 .dc-dialog__button {
-  margin: 0.4em; }
+  margin: 0.4rem; }
 
 @media screen and (max-width: 560px) {
   .dc-dialog__dialog {

@@ -16,23 +16,6 @@
  * SASS interpolation
  */
 /*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -190,7 +173,7 @@ html {
 
 /** @define icon */
 .icon--centered {
-  top: 0.8em;
+  top: 0.8rem;
   left: 5%; }
 
 /** @define center-text */
@@ -207,7 +190,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -302,7 +285,7 @@ html {
   line-height: 1.5;
   color: var(--text-general); }
   .table__cell {
-    padding: 0.75em;
+    padding: 0.75rem;
     display: flex;
     align-items: center; }
     .table__cell:first-child {
@@ -313,7 +296,7 @@ html {
     display: grid;
     grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
-    padding: 0 1.6em;
+    padding: 0 1.6rem;
     box-sizing: border-box;
     text-decoration: none;
     position: relative; }
@@ -418,7 +401,7 @@ html {
       justify-content: center;
       background-color: var(--general-section-1); }
       .statement__row--detail-text {
-        padding: 1.12em; }
+        padding: 1.12rem; }
     .statement__row .date {
       text-align: left; }
   .statement .amount, .statement .balance {
@@ -433,14 +416,14 @@ html {
     background: var(--general-main-2);
     overflow: hidden; }
     .statement--card-view .statement__filter {
-      padding: 0 1.2em;
+      padding: 0 1.2rem;
       border-bottom: 1px solid var(--general-section-1); }
       .statement--card-view .statement__filter-content {
         padding: 0;
         margin: 0 auto;
         max-width: 450px;
         display: grid;
-        grid-template-columns: 1fr 3em 1fr;
+        grid-template-columns: 1fr 3rem 1fr;
         text-align: center; }
         .statement--card-view .statement__filter-content .datepicker__input-field {
           width: 100%; }
@@ -449,15 +432,15 @@ html {
     .statement--card-view .statement__content {
       padding: 0; }
     .statement--card-view .statement__card-list {
-      padding: 0 1.2em;
+      padding: 0 1.2rem;
       height: 100%; }
 
 /** @define statement-card */
 .statement-card {
   /* postcss-bem-linter: ignore */ }
   .statement-card__header {
-    font-size: 1em;
-    padding: 0.5em;
+    font-size: 1rem;
+    padding: 0.5rem;
     border-bottom: 1px solid var(--general-section-1);
     display: flex;
     justify-content: space-between; }
@@ -465,10 +448,10 @@ html {
     color: #2196f3;
     text-decoration: none; }
   .statement-card__body {
-    padding: 0.5em;
-    font-size: 1.2em; }
+    padding: 0.5rem;
+    font-size: 1.2rem; }
   .statement-card__desc {
-    margin-bottom: 0.7em; }
+    margin-bottom: 0.7rem; }
   .statement-card__row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -481,11 +464,11 @@ html {
     color: var(--text-loss-danger); }
   .statement-card__icon {
     display: inline-block;
-    height: 1.6em;
-    width: 1.6em;
-    background-size: 1.6em 1.6em;
+    height: 1.6rem;
+    width: 1.6rem;
+    background-size: 1.6rem 1.6rem;
     vertical-align: middle;
-    margin-right: 0.5em; }
+    margin-right: 0.5rem; }
 
 /** @define statement-empty */
 .statement-empty {
@@ -495,11 +478,11 @@ html {
   justify-content: center;
   align-items: center; }
   .statement-empty__icon {
-    height: 6.4em;
-    width: 6.4em;
-    margin-bottom: 1.4em; }
+    height: 6.4rem;
+    width: 6.4rem;
+    margin-bottom: 1.4rem; }
   .statement-empty__text {
-    font-size: 1.4em; }
+    font-size: 1.4rem; }
 
 /** @define profit-table; weak */
 .profit-table {
@@ -612,7 +595,7 @@ html {
     .empty-trade-history__icon .color1-stroke {
       stroke: var(--text-disabled); }
   .empty-trade-history__text {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     text-align: center;
     line-height: 20px;
     color: var(--text-disabled); }
