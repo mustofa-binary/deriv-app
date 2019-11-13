@@ -17,6 +17,23 @@
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -120,6 +137,23 @@
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -211,7 +245,7 @@
   color: var(--brand-red-coral);
   font-size: 10px;
   font-weight: bold;
-  line-height: 1.4rem;
+  line-height: 1.4em;
   position: absolute;
   top: 50%;
   transform: translateY(-65%); }
@@ -225,7 +259,7 @@
   line-height: 1.25;
   cursor: help;
   position: fixed;
-  padding: 0.7rem;
+  padding: 0.7em;
   max-width: 280px;
   border-radius: 4px;
   display: flex;
@@ -235,7 +269,7 @@
 
 .dc-popover__bubble__icon {
   flex-grow: 1;
-  margin-right: 0.7rem;
+  margin-right: 0.7em;
   padding-top: 3px; }
 
 .dc-popover__bubble__text {
@@ -249,10 +283,10 @@
   border-color: transparent; }
 
 .dc-popover__bubble[data-popover-pos=top], .dc-popover__bubble[data-popover-pos=bottom] {
-  margin: 1rem 0; }
+  margin: 1em 0; }
 
 .dc-popover__bubble[data-popover-pos=left], .dc-popover__bubble[data-popover-pos=right] {
-  margin: 0 1rem; }
+  margin: 0 1em; }
 
 .dc-popover__bubble[data-popover-pos=left] .dc-popover__bubble__arrow {
   left: 100%;
@@ -309,6 +343,23 @@
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -453,6 +504,23 @@
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -612,7 +680,7 @@ html {
 
 /** @define icon */
 .icon--centered {
-  top: 0.8rem;
+  top: 0.8em;
   left: 5%; }
 
 /** @define center-text */
@@ -629,7 +697,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -751,6 +819,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -1138,6 +1223,23 @@ html {
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -1251,6 +1353,23 @@ html {
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -1316,15 +1435,15 @@ html {
 */
 .barspinner {
   margin: auto;
-  width: 6rem;
-  height: 2rem;
+  width: 6em;
+  height: 2em;
   white-space: nowrap; }
 
 .barspinner__rect {
-  margin: 0.4rem;
+  margin: 0.4em;
   border-radius: 20px;
   height: 60%;
-  width: 0.6rem;
+  width: 0.6em;
   display: inline-block;
   -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
           animation: sk-stretchdelay 1.2s infinite ease-in-out; }
@@ -1378,7 +1497,7 @@ html {
   height: 100vh; }
 
 .initial-loader__barspinner {
-  margin: 5rem auto; }
+  margin: 5em auto; }
 
 .initial-loader__barspinner--rect {
   background-color: var(--brand-secondary); }
@@ -1401,7 +1520,7 @@ html {
   cursor: pointer;
   white-space: nowrap;
   padding: 0 1.6rem;
-  display: inline-flex;
+  display: flex;
   border: 0;
   height: 3.2rem;
   border-radius: 4px;
@@ -1513,10 +1632,10 @@ html {
 .btn__effect:focus:not(:active):after {
   content: '';
   position: absolute;
-  top: -0.1rem;
-  left: -0.1rem;
-  bottom: -0.1rem;
-  right: -0.1rem;
+  top: -0.1em;
+  left: -0.1em;
+  bottom: -0.1em;
+  right: -0.1em;
   border-radius: inherit;
   border: 0 solid var(--brand-secondary);
   opacity: 0.4;
@@ -1541,19 +1660,19 @@ html {
 @-webkit-keyframes buttonEffect {
   to {
     opacity: 0;
-    top: -0.6rem;
-    left: -0.6rem;
-    bottom: -0.6rem;
-    right: -0.6rem;
+    top: -0.6em;
+    left: -0.6em;
+    bottom: -0.6em;
+    right: -0.6em;
     border-width: 6px; } }
 
 @keyframes buttonEffect {
   to {
     opacity: 0;
-    top: -0.6rem;
-    left: -0.6rem;
-    bottom: -0.6rem;
-    right: -0.6rem;
+    top: -0.6em;
+    left: -0.6em;
+    bottom: -0.6em;
+    right: -0.6em;
     border-width: 6px; } }
 
 /*------------------------------------*
@@ -1572,6 +1691,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -1865,6 +2001,23 @@ html {
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -2022,7 +2175,7 @@ html {
 
 /** @define icon */
 .icon--centered {
-  top: 0.8rem;
+  top: 0.8em;
   left: 5%; }
 
 /** @define center-text */
@@ -2039,7 +2192,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -2100,6 +2253,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -2215,7 +2385,7 @@ html {
   color: var(--brand-red-coral);
   font-size: 10px;
   font-weight: bold;
-  line-height: 1.4rem;
+  line-height: 1.4em;
   position: absolute;
   top: 50%;
   transform: translateY(-65%); }
@@ -2229,7 +2399,7 @@ html {
   line-height: 1.25;
   cursor: help;
   position: fixed;
-  padding: 0.7rem;
+  padding: 0.7em;
   max-width: 280px;
   border-radius: 4px;
   display: flex;
@@ -2239,7 +2409,7 @@ html {
 
 .dc-popover__bubble__icon {
   flex-grow: 1;
-  margin-right: 0.7rem;
+  margin-right: 0.7em;
   padding-top: 3px; }
 
 .dc-popover__bubble__text {
@@ -2253,10 +2423,10 @@ html {
   border-color: transparent; }
 
 .dc-popover__bubble[data-popover-pos=top], .dc-popover__bubble[data-popover-pos=bottom] {
-  margin: 1rem 0; }
+  margin: 1em 0; }
 
 .dc-popover__bubble[data-popover-pos=left], .dc-popover__bubble[data-popover-pos=right] {
-  margin: 0 1rem; }
+  margin: 0 1em; }
 
 .dc-popover__bubble[data-popover-pos=left] .dc-popover__bubble__arrow {
   left: 100%;
@@ -2368,7 +2538,7 @@ html {
 .dc-dropdown__display {
   cursor: pointer;
   border-radius: 4px;
-  height: 3.2rem;
+  height: 3.2em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2384,8 +2554,8 @@ html {
   border-color: var(--border-active); }
 
 .dc-dropdown__display-text {
-  padding-left: 1rem;
-  padding-right: 2.5rem;
+  padding-left: 1em;
+  padding-right: 2.5em;
   font-size: 1.4rem;
   color: var(--text-general);
   font-weight: 400;
@@ -2432,7 +2602,7 @@ html {
   transform-origin: top left; }
 
 .dc-dropdown__display-placeholder-text {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   padding: 0 4px;
   color: var(--color-grey);
   background: var(--fill-normal); }
@@ -2479,7 +2649,7 @@ html {
 .dc-dropdown__select-arrow:before {
   content: '\002303';
   display: block;
-  height: 0.53rem; }
+  height: 0.53em; }
 
 .dc-dropdown:active, .dc-dropdown:focus, .dc-dropdown--show {
   outline: none;
@@ -2513,13 +2683,13 @@ html {
 
 .dc-dropdown__list--top {
   bottom: unset;
-  top: 0.8rem; }
+  top: 0.8em; }
 
 .dc-dropdown__list--left {
-  top: -0.1rem; }
+  top: -0.1em; }
 
 .dc-dropdown__list--left--enter, .dc-dropdown__list--left--exit {
-  transform: scale(1, 1) translate3d(2rem, 0, 0px);
+  transform: scale(1, 1) translate3d(2em, 0, 0px);
   opacity: 0; }
 
 .dc-dropdown__list--left--enter-done {
@@ -2536,11 +2706,11 @@ html {
   float: right;
   position: relative;
   margin-left: auto;
-  margin-right: 0.6rem; }
+  margin-right: 0.6em; }
 
 .dc-dropdown--left .dc-dropdown__select-arrow {
   transform: rotate(90deg);
-  left: 0.6rem;
+  left: 0.6em;
   right: unset; }
 
 .dc-dropdown--show .dc-dropdown__display {
@@ -2562,7 +2732,7 @@ html {
   width: 100%; }
 
 .dc-dropdown--has-placeholder .dc-dropdown__display {
-  height: 4rem; }
+  height: 4em; }
 
 .dc-dropdown--has-placeholder .dc-dropdown__display .dc-dropdown__display-placeholder-text {
   color: var(--text-less-prominent); }
@@ -2588,8 +2758,8 @@ html {
   width: unset; }
 
 .dc-list--left .dc-list__item-text, .dc-list--left .dc-list__item-symbol {
-  padding-left: 2.286rem;
-  padding-right: 2.286rem;
+  padding-left: 2.286em;
+  padding-right: 2.286em;
   overflow: hidden;
   white-space: nowrap;
   text-align: center; }
@@ -2622,11 +2792,11 @@ html {
   pointer-events: none;
   vertical-align: middle;
   padding: 0.6rem 0;
-  padding-left: 1.6rem; }
+  padding-left: 1.6em; }
 
 .dc-list__item-text--left {
   justify-content: flex-start;
-  padding-left: 1rem; }
+  padding-left: 1em; }
 
 .dc-list__item:not(.dc-list__item--disabled):hover {
   background-color: var(--state-hover);
@@ -2680,7 +2850,7 @@ html {
     .dc-list > div:nth-child(1) > div:nth-child(1)::-webkit-scrollbar {
       -webkit-appearance: none; }
     .dc-list > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
-      padding-bottom: 11.5rem !important; } } }
+      padding-bottom: 11.5em !important; } } }
 
 /*------------------------------------*
  *  # Constants
@@ -2698,6 +2868,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -2772,7 +2959,7 @@ html {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  padding: 2rem;
+  padding: 2em;
   cursor: pointer;
   position: relative; }
 
@@ -2837,7 +3024,7 @@ html {
   border-color: var(--status-danger); }
 
 .dc-file-dropzone--has-error .dc-file-dropzone__filename {
-  margin-top: -3rem; }
+  margin-top: -3em; }
 
 .dc-file-dropzone:hover, .dc-file-dropzone:focus {
   outline: 0; }
@@ -2861,6 +3048,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -3157,6 +3361,23 @@ html {
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -3288,6 +3509,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -3466,6 +3704,23 @@ html {
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -3548,6 +3803,23 @@ html {
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -3628,6 +3900,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -3787,7 +4076,7 @@ html {
 
 /** @define icon */
 .icon--centered {
-  top: 0.8rem;
+  top: 0.8em;
   left: 5%; }
 
 /** @define center-text */
@@ -3804,7 +4093,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -3820,14 +4109,14 @@ html {
   top: unset !important;
   bottom: 80px !important; }
   .cq-bottom-ui-widgets .bottom-widgets {
-    left: -3.5rem; }
+    left: -3.5em; }
 
 /** @define digits; weak */
 .digits {
   display: flex;
   align-items: center;
   position: relative;
-  margin: 0 2.5rem 0 1rem; }
+  margin: 0 2.5em 0 1em; }
   .digits__container {
     position: relative; }
   .digits__tooltip-container {
@@ -3837,7 +4126,7 @@ html {
     right: 10px; }
   .digits__digit {
     pointer-events: none;
-    margin: 0 0.6rem;
+    margin: 0 0.6em;
     text-align: center;
     position: relative;
     transition: transform 0.25s linear; }
@@ -3845,7 +4134,7 @@ html {
       z-index: 1;
       transform: scale(1.2); }
       .digits__digit--latest .digits__digit-spot {
-        font-size: 0.9rem; }
+        font-size: 0.9em; }
     .digits__digit--win {
       z-index: 1;
       transform: scale(1.25); }
@@ -3870,7 +4159,7 @@ html {
     .digits__digit-display-percentage {
       top: 20px;
       position: absolute;
-      font-size: 0.65rem;
+      font-size: 0.65em;
       font-weight: 400;
       color: var(--text-general); }
     .digits__digit-value {
@@ -3880,11 +4169,11 @@ html {
       text-transform: capitalize;
       text-align: center;
       line-height: 1.5;
-      height: 4rem;
-      width: 4rem;
+      width: 40px;
+      height: 40px;
       background-color: var(--general-main-1);
       color: var(--text-prominent);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.5em;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -4059,6 +4348,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -4280,6 +4586,23 @@ html {
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -4498,7 +4821,7 @@ html {
 
 /** @define icon */
 .icon--centered {
-  top: 0.8rem;
+  top: 0.8em;
   left: 5%; }
 
 /** @define center-text */
@@ -4515,7 +4838,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -4531,7 +4854,7 @@ html {
   flex-direction: row;
   height: 100%;
   justify-content: center;
-  padding: 0 1.6rem 0 1.7rem; }
+  padding: 0 1.6em 0 1.7em; }
   .acc-info__container {
     align-items: center;
     -webkit-box-align: center;
@@ -4559,7 +4882,7 @@ html {
     text-transform: default;
     text-align: center;
     line-height: 1.75;
-    padding: 0.8rem;
+    padding: 0.5em;
     color: var(--text-profit-success);
     pointer-events: none; }
   .acc-info__select-arrow {
@@ -4576,9 +4899,9 @@ html {
   .acc-info--show .acc-info__select-arrow {
     transform: rotate(180deg); }
   .acc-info__button {
-    margin: 0 1.6rem 0 0 !important; }
+    margin: 0 1.6em 0 0 !important; }
     .acc-info__button:not(:last-child) {
-      margin-right: 1rem; }
+      margin-right: 1em; }
 
 /** @define acc-switcher; weak */
 .acc-switcher {
@@ -4611,8 +4934,8 @@ html {
     border-radius: 4px; }
     .acc-switcher__new-account-link {
       background-color: transparent;
-      margin: 0 0 0.8rem;
-      padding: 0 0 0 0.8rem;
+      margin: 0 0 0.8em;
+      padding: 0 0 0 0.8em;
       display: flex;
       text-decoration: none;
       width: 100%;
@@ -4653,7 +4976,7 @@ html {
       color: var(--text-prominent);
       flex: 1; }
     .acc-switcher__list-wrapper {
-      padding: 0.4rem 0.8rem 0.8rem; }
+      padding: 0.4em 0.8em 0.8em; }
   .acc-switcher__accounts {
     border-radius: 4px;
     background: var(--general-main-2); }
@@ -4686,7 +5009,7 @@ html {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    padding: 0.8rem;
+    padding: 0.8em;
     position: relative;
     background: var(--general-main-2);
     text-decoration: none; }
@@ -4701,7 +5024,7 @@ html {
       display: flex;
       color: var(--text-prominent); }
       .acc-switcher__account .acc-switcher__id-icon {
-        margin-right: 0.8rem; }
+        margin-right: 8px; }
     .acc-switcher__account:hover:not(.acc-switcher__account--selected) {
       background: var(--state-hover); }
     .acc-switcher__account--selected {
@@ -4718,15 +5041,15 @@ html {
           color: var(--text-prominent);
           border: 1px solid var(--text-prominent); }
     .acc-switcher__account--demo-text {
-      padding-top: 0.3rem;
-      padding-bottom: 0.3rem; }
+      padding-top: 0.3em;
+      padding-bottom: 0.3em; }
   .acc-switcher__logout {
     align-items: center;
     align-self: flex-end;
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
-    padding: 1.6rem 1.3rem; }
+    padding: 1.6em 1.3em; }
     .acc-switcher__logout-text {
       font-size: 1.4rem;
       color: var(--text-general);
@@ -4799,6 +5122,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -4940,6 +5280,23 @@ html {
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -5056,6 +5413,23 @@ html {
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -5121,15 +5495,15 @@ html {
 */
 .barspinner {
   margin: auto;
-  width: 6rem;
-  height: 2rem;
+  width: 6em;
+  height: 2em;
   white-space: nowrap; }
 
 .barspinner__rect {
-  margin: 0.4rem;
+  margin: 0.4em;
   border-radius: 20px;
   height: 60%;
-  width: 0.6rem;
+  width: 0.6em;
   display: inline-block;
   -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
           animation: sk-stretchdelay 1.2s infinite ease-in-out; }
@@ -5183,7 +5557,7 @@ html {
   height: 100vh; }
 
 .initial-loader__barspinner {
-  margin: 5rem auto; }
+  margin: 5em auto; }
 
 .initial-loader__barspinner--rect {
   background-color: var(--brand-secondary); }
@@ -5214,6 +5588,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -5373,7 +5764,7 @@ html {
 
 /** @define icon */
 .icon--centered {
-  top: 0.8rem;
+  top: 0.8em;
   left: 5%; }
 
 /** @define center-text */
@@ -5390,7 +5781,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -5441,7 +5832,7 @@ html {
     .currency-list__item svg {
       height: 48px;
       width: 48px;
-      margin-bottom: 1rem; }
+      margin-bottom: 1em; }
     .currency-list__item p {
       text-align: center;
       font-size: 1.4rem;
@@ -5482,6 +5873,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -5641,7 +6049,7 @@ html {
 
 /** @define icon */
 .icon--centered {
-  top: 0.8rem;
+  top: 0.8em;
   left: 5%; }
 
 /** @define center-text */
@@ -5658,7 +6066,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -5722,6 +6130,23 @@ html {
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -5879,7 +6304,7 @@ html {
 
 /** @define icon */
 .icon--centered {
-  top: 0.8rem;
+  top: 0.8em;
   left: 5%; }
 
 /** @define center-text */
@@ -5896,7 +6321,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -5996,6 +6421,23 @@ html {
  * SASS interpolation
  */
 /*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
  * Generate typefaces key-value pair of variable name and config
  * Example:
    --paragraph-center-bold-black: (14px, center, bold, black)
@@ -6153,7 +6595,7 @@ html {
 
 /** @define icon */
 .icon--centered {
-  top: 0.8rem;
+  top: 0.8em;
   left: 5%; }
 
 /** @define center-text */
@@ -6170,7 +6612,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -6201,6 +6643,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -6269,14 +6728,14 @@ html {
 /** @define barspinner */
 .barspinner {
   margin: auto;
-  width: 6rem;
-  height: 2rem;
+  width: 6em;
+  height: 2em;
   white-space: nowrap; }
   .barspinner__rect {
-    margin: 0.4rem;
+    margin: 0.4em;
     border-radius: 20px;
     height: 60%;
-    width: 0.6rem;
+    width: 0.6em;
     display: inline-block;
     -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
             animation: sk-stretchdelay 1.2s infinite ease-in-out; }
@@ -6323,7 +6782,7 @@ html {
     width: 100vw;
     height: 100vh; }
   .initial-loader__barspinner {
-    margin: 5rem auto; }
+    margin: 5em auto; }
     .initial-loader__barspinner--rect {
       background-color: var(--brand-secondary); }
   .initial-loader__text {
@@ -6352,6 +6811,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -6426,7 +6902,7 @@ html {
   cursor: pointer;
   white-space: nowrap;
   padding: 0 1.6rem;
-  display: inline-flex;
+  display: flex;
   border: 0;
   height: 3.2rem;
   border-radius: 4px;
@@ -6517,10 +6993,10 @@ html {
   .btn__effect:focus:not(:active):after {
     content: '';
     position: absolute;
-    top: -0.1rem;
-    left: -0.1rem;
-    bottom: -0.1rem;
-    right: -0.1rem;
+    top: -0.1em;
+    left: -0.1em;
+    bottom: -0.1em;
+    right: -0.1em;
     border-radius: inherit;
     border: 0 solid var(--brand-secondary);
     opacity: 0.4;
@@ -6544,19 +7020,19 @@ html {
 @-webkit-keyframes buttonEffect {
   to {
     opacity: 0;
-    top: -0.6rem;
-    left: -0.6rem;
-    bottom: -0.6rem;
-    right: -0.6rem;
+    top: -0.6em;
+    left: -0.6em;
+    bottom: -0.6em;
+    right: -0.6em;
     border-width: 6px; } }
 
 @keyframes buttonEffect {
   to {
     opacity: 0;
-    top: -0.6rem;
-    left: -0.6rem;
-    bottom: -0.6rem;
-    right: -0.6rem;
+    top: -0.6em;
+    left: -0.6em;
+    bottom: -0.6em;
+    right: -0.6em;
     border-width: 6px; } }
 
 /*------------------------------------*
@@ -6575,6 +7051,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -6734,7 +7227,7 @@ html {
 
 /** @define icon */
 .icon--centered {
-  top: 0.8rem;
+  top: 0.8em;
   left: 5%; }
 
 /** @define center-text */
@@ -6751,7 +7244,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -6770,7 +7263,7 @@ html {
     max-width: 478px; }
   .dc-modal__container_real-account-signup-modal .dc-modal-header__title {
     text-transform: none;
-    border-top-left-radius: 1rem; }
+    border-top-left-radius: 1em; }
   .dc-modal__container_real-account-signup-modal--error .account-wizard--error {
     display: flex;
     align-items: center;
@@ -6782,7 +7275,7 @@ html {
     width: 128px;
     height: 128px;
     align-self: center;
-    margin: 2rem 0 0; }
+    margin: 2em 0 0; }
   .dc-modal__container_real-account-signup-modal--error h1 {
     font-size: 1.6rem;
     color: var(--text-general);
@@ -6816,7 +7309,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 12rem;
+    width: 12em;
     align-self: center; }
 
 .dc-modal-header__real-account-signup-modal {
@@ -6892,23 +7385,23 @@ html {
     align-items: center;
     justify-content: flex-end;
     align-self: flex-end;
-    padding-top: 2.4rem;
+    padding-top: 2.4em;
     width: 100%; }
     .account-wizard__btn-area .btn:not(:last-child) {
-      margin: 0 1rem; }
+      margin: 0 1em; }
     .account-wizard__btn-area .btn:last-child {
       margin: 0; }
     .account-wizard__btn-area--absolute {
       bottom: 0;
       position: absolute;
       left: 0;
-      padding: 2.4rem;
+      padding: 2.4em;
       border-top: 1px solid var(--general-section-1); }
     .account-wizard__btn-area--center {
       justify-content: center;
       width: 100%; }
       .account-wizard__btn-area--center .btn {
-        min-width: 9rem; }
+        min-width: 9em; }
     .account-wizard__btn-area--error {
       font-size: 1.4rem;
       color: var(--text-general);
@@ -6977,6 +7470,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -7136,7 +7646,7 @@ html {
 
 /** @define icon */
 .icon--centered {
-  top: 0.8rem;
+  top: 0.8em;
   left: 5%; }
 
 /** @define center-text */
@@ -7153,7 +7663,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -7168,7 +7678,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 3.2rem; }
+    margin-bottom: 3.2em; }
     .form-progress__header h2 {
       font-size: var(--text-size-s);
       font-weight: bold;
@@ -7227,7 +7737,7 @@ html {
       position: absolute;
       /* positioning must be absolute here, and relative positioning must be applied to the parent */
       right: 0;
-      top: 1.7rem;
+      top: 1.7em;
       width: 77%;
       border-top: 2px solid var(--text-less-prominent); }
     .form-progress__steps--after {
@@ -7239,7 +7749,7 @@ html {
       /* this centers the line to the full width specified */
       position: absolute;
       /* positioning must be absolute here, and relative positioning must be applied to the parent */
-      top: 1.7rem;
+      top: 1.7em;
       transition: width 0.3s ease; }
 
 .modal__container.modal__real-account-signup-modal .vertical-tab__content {
@@ -7261,6 +7771,23 @@ html {
  *------------------------------------*/
 /*
  * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
  */
 /*
  * Generate typefaces key-value pair of variable name and config
@@ -7482,7 +8009,7 @@ html {
 
 /** @define icon */
 .icon--centered, .time-picker__icon, .datepicker__icon {
-  top: 0.8rem;
+  top: 0.8em;
   left: 5%; }
 
 /** @define center-text */
@@ -7499,7 +8026,7 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
   padding: 0; }
 
 /** @define deriv-app */
@@ -7677,7 +8204,7 @@ table {
   font-family: 'BinarySymbols';
   font-style: normal;
   pointer-events: none;
-  padding-right: 0.05rem; }
+  padding-right: 0.05em; }
 
 .symbols, .symbols:before {
   transition: none;
@@ -7975,7 +8502,7 @@ table {
       left: 50%;
       position: absolute;
       z-index: 1;
-      transform: translate(-50%, 1rem);
+      transform: translate(-50%, 1em);
       transform-origin: top; }
     .tooltip[data-tooltip]:before {
       font-size: 1.2rem;
@@ -7989,7 +8516,7 @@ table {
       letter-spacing: normal;
       border-radius: 4px;
       content: attr(data-tooltip);
-      padding: 0.7rem;
+      padding: 0.7em;
       margin-bottom: 10px;
       width: -webkit-max-content;
       width: -moz-max-content;
@@ -8009,9 +8536,9 @@ table {
       bottom: auto;
       left: 100%;
       top: 50%;
-      transform: translate(-1rem, -50%); }
+      transform: translate(-1em, -50%); }
     .tooltip[data-tooltip][data-tooltip-pos=right]:before {
-      margin-left: 1rem; }
+      margin-left: 1em; }
     .tooltip[data-tooltip][data-tooltip-pos=right]:hover:after, .tooltip[data-tooltip][data-tooltip-pos=right]:hover:before {
       transform: translate(0, -50%); }
     .tooltip[data-tooltip][data-tooltip-pos=left]:before, .tooltip[data-tooltip][data-tooltip-pos=left]:after {
@@ -8019,22 +8546,22 @@ table {
       left: auto;
       right: 100%;
       top: 50%;
-      transform: translate(1rem, -50%); }
+      transform: translate(1em, -50%); }
     .tooltip[data-tooltip][data-tooltip-pos=left]:before {
-      margin-right: 1rem; }
+      margin-right: 1em; }
     .tooltip[data-tooltip][data-tooltip-pos=left]:hover:after, .tooltip[data-tooltip][data-tooltip-pos=left]:hover:before {
       transform: translate(0, -50%); }
     .tooltip[data-tooltip][data-tooltip-pos=bottom]:before, .tooltip[data-tooltip][data-tooltip-pos=bottom]:after {
       bottom: auto;
       left: 50%;
       top: 100%;
-      transform: translate(-50%, -1rem); }
+      transform: translate(-50%, -1em); }
     .tooltip[data-tooltip][data-tooltip-pos=bottom]:before {
-      margin-top: 1.1rem; }
+      margin-top: 1.1em; }
     .tooltip[data-tooltip][data-tooltip-pos=bottom]:hover:after, .tooltip[data-tooltip][data-tooltip-pos=bottom]:hover:before {
       transform: translate(-50%, 0); }
   .tooltip--with-label[data-tooltip]:before, .tooltip--with-label[data-tooltip]:after {
-    margin-top: 1rem; }
+    margin-top: 1em; }
   .tooltip--error[data-tooltip]:before {
     background: var(--status-danger); }
   .tooltip--error[data-tooltip]:after, .tooltip--error[data-tooltip][data-tooltip-pos=top]:after {
@@ -8076,14 +8603,14 @@ table {
 /** @define barspinner */
 .barspinner {
   margin: auto;
-  width: 6rem;
-  height: 2rem;
+  width: 6em;
+  height: 2em;
   white-space: nowrap; }
   .barspinner__rect {
-    margin: 0.4rem;
+    margin: 0.4em;
     border-radius: 20px;
     height: 60%;
-    width: 0.6rem;
+    width: 0.6em;
     display: inline-block;
     -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
             animation: sk-stretchdelay 1.2s infinite ease-in-out; }
@@ -8131,7 +8658,7 @@ table {
     width: 100vw;
     height: 100vh; }
   .initial-loader__barspinner {
-    margin: 5rem auto; }
+    margin: 5em auto; }
     .initial-loader__barspinner--rect {
       background-color: #85acb0;
       background-color: var(--brand-secondary); }
@@ -8191,7 +8718,7 @@ table {
 /** @define trade-container; weak */
 .trade-container {
   position: relative;
-  padding: 0.8rem 1.2rem 0;
+  padding: 0.8em 1.2em 0;
   display: flex;
   min-height: calc(100vh - 83px);
   transition: transform 0.25s ease;
@@ -8291,7 +8818,7 @@ table {
     left: 0;
     z-index: 0; }
     .chart-container .cq-context div.ciq-chart {
-      height: calc(100% - 5rem);
+      height: calc(100% - 5em);
       box-shadow: none; }
       .chart-container .cq-context div.ciq-chart div.cq-last-digits {
         bottom: 15px;
@@ -8309,14 +8836,14 @@ table {
           -webkit-animation: fadeIn 0.2s;
                   animation: fadeIn 0.2s; }
     .chart-container .cq-context div.cq-chart-control-left .cq-top-ui-widgets {
-      width: calc(100% - 9rem); }
+      width: calc(100% - 9em); }
   .chart-container div.debug-text {
     display: none; }
   .chart-container .cq-chart-control-left .cq-chart-controls {
     transform: translate3d(0, 0, 0);
     transition: transform 0.25s ease; }
   .chart-container .cq-chart-control-left .cq-top-ui-widgets {
-    left: 9rem; }
+    left: 9em; }
     .chart-container .cq-chart-control-left .cq-top-ui-widgets .info-box {
       transform: translate3d(0, 0, 0); }
   .chart-container .ciq-chart .cq-top-ui-widgets, .chart-container .ciq-chart .info-box {
@@ -8339,22 +8866,22 @@ table {
         position: fixed;
         height: 100%;
         width: 100%;
-        top: 4.7rem;
-        left: -0.1rem; }
+        top: 4.7em;
+        left: -0.1em; }
       .chart-container .cq-modal-dropdown .cq-categorical-display .ic-icon.icon-close-menu svg {
-        width: 2.4rem;
-        height: 2.4rem; }
+        width: 2.4em;
+        height: 2.4em; }
       .chart-container .cq-modal-dropdown .cq-categorical-display .cq-lookup-filters.scroll-down {
         max-height: unset; }
       .chart-container .cq-modal-dropdown .cq-categorical-display .scrollbar-container.cq-scroll-panel {
-        left: -0.1rem; }
+        left: -0.1em; }
       .chart-container .smartcharts-mobile .cq-modal-dropdown .cq-menu-overlay .cq-menu-dropdown {
-        bottom: 4.8rem; } }
+        bottom: 4.8em; } }
 
 /** @define sidebar; weak; */
 .sidebar__container {
   position: relative;
-  margin-left: 1.6rem;
+  margin-left: 1.6em;
   width: 240px;
   margin-top: 8px;
   z-index: 1; }
@@ -8396,11 +8923,11 @@ table {
   transform: none; }
 
 .contract--enter {
-  transform: translate3d(calc(100% + 1.6rem), 0, 0);
+  transform: translate3d(calc(100% + 1.6em), 0, 0);
   opacity: 0; }
 
 .contract--exit {
-  transform: translate3d(calc(100% + 1.6rem), 0, 0);
+  transform: translate3d(calc(100% + 1.6em), 0, 0);
   opacity: 0;
   pointer-events: none; }
 
@@ -8433,8 +8960,8 @@ table {
 
 /** @define category-wrapper */
 .category-wrapper {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.4em;
+  height: 2.4em;
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -8443,8 +8970,8 @@ table {
 
 /** @define type-wrapper */
 .type-wrapper {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.4em;
+  height: 2.4em;
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -8480,7 +9007,7 @@ table {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 9rem); }
+  height: calc(100vh - 9em); }
 
 .error__message {
   color: var(--text-general); }
@@ -8540,14 +9067,14 @@ table {
     height: 100%; }
   .header__navbar-icons {
     cursor: pointer;
-    padding: 0.8rem 1.6rem;
+    padding: 0.8em 1.6em;
     align-self: center;
     height: 100%; }
     .header__navbar-icons--notify-toggle {
       order: 2;
       order: 2;
-      padding: 0.5rem 1rem;
-      width: 2rem; }
+      padding: 0.5em 1em;
+      width: 2em; }
   .header__menu-left {
     justify-content: flex-start;
     order: -1;
@@ -8570,7 +9097,7 @@ table {
         display: none; } }
   .header__menu-link {
     height: 100%;
-    padding: 0 1.6rem;
+    padding: 0 1.6em;
     text-decoration: none;
     position: relative;
     display: inline-flex;
@@ -8585,7 +9112,7 @@ table {
       text-transform: capitalize;
       text-align: left;
       line-height: 1.75;
-      padding: 0.5rem 0;
+      padding: 0.5em 0;
       position: relative;
       color: var(--text-general);
       /* postcss-bem-linter: ignore */
@@ -8608,8 +9135,8 @@ table {
         stroke: var(--text-general); }
       .header__menu-link-text:before {
         position: absolute;
-        top: 1.4rem;
-        left: 1.2rem; }
+        top: 1.4em;
+        left: 1.2em; }
       .header__menu-link-text:after {
         display: block;
         content: attr(title);
@@ -8649,7 +9176,7 @@ table {
 .footer {
   position: fixed;
   bottom: 0;
-  padding: 0 1rem;
+  padding: 0 1em;
   width: 100%;
   height: 36px;
   box-sizing: border-box;
@@ -8687,7 +9214,7 @@ table {
     .footer__links--left {
       margin-right: auto; }
   .footer__link {
-    padding: 0 0.8rem;
+    padding: 0 0.8em;
     text-decoration: none;
     height: 100%;
     display: inline-flex;
@@ -8696,8 +9223,8 @@ table {
     .footer__link:hover {
       background: var(--general-hover); }
   .footer__icon {
-    width: 1.6rem;
-    height: 1.6rem; }
+    width: 1.6em;
+    height: 1.6em; }
   @media (max-width: 768px) {
     .footer {
       display: none; } }
@@ -8706,15 +9233,15 @@ table {
 .ic-positions {
   position: relative; }
   .ic-positions__icon {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5em; }
   .ic-positions:before {
     content: '';
-    width: 0.2rem;
-    height: 0.2rem;
+    width: 0.2em;
+    height: 0.2em;
     border-radius: 50%;
     position: absolute;
-    margin-top: 1rem;
-    right: 1.5rem;
+    margin-top: 1em;
+    right: 1.5em;
     display: block;
     transition: transform 0.25s ease;
     transform: translate3d(0, 0, 0);
@@ -8729,7 +9256,7 @@ table {
     content: attr(data-count);
     width: 14px;
     height: 14px;
-    font-size: 1rem;
+    font-size: 1em;
     border-radius: 50%;
     position: absolute;
     display: flex;
@@ -8755,20 +9282,20 @@ table {
 
 /** @define network-status */
 .network-status__wrapper {
-  height: 1.4rem;
+  height: 1.4em;
   position: relative; }
 
 .network-status__tooltip {
   left: unset;
-  margin-left: 2rem;
+  margin-left: 2em;
   -webkit-text-decoration-line: none;
           text-decoration-line: none; }
 
 .network-status__circle {
   background: var(--general-section-1);
-  width: 1rem;
-  height: 1rem;
-  margin: 0.2rem 1.6rem;
+  width: 1em;
+  height: 1em;
+  margin: 0.2em 1.6em;
   border-radius: 50%; }
   .network-status__circle--online {
     background: var(--text-profit-success); }
@@ -8783,8 +9310,8 @@ table {
 .server-time {
   display: inline-flex;
   align-self: center;
-  margin-right: 1rem;
-  padding: 0 1rem;
+  margin-right: 1em;
+  padding: 0 1em;
   font-size: 1.2rem;
   color: var(--text-general);
   font-weight: 400;
@@ -8799,7 +9326,7 @@ table {
   background: var(--state-hover); }
   .ic-settings--active:after {
     content: '';
-    height: 0.2rem;
+    height: 0.2em;
     width: 100%;
     position: absolute;
     top: 0;
@@ -8914,11 +9441,11 @@ table {
     display: inline-flex;
     cursor: pointer; }
     .drawer__icons-btn-close {
-      width: 2.4rem;
-      height: 2.4rem; }
+      width: 2.4em;
+      height: 2.4em; }
     .drawer__icons-icon-close {
-      width: 2.4rem;
-      height: 2.4rem; }
+      width: 2.4em;
+      height: 2.4em; }
   .drawer--left {
     right: auto;
     left: 0;
@@ -8926,15 +9453,15 @@ table {
     .drawer--left .drawer__header {
       z-index: 3; }
       .drawer--left .drawer__header .drawer__icons {
-        padding: 0.6rem 1rem; }
+        padding: 0.6em 1em; }
         .drawer--left .drawer__header .drawer__icons-btn-close {
           align-self: center; }
       .drawer--left .drawer__header .drawer__brand-logo {
         display: inline-flex;
-        padding: 0.8rem 2rem;
+        padding: 0.8em 2em;
         border-left: 1px solid var(--general-section-1); }
     .drawer--left .drawer__footer {
-      height: 4.4rem;
+      height: 4.4em;
       border-top: 1px solid var(--general-section-1);
       left: 0;
       bottom: 0;
@@ -8952,13 +9479,13 @@ table {
       flex-direction: row-reverse;
       justify-content: space-between; }
       .drawer--right .drawer__header .drawer__icons {
-        padding: 1.4rem 1.1rem; }
+        padding: 1.4em 1.1em; }
         .drawer--right .drawer__header .drawer__icons-btn-close {
           border-left: 1px solid var(--general-section-1); }
         .drawer--right .drawer__header .drawer__icons-icon-close {
           position: absolute;
-          top: 1.4rem;
-          right: 1rem; }
+          top: 1.4em;
+          right: 1em; }
       .drawer--right .drawer__header .drawer__notifications {
         font-size: 1.6rem;
         color: var(--text-general);
@@ -8966,10 +9493,10 @@ table {
         text-transform: capitalize;
         text-align: left;
         line-height: 1.75;
-        padding: 1.6rem;
+        padding: 0 10px;
         color: var(--text-general); }
         .drawer--right .drawer__header .drawer__notifications-header {
-          margin: 0.5rem;
+          margin: 0.5em;
           font-weight: 400; }
     .drawer--right .drawer__no-notifications-container {
       position: relative;
@@ -8983,10 +9510,10 @@ table {
         justify-content: center;
         height: 80%; }
         .drawer--right .drawer__no-notifications-container .drawer__no-notifications .drawer__bell {
-          height: 7rem; }
+          height: 7em; }
           .drawer--right .drawer__no-notifications-container .drawer__no-notifications .drawer__bell-icon {
-            width: 1.6rem;
-            height: 1.6rem;
+            width: 1.6em;
+            height: 1.6em;
             transform: scale(6, 6); }
         .drawer--right .drawer__no-notifications-container .drawer__no-notifications-header {
           font-size: 1.4rem;
@@ -8995,12 +9522,12 @@ table {
           text-transform: capitalize;
           text-align: center;
           line-height: 1.5;
-          padding: 0 1.6rem;
+          padding: 0 10px;
           color: var(--text-general);
           margin: 0; }
         .drawer--right .drawer__no-notifications-container .drawer__no-notifications-message {
           display: block;
-          font-size: 1.2rem; }
+          font-size: 1.2em; }
   .drawer__items {
     max-height: 0;
     transition: all 0.25s;
@@ -9016,34 +9543,34 @@ table {
     position: relative;
     width: 100%;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 1.4em;
     box-sizing: border-box;
-    padding: 1.6rem;
+    padding: 1.6em;
     z-index: 1; }
     .drawer__item .drawer__parent-item {
       font-weight: 300;
       cursor: pointer;
-      padding-left: 3rem;
-      line-height: 1.5rem; }
+      padding-left: 3em;
+      line-height: 1.5em; }
       .drawer__item .drawer__parent-item:before {
         content: '\25A2';
-        font-size: 1.6rem;
+        font-size: 1.6em;
         position: absolute;
         display: inline-flex;
         justify-content: center;
         align-items: center;
         color: var(--state-normal);
-        left: 1rem;
-        top: 1.1rem; }
+        left: 1em;
+        top: 1.1em; }
       .drawer__item .drawer__parent-item:after {
         content: '\002303';
-        font-size: 1.5rem;
+        font-size: 1.5em;
         position: absolute;
         font-weight: 300;
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        right: 1rem;
+        right: 1em;
         transition: transform 0.25s;
         transform: rotate(-180deg);
         transform-origin: 50% 35%;
@@ -9057,12 +9584,12 @@ table {
       .drawer__item-link:before {
         content: none; }
       .drawer__item-link-text {
-        padding-left: 1.5rem;
+        padding-left: 1.5em;
         color: var(--text-general);
         position: relative; }
         .drawer__item-link-text .drawer__icon {
-          width: 1.6rem;
-          height: 1.6rem;
+          width: 1.6em;
+          height: 1.6em;
           position: absolute;
           left: 0;
           top: 0; }
@@ -9116,7 +9643,7 @@ table {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.5em;
     margin-left: -8px;
     font-size: 1.6rem;
     color: var(--text-general);
@@ -9187,13 +9714,13 @@ table {
     margin-bottom: 4px;
     color: var(--text-general); }
   .contract-card .purchase-price__value, .contract-card .potential-payout__value {
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: bold;
     align-self: flex-start; }
   .contract-card .potential-payout-container {
     padding-left: 4px; }
   .contract-card .potential-payout-price__value {
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: bold;
     align-self: flex-start; }
   .contract-card__separator {
@@ -9204,10 +9731,10 @@ table {
     justify-content: flex-start;
     align-items: center;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     max-width: 120px; }
   .contract-card__type {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     display: flex;
     justify-content: flex-start;
     font-weight: bold;
@@ -9220,19 +9747,19 @@ table {
       fill: var(--brand-secondary) !important; }
   .contract-card__symbol {
     margin-left: 0.5rem;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.5; }
   .contract-card__header {
     display: flex;
     justify-content: space-evenly;
-    margin: 0.5rem 0.2rem; }
+    margin: 0.5em 0.2em; }
   .contract-card__body {
     border-radius: 4px;
     width: 100%;
     padding: 8px 12px 0;
     color: var(--text-prominent); }
   .contract-card__footer {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
     padding: 0 4px; }
     .contract-card__footer-wrapper {
       font-size: 1.2rem;
@@ -9265,15 +9792,15 @@ table {
     padding: 2px 0;
     width: 100%; }
   .contract-card .contract-audit__wrapper--is-open {
-    margin-top: 0.5rem; }
+    margin-top: 0.5em; }
   .contract-card .contract-audit__toggle {
-    margin: 0 0 -0.5rem;
+    margin: 0 0 -0.5em;
     width: 100%; }
   .contract-card .contract-audit__label {
-    font-size: 0.8rem;
+    font-size: 0.8em;
     text-align: left; }
   .contract-card .contract-audit__value {
-    font-size: 1rem;
+    font-size: 1em;
     text-align: left; }
 
 .trade-container + .positions-drawer {
@@ -9313,11 +9840,11 @@ table {
     transform: translateX(8px);
     opacity: 1; }
   .positions-drawer__header {
-    height: 3.6rem;
+    height: 3.6em;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 1rem; }
+    padding: 0 1em; }
     .positions-drawer__header:after {
       content: '';
       position: absolute;
@@ -9328,15 +9855,15 @@ table {
       z-index: 1;
       box-shadow: 0 8px 2px -2px var(--general-section-1) inset; }
   .positions-drawer__body {
-    height: calc(100% - 9.72rem);
-    padding: 0.8rem 0 0;
+    height: calc(100% - 9.72em);
+    padding: 0.8em 0 0;
     box-sizing: border-box;
     overflow: hidden;
     align-self: center;
     color: var(--text-general); }
   .positions-drawer__footer {
     position: relative;
-    height: 6rem;
+    height: 6em;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -9353,21 +9880,21 @@ table {
       margin: 8px;
       height: 40px; }
       .positions-drawer__footer .btn .btn__text {
-        font-size: 1.4rem;
+        font-size: 1.4em;
         font-weight: bold; }
   .positions-drawer__title {
-    font-size: 1.4rem;
+    font-size: 1.4em;
     font-weight: bold;
     color: var(--text-prominent); }
   .positions-drawer__icon-main {
-    margin-right: 0.8rem; }
+    margin-right: 0.8em; }
   .positions-drawer__icon-close {
     display: inline-block;
     margin-left: auto;
     cursor: pointer; }
     .positions-drawer__icon-close svg {
-      height: 1.6rem;
-      width: 1.6rem; }
+      height: 1.6em;
+      width: 1.6em; }
 
 /** @define positions-drawer-card; weak */
 .positions-drawer-card {
@@ -9411,8 +9938,8 @@ table {
     .positions-drawer-card__result--enter-done {
       opacity: 1; }
   .positions-drawer-card__wrapper {
-    padding: 0.8rem;
-    margin: 0 1rem;
+    padding: 0.8em;
+    margin: 0 1em;
     max-width: 218px;
     border-radius: 4px;
     transition: transform 0.25s ease, opacity 0.25s linear;
@@ -9476,7 +10003,7 @@ table {
     max-width: 90px;
     color: var(--text-general); }
   .positions-drawer-card__purchase-value, .positions-drawer-card__payout-value {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -9488,7 +10015,7 @@ table {
   .positions-drawer-card__payout-price {
     margin-left: 4px; }
   .positions-drawer-card__type {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     display: flex;
     justify-content: flex-start;
     font-weight: bold;
@@ -9501,10 +10028,10 @@ table {
       fill: var(--brand-secondary); }
   .positions-drawer-card__symbol {
     margin-left: 0.5rem;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.5; }
   .positions-drawer-card__indicative {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: bold;
     display: flex;
     justify-content: flex-start;
@@ -9512,7 +10039,7 @@ table {
     align-items: center;
     color: var(--text-general); }
     .positions-drawer-card__indicative-label {
-      font-size: 1rem;
+      font-size: 1em;
       font-weight: normal;
       margin-bottom: 4px;
       white-space: nowrap;
@@ -9528,17 +10055,17 @@ table {
         content: '';
         width: 16px; }
   .positions-drawer-card__remaining-time {
-    font-size: 1rem;
+    font-size: 1em;
     color: var(--text-general); }
   .positions-drawer-card__profit-loss {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     text-align: center;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-weight: bold; }
     .positions-drawer-card__profit-loss-label {
-      font-size: 1rem;
+      font-size: 1em;
       margin-bottom: 4px;
       font-weight: normal;
       white-space: nowrap;
@@ -9561,7 +10088,7 @@ table {
     justify-content: flex-start;
     align-items: center;
     font-weight: bold;
-    font-size: 1.2rem; }
+    font-size: 1.2em; }
   .positions-drawer-card__sell-button {
     display: flex;
     align-items: center;
@@ -9585,7 +10112,7 @@ table {
   margin-left: -4px; }
   .contract-type__type-wrapper {
     margin: 0;
-    padding: 0.5rem 0.3rem;
+    padding: 0.5em 0.3em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9594,7 +10121,7 @@ table {
       width: 20px;
       height: 20px; }
   .contract-type__type-label {
-    width: 3.8rem;
+    width: 3.8em;
     line-height: 1.5;
     text-align: left; }
 
@@ -9610,7 +10137,7 @@ table {
 /** @define result */
 .result__caption {
   text-transform: capitalize;
-  font-size: 1.6rem;
+  font-size: 1.6em;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -9869,7 +10396,7 @@ table {
 
 /** @define input-field; weak */
 .input-field {
-  margin: 0.8rem 0 0;
+  margin: 0.8em 0 0;
   position: relative; }
   .input-field__label {
     font-size: 1.4rem;
@@ -9879,7 +10406,7 @@ table {
     text-align: left;
     line-height: 1.5;
     color: var(--text-general);
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.2em;
     display: inline-block;
     text-align: center;
     width: 100%; }
@@ -9908,10 +10435,10 @@ table {
     top: 2px;
     height: 28px;
     border: none;
-    padding: 0 1.6rem;
+    padding: 0 1.6em;
     margin: 0;
     margin: initial;
-    min-width: 3.2rem;
+    min-width: 3.2em;
     border-radius: 3px;
     background-color: transparent;
     background-color: initial;
@@ -9942,14 +10469,14 @@ table {
   display: inline-block;
   width: 100%;
   height: 32px;
-  padding-left: 0.8rem;
+  padding-left: 0.8em;
   border-radius: 4px;
   transition: transform 0.3s;
   background-color: var(--fill-normal);
   border: 1px solid var(--fill-normal);
   color: var(--text-prominent); }
   .input[type=checkbox] {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
@@ -10028,9 +10555,9 @@ table {
 /** @define time-picker */
 .time-picker {
   position: relative;
-  margin-top: 0.8rem; }
+  margin-top: 0.8em; }
   .time-picker--padding {
-    padding: 1.6rem; }
+    padding: 1.6em; }
   .time-picker__icon {
     z-index: 1;
     margin: unset;
@@ -10118,7 +10645,7 @@ table {
   align-items: center;
   position: relative; }
   .allow-equals__input-field {
-    margin-top: 0.6rem; }
+    margin-top: 0.6em; }
   .allow-equals__label {
     font-size: 1.4rem;
     color: var(--text-general);
@@ -10126,11 +10653,11 @@ table {
     text-transform: none;
     text-align: left;
     line-height: 1.5;
-    padding: 0 0.8rem;
+    padding: 0 6.66667px;
     color: var(--text-general);
     cursor: pointer; }
   .allow-equals__tooltip {
-    margin-top: 1rem; }
+    margin-top: 1em; }
 
 /** @define calendar */
 .calendar {
@@ -10140,42 +10667,42 @@ table {
   border-radius: 5px;
   z-index: 999;
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: 1em;
   background: var(--general-main-2);
   box-shadow: 0 2px 8px 0 var(--shadow-menu); }
   .calendar__header, .calendar__footer {
     position: relative;
     display: flex;
     align-items: center;
-    height: 5rem;
+    height: 5em;
     border-radius: 5px;
-    padding: 1.6rem; }
+    padding: 1.6em; }
   .calendar__header {
     justify-content: center; }
   .calendar__body {
-    border-top: 0.1rem solid var(--general-section-2);
-    border-bottom: 0.1rem solid var(--general-section-2); }
+    border-top: 0.1em solid var(--general-section-2);
+    border-bottom: 0.1em solid var(--general-section-2); }
     .calendar__body--date, .calendar__body--month, .calendar__body--year, .calendar__body--decade {
       display: grid;
-      grid-gap: 1.2rem;
-      padding: 0.8rem 2rem; }
+      grid-gap: 1.2em;
+      padding: 0.8em 2em; }
       .calendar__body--date .calendar__cell, .calendar__body--month .calendar__cell, .calendar__body--year .calendar__cell, .calendar__body--decade .calendar__cell {
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 5px; }
     .calendar__body--date {
-      grid-template-columns: repeat(7, 2.4rem);
-      grid-auto-rows: 2.4rem; }
+      grid-template-columns: repeat(7, 2.4em);
+      grid-auto-rows: 2.4em; }
       .calendar__body--date .calendar__cell {
         width: 100%;
         height: 100%; }
     .calendar__body--month, .calendar__body--year, .calendar__body--decade {
-      grid-template-columns: repeat(3, minmax(7.2rem, 1fr));
-      grid-auto-rows: minmax(4.2rem, auto); }
+      grid-template-columns: repeat(3, minmax(7.2em, 1fr));
+      grid-auto-rows: minmax(4.2em, auto); }
       .calendar__body--month .calendar__cell, .calendar__body--year .calendar__cell, .calendar__body--decade .calendar__cell {
-        width: 5.6rem;
-        height: 3.2rem; }
+        width: 5.6em;
+        height: 3.2em; }
     .calendar__body--decade .calendar__cell {
       width: 100%; }
   .calendar__icon {
@@ -10188,8 +10715,8 @@ table {
     outline: none;
     background: none;
     position: absolute;
-    padding: 0 0.5rem;
-    height: 1.4rem; }
+    padding: 0 0.5em;
+    height: 1.4em; }
     .calendar__nav:hover:not(.calendar__nav--disabled) {
       cursor: pointer; }
     .calendar__nav--is-hidden {
@@ -10204,7 +10731,7 @@ table {
       right: 14%; }
   .calendar__btn {
     text-align: center;
-    padding: 0rem 0.2rem;
+    padding: 0em 0.2em;
     font-weight: bold;
     cursor: pointer;
     border: none;
@@ -10325,7 +10852,7 @@ table {
       justify-content: center;
       width: 100%; }
       .calendar__cell-tooltip-icon {
-        margin-top: 0.1rem;
+        margin-top: 0.1em;
         display: inherit; }
 
 /** @define card-list */
@@ -10335,7 +10862,7 @@ table {
     display: block;
     text-decoration: none;
     max-width: 450px;
-    margin: 0.6rem auto;
+    margin: 0.6em auto;
     border-radius: 4px;
     background-color: var(--general-main-2);
     border: 1px solid var(--general-main-2);
@@ -10345,12 +10872,12 @@ table {
 
 /** @define contract-audit; */
 .contract-audit__wrapper {
-  margin-top: 1rem;
+  margin-top: 1em;
   border-radius: 4px;
   padding: 2px 4px;
   opacity: 1;
-  height: calc(100vh - 32.6rem);
-  max-height: calc(100vh - 32.6rem);
+  height: calc(100vh - 32.6em);
+  max-height: calc(100vh - 32.6em);
   overflow: hidden;
   background-color: var(--general-main-1);
   color: var(--text-prominent); }
@@ -10372,7 +10899,7 @@ table {
   margin: 0 4px; }
 
 .contract-audit__label {
-  font-size: 1rem;
+  font-size: 1em;
   white-space: nowrap;
   max-width: 90px;
   color: var(--text-general); }
@@ -10384,13 +10911,13 @@ table {
 .contract-audit__value, .contract-audit__value2 {
   padding-top: 2px;
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: bold;
   color: var(--text-prominent); }
 
 /** @define contracts-type-dialog; */
 .contracts-type-dialog {
-  right: 0.4rem;
+  right: 0.4em;
   width: 100%;
   pointer-events: none;
   position: absolute;
@@ -10439,7 +10966,7 @@ table {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    padding: 1.6rem;
+    padding: 1.6em;
     /* postcss-bem-linter: ignore */ }
     .contract-type-widget__display span[name=contract_type] {
       font-size: 1.4rem;
@@ -10451,7 +10978,7 @@ table {
       color: var(--text-prominent);
       font-weight: bold;
       vertical-align: middle;
-      padding-left: 0.4rem; }
+      padding-left: 0.4em; }
     .contract-type-widget__display:hover, .contract-type-widget__display:focus {
       border-color: var(--border-hover);
       outline: none; }
@@ -10469,7 +10996,7 @@ table {
     position: absolute;
     pointer-events: none;
     top: 37%;
-    left: 0.6rem;
+    left: 0.6em;
     line-height: 1;
     transition: transform 0.25s ease;
     transform: rotate(90deg);
@@ -10479,10 +11006,10 @@ table {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding-left: 1.2rem;
+    padding-left: 1.2em;
     /* postcss-bem-linter: ignore */ }
     .contract-type-widget__icon-wrapper .category-wrapper {
-      margin: 0 0.2rem;
+      margin: 0 0.2em;
       background-color: var(--general-section-1);
       /* postcss-bem-linter: ignore */ }
       .contract-type-widget__icon-wrapper .category-wrapper .category-type {
@@ -10506,7 +11033,7 @@ table {
 
 /** @define contract-type-list; */
 .contract-type-list {
-  padding: 1.6rem 1.6rem 0rem;
+  padding: 1.6em 1.6em 0em;
   border-bottom: 4px solid var(--general-section-2); }
   .contract-type-list__label {
     font-size: 1.4rem;
@@ -10516,7 +11043,7 @@ table {
     text-align: left;
     line-height: 1.5;
     color: var(--text-prominent);
-    margin-bottom: 0.6rem; }
+    margin-bottom: 0.6em; }
   .contract-type-list:last-child {
     border-bottom: none; }
   .contract-type-list__contracts-wrapper {
@@ -10529,9 +11056,9 @@ table {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  padding: 0.8rem;
+  padding: 0.8em;
   box-sizing: border-box;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.1em;
   transition: transform 0.3s opacity 0.3s;
   color: var(--text-general);
   border-radius: 4px; }
@@ -10547,7 +11074,7 @@ table {
     text-align: left;
     line-height: 1.5;
     color: var(--text-general);
-    padding-left: 0.4rem; }
+    padding-left: 0.4em; }
   .contract-type-item__icon {
     display: none;
     height: 16px;
@@ -10587,10 +11114,10 @@ table {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 0.7rem;
+    margin-right: 0.7em;
     /* postcss-bem-linter: ignore */ }
     .contract-type-item__icon-wrapper .category-wrapper {
-      margin: 0 0.2rem;
+      margin: 0 0.2em;
       background-color: var(--general-section-1); }
       .contract-type-item__icon-wrapper .category-wrapper svg {
         /* postcss-bem-linter: ignore */
@@ -10607,7 +11134,7 @@ table {
 
 /** @define trade-type-info-dialog; */
 .trade-type-info-dialog {
-  right: 0.4rem;
+  right: 0.4em;
   width: 100%;
   pointer-events: none;
   position: absolute;
@@ -10638,13 +11165,13 @@ table {
     top: -66px;
     z-index: 2;
     border-radius: 4px;
-    padding: 1.6rem 1.6rem 1rem;
+    padding: 1.6em 1.6em 1em;
     box-shadow: 0 2px 8px 0 var(--shadow-menu);
     display: flex;
     flex-direction: column;
     background: var(--general-main-2); }
   .trade-type-info-dialog__choose-button {
-    margin: 1.6rem 0;
+    margin: 1.6em 0;
     width: 100%;
     /* postcss-bem-linter: ignore */ }
     .trade-type-info-dialog__choose-button span {
@@ -10655,7 +11182,7 @@ table {
       text-align: center;
       line-height: 1.5; }
   .trade-type-info-dialog__content {
-    margin-top: 1.5rem;
+    margin-top: 1.5em;
     height: 260px;
     overflow: hidden;
     /* postcss-bem-linter: ignore */ }
@@ -10666,7 +11193,7 @@ table {
       text-transform: none;
       text-align: left;
       line-height: 1.5;
-      margin-bottom: 0.8rem;
+      margin-bottom: 5.71429px;
       color: var(--text-general); }
   .trade-type-info-dialog__gif {
     width: 100%;
@@ -10683,7 +11210,7 @@ table {
   .trade-type-info-dialog__header {
     display: flex;
     align-items: center;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.8em;
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
@@ -10694,7 +11221,7 @@ table {
       text-transform: capitalize;
       text-align: left;
       line-height: 1.5;
-      margin-left: 0.8rem;
+      margin-left: 5.71429px;
       color: var(--text-prominent);
       cursor: default; }
     .trade-type-info-dialog__header span {
@@ -10721,11 +11248,11 @@ table {
     margin: 0 auto;
     position: relative; }
   .trade-type-info-navigation__circle-button {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.8em;
+    height: 0.8em;
     border-radius: 50%;
     display: inline-block;
-    margin: 0 0.4rem;
+    margin: 0 0.4em;
     cursor: pointer;
     background-color: var(--text-disabled); }
     .trade-type-info-navigation__circle-button--active {
@@ -10748,7 +11275,7 @@ table {
   max-width: 280px; }
   .datepicker__input-field {
     border-radius: 4px;
-    margin-top: 0.8rem; }
+    margin-top: 0.8em; }
   .datepicker__input {
     background: var(--fill-normal);
     border: 1px solid var(--border-normal); }
@@ -10803,20 +11330,20 @@ table {
 /** @define login-prompt */
 .login-prompt {
   height: calc(100vh - 83px);
-  margin: 0 2rem;
+  margin: 0 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
   .login-prompt__icon {
-    height: 6.4rem;
-    width: 6.4rem;
-    margin-bottom: 1rem; }
+    height: 6.4em;
+    width: 6.4em;
+    margin-bottom: 1em; }
     .login-prompt__icon-svg {
       height: 100%;
       width: 100%; }
   .login-prompt__message {
-    font-size: 1.4rem; }
+    font-size: 1.4em; }
 
 /** @define .market-is-closed-overlay */
 .market-is-closed-overlay {
@@ -10842,7 +11369,7 @@ table {
     color: var(--text-prominent);
     text-transform: none; }
   .market-is-closed-overlay__button {
-    height: 4rem; }
+    height: 4em; }
 
 /** @define .market-symbol-icon; weak */
 .market-symbol-icon {
@@ -10884,7 +11411,7 @@ table {
     text-transform: none; }
   .media__icon {
     height: 120px;
-    margin-right: 1.6rem;
+    margin-right: 1.6em;
     border-radius: 4px;
     min-width: 160px; }
     .media__icon:empty {
@@ -10958,10 +11485,10 @@ table {
 
 /** @define number-selector */
 .number-selector {
-  margin-top: 1.2rem;
+  margin-top: 1.2em;
   text-align: center; }
   .number-selector__row:first-child {
-    margin-bottom: 0.8rem; }
+    margin-bottom: 0.8em; }
   .number-selector__selection {
     width: calc(20% - 4px);
     height: 24px;
@@ -11241,8 +11768,8 @@ table {
     .range-slider__track[type=range]::-webkit-slider-thumb {
       -webkit-appearance: none;
               appearance: none;
-      width: 1rem;
-      height: 1rem;
+      width: 1em;
+      height: 1em;
       border-radius: 100%;
       border: 0;
       cursor: pointer;
@@ -11250,12 +11777,12 @@ table {
       box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
       background: var(--state-active); }
       .range-slider__track[type=range]::-webkit-slider-thumb:hover {
-        box-shadow: 0 0 0 0.5rem var(--state-hover); }
+        box-shadow: 0 0 0 0.5em var(--state-hover); }
     .range-slider__track[type=range]::-moz-range-thumb {
       -moz-appearance: none;
            appearance: none;
-      width: 1rem;
-      height: 1rem;
+      width: 1em;
+      height: 1em;
       border-radius: 100%;
       border: 0;
       cursor: pointer;
@@ -11263,11 +11790,11 @@ table {
       box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
       background: var(--state-active); }
       .range-slider__track[type=range]::-moz-range-thumb:hover {
-        box-shadow: 0 0 0 0.5rem var(--state-hover); }
+        box-shadow: 0 0 0 0.5em var(--state-hover); }
     .range-slider__track[type=range]::-ms-thumb {
       appearance: none;
-      width: 1rem;
-      height: 1rem;
+      width: 1em;
+      height: 1em;
       border-radius: 100%;
       border: 0;
       cursor: pointer;
@@ -11275,7 +11802,7 @@ table {
       box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
       background: var(--state-active); }
       .range-slider__track[type=range]::-ms-thumb:hover {
-        box-shadow: 0 0 0 0.5rem var(--state-hover); }
+        box-shadow: 0 0 0 0.5em var(--state-hover); }
     .range-slider__track[type=range]:hover, .range-slider__track[type=range]:focus, .range-slider__track[type=range]:active {
       border: 0;
       outline: none; }
@@ -11326,8 +11853,8 @@ table {
         pointer-events: none; }
         .range-slider__ticks-step--active:after {
           content: '';
-          width: 1rem;
-          height: 1rem;
+          width: 1em;
+          height: 1em;
           position: absolute;
           display: block;
           top: 0;
@@ -11353,7 +11880,7 @@ table {
   .range-slider__caption {
     padding-top: 8px;
     line-height: 1.5;
-    font-size: 1.4rem;
+    font-size: 1.4em;
     text-align: center;
     /* postcss-bem-linter: ignore */ }
     .range-slider__caption-title {
@@ -11366,9 +11893,9 @@ table {
   border-radius: 4px;
   background-color: var(--state-normal);
   color: var(--text-general);
-  height: 3.2rem;
+  height: 3.2em;
   margin: 0;
-  margin-top: 0.8rem; }
+  margin-top: 0.8em; }
   .toggle-button:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
@@ -11382,7 +11909,7 @@ table {
 /** @define toggle-button-group */
 .toggle-button-group {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(4.4rem, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(4.4em, 1fr)); }
 
 /** @define native-select */
 .native-select__wrapper {
@@ -11449,7 +11976,7 @@ table {
 /** @define toggle-chart-layout */
 .toggle-chart-layout {
   border-radius: 4px;
-  padding: 0.2rem;
+  padding: 0.2em;
   transition: all 0.4s ease;
   outline: 0;
   display: block;
@@ -11457,7 +11984,7 @@ table {
   height: 18px;
   position: relative;
   cursor: pointer;
-  margin-right: 0.4rem;
+  margin-right: 0.4em;
   border: 1px solid var(--text-general); }
   .toggle-chart-layout:after {
     background: var(--text-prominent);
@@ -11481,7 +12008,7 @@ table {
   position: absolute;
   z-index: 3;
   top: 0;
-  left: 0.2rem;
+  left: 0.2em;
   right: 0;
   bottom: 0;
   width: calc(100% - 4px);
@@ -11495,7 +12022,7 @@ table {
     .block-ui__loading-spinner {
       position: relative;
       margin: 0 auto;
-      width: 4.2rem; }
+      width: 4.2em; }
       .block-ui__loading-spinner:before {
         content: '';
         display: block;
@@ -11576,7 +12103,7 @@ table {
   .vertical-tab--full-screen {
     min-height: calc(100vh - 84px - 31px); }
   .vertical-tab:not(.vertical-tab--full-screen) .vertical-tab__content {
-    padding: 2.4rem; }
+    padding: 2.4em; }
   .vertical-tab__action-bar {
     width: 100%;
     display: flex;
@@ -11673,7 +12200,7 @@ table {
     position: relative;
     background-color: var(--general-main-1); }
     .vertical-tab__content.vertical-tab:not(.vertical-tab--full-screen) {
-      padding: 2.4rem;
+      padding: 2.4em;
       height: 100%; }
 
 /** @define .wallet-information; weak; */
@@ -11729,8 +12256,8 @@ table {
   .mobile-dialog__content {
     box-sizing: border-box;
     position: relative;
-    padding-top: 3.6rem;
-    padding-bottom: 7rem;
+    padding-top: 3.6em;
+    padding-bottom: 7em;
     z-index: 1;
     background: #ffffff;
     transform: scale(0);
@@ -11744,8 +12271,8 @@ table {
     width: 100%;
     position: fixed;
     top: 0;
-    padding: 1rem;
-    height: 3.2rem;
+    padding: 1em;
+    height: 3.2em;
     z-index: 4;
     background: #ffffff;
     transform: translateY(-100%);
@@ -11755,43 +12282,43 @@ table {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 3.6rem;
+    height: 3.6em;
     z-index: 3;
     background-color: #ffffff; }
   .mobile-dialog__header-shadow {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 3.2rem;
+    height: 3.2em;
     z-index: 2;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
   .mobile-dialog__title {
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-weight: 600;
     color: var(--text-prominent);
     margin: 0; }
   .mobile-dialog__close-btn-icon {
-    width: 2.4rem;
-    height: 2.4rem; }
+    width: 2.4em;
+    height: 2.4em; }
   .mobile-dialog fieldset {
     border: none;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem; }
+    margin-right: 0.5em;
+    margin-left: 0.5em; }
   .mobile-dialog__trade-type-info-modal {
-    padding: 1.6rem; }
+    padding: 1.6em; }
     .mobile-dialog__trade-type-info-modal .info-header {
       display: flex;
-      padding: 0.8rem; }
+      padding: 0.8em; }
       .mobile-dialog__trade-type-info-modal .info-header .title {
-        margin-left: 1.5rem;
-        font-size: 1.4rem;
+        margin-left: 1.5em;
+        font-size: 1.4em;
         color: var(--text-prominent); }
       .mobile-dialog__trade-type-info-modal .info-header span {
         align-self: center; }
     .mobile-dialog__trade-type-info-modal .info-gif {
-      padding: 0.8rem;
+      padding: 0.8em;
       width: 90%;
-      width: calc(100% - 1.6rem);
+      width: calc(100% - 1.6em);
       height: -webkit-fit-content;
       height: -moz-fit-content;
       height: fit-content;
@@ -11799,31 +12326,31 @@ table {
       border-radius: 4px;
       margin: 0 auto; }
     .mobile-dialog__trade-type-info-modal .info-content {
-      padding: 0.8rem;
+      padding: 0.8em;
       margin: 0 auto;
-      font-size: 1.4rem;
-      line-height: 2rem;
+      font-size: 1.4em;
+      line-height: 2em;
       color: var(--text-prominent); }
     .mobile-dialog__trade-type-info-modal .info-choose button {
       background: var(--button-primary-default);
       color: #ffffff;
       font-weight: bold;
-      margin: 1.6rem 0;
+      margin: 1.6em 0;
       width: 100%; }
     .mobile-dialog__trade-type-info-modal .info-navigation {
       display: flex;
       align-self: flex-end;
-      margin-top: 1.6rem; }
+      margin-top: 1.6em; }
       .mobile-dialog__trade-type-info-modal .info-navigation__list {
         display: inline-block;
         text-align: center;
         margin: 0 auto; }
         .mobile-dialog__trade-type-info-modal .info-navigation__list .circle-button {
-          width: 1rem;
-          height: 1rem;
+          width: 1em;
+          height: 1em;
           border-radius: 50%;
           display: inline-block;
-          margin: 0 0.5rem;
+          margin: 0 0.5em;
           background-color: var(--text-general);
           cursor: pointer; }
           .mobile-dialog__trade-type-info-modal .info-navigation__list .circle-button.active {
@@ -12274,8 +12801,8 @@ table {
 .info-box-container {
   position: absolute;
   z-index: 10;
-  top: 1rem;
-  right: 1rem;
+  top: 1em;
+  right: 1em;
   display: flex;
   justify-content: space-between;
   width: 100%; }
@@ -12287,14 +12814,14 @@ table {
   .info-box-container .info-box {
     position: relative;
     border-radius: 4px;
-    padding: 1.6rem;
+    padding: 1.6em;
     background: rgba(51, 51, 51, 0.1);
     font-weight: 300; }
     .info-box-container .info-box-longcode {
       display: flex; }
       .info-box-container .info-box-longcode-icon {
-        margin-right: 1.6rem;
-        padding: 0.4rem; }
+        margin-right: 1.6em;
+        padding: 0.4em; }
       .info-box-container .info-box-longcode-text {
         font-size: 1.4rem;
         color: var(--text-general);
@@ -12319,34 +12846,34 @@ table {
       display: flex;
       align-items: center; }
       .info-box-container .info-box .expired svg {
-        width: 2.4rem;
-        height: 2.4rem;
-        margin-right: 1rem; }
+        width: 2.4em;
+        height: 2.4em;
+        margin-right: 1em; }
         .info-box-container .info-box .expired svg .color1-fill {
           fill: var(--status-success); }
       .info-box-container .info-box .expired .pl-value {
         color: var(--text-profit-success);
         font-weight: bold;
-        font-size: 1.6rem;
-        line-height: 1.5rem; }
+        font-size: 1.6em;
+        line-height: 1.5em; }
         .info-box-container .info-box .expired .pl-value .percentage {
           display: inline-block;
-          margin-left: 0.7rem; }
+          margin-left: 0.7em; }
       .info-box-container .info-box .expired.lost .pl-value {
         color: var(--text-loss-danger); }
       .info-box-container .info-box .expired.lost svg .color1-fill {
         fill: var(--status-danger); }
       .info-box-container .info-box .expired .sell-info {
-        margin-right: 2rem;
+        margin-right: 2em;
         text-align: center;
-        line-height: 1.2rem; }
+        line-height: 1.2em; }
     .info-box-container .info-box .general {
       display: flex;
       align-items: center;
-      line-height: 1.4rem; }
+      line-height: 1.4em; }
       .info-box-container .info-box .general .values {
-        margin-left: 1rem;
-        margin-right: 2rem;
+        margin-left: 1em;
+        margin-right: 2em;
         text-align: right;
         font-weight: bold; }
         .info-box-container .info-box .general .values .profit {
@@ -12358,28 +12885,28 @@ table {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: -1.6rem;
-        margin-left: 1.6rem;
-        padding: 1.6rem; }
+        margin: -1.6em;
+        margin-left: 1.6em;
+        padding: 1.6em; }
         .info-box-container .info-box .general .sell .tooltip {
           position: absolute;
-          bottom: 0.5rem;
-          right: 0.5rem;
+          bottom: 0.5em;
+          right: 0.5em;
           line-height: 0; }
           .info-box-container .info-box .general .sell .tooltip:before {
             width: 350px;
             white-space: normal; }
   .info-box-container .message {
-    margin-top: 0.5rem;
+    margin-top: 0.5em;
     border: 1px solid #ff444f;
     border: 1px solid var(--brand-red-coral);
     border-radius: 4px;
-    padding: 1rem;
+    padding: 1em;
     background-color: rgba(14, 14, 14, 0.16);
     display: flex;
     align-items: center; }
     .info-box-container .message .message-icon {
-      margin-right: 1rem; }
+      margin-right: 1em; }
     .info-box-container .message .message-text {
       flex-grow: 1; }
     .info-box-container .message .message-close {
@@ -12399,7 +12926,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  bottom: 2rem; }
+  bottom: 2em; }
 
 /** @define page-error */
 .page-error__container {
@@ -12411,7 +12938,7 @@ table {
 .page-error__box {
   background: var(--general-main-1);
   border: var(--general-main-1);
-  padding: 5rem;
+  padding: 5em;
   text-align: center;
   display: flex;
   flex-flow: column nowrap;
@@ -12441,7 +12968,7 @@ table {
   text-transform: none;
   text-align: center;
   line-height: 1.5;
-  margin: 1.6rem 0;
+  margin: 1.14286em 0em;
   color: var(--text-prominent);
   line-height: 1.45;
   max-width: 400px; }
@@ -12454,7 +12981,7 @@ table {
 
 /** @define portfolio; weak */
 .portfolio {
-  padding: 1.5rem 1.2rem;
+  padding: 1.5em 1.2em;
   height: 100%;
   /* postcss-bem-linter: ignore */ }
   .portfolio--card-view {
@@ -12462,7 +12989,7 @@ table {
   .portfolio__table {
     height: 100%; }
   .portfolio__row {
-    grid-template-columns: 6.5rem 7rem 1fr 6rem 9rem 6rem 5rem; }
+    grid-template-columns: 6.5em 7em 1fr 6em 9em 6em 5em; }
   .portfolio .payout, .portfolio .indicative, .portfolio .purchase, .portfolio .remaining_time {
     justify-content: flex-end; }
   .portfolio .container {
@@ -12474,10 +13001,10 @@ table {
     align-items: center;
     text-align: center; }
     .portfolio .contract-type .type-wrapper {
-      width: 2rem;
-      height: 2rem;
-      padding: 0.5rem;
-      margin-bottom: 0.3rem;
+      width: 2em;
+      height: 2em;
+      padding: 0.5em;
+      margin-bottom: 0.3em;
       border-radius: 100%;
       display: flex;
       justify-content: center;
@@ -12497,7 +13024,7 @@ table {
     .portfolio .indicative--no-resale {
       color: var(--text-general); }
     .portfolio .indicative__no-resale-msg {
-      font-size: 1rem;
+      font-size: 1em;
       font-weight: 400; }
 
 /** @define portfolio-empty */
@@ -12512,19 +13039,19 @@ table {
     align-items: center;
     width: 100%; }
   .portfolio-empty__icon {
-    height: 4.8rem;
-    width: 4.8rem;
-    margin-bottom: 1.6rem; }
+    height: 4.8em;
+    width: 4.8em;
+    margin-bottom: 1.6em; }
   .portfolio-empty__text {
-    font-size: 1.4rem;
+    font-size: 1.4em;
     color: var(--text-disabled); }
 
 /** @define portfolio-card */
 .portfolio-card {
   /* postcss-bem-linter: ignore */ }
   .portfolio-card__header {
-    font-size: 1rem;
-    padding: 0.5rem;
+    font-size: 1em;
+    padding: 0.5em;
     border-bottom: 1px solid var(--general-section-1);
     display: flex;
     justify-content: space-between; }
@@ -12532,10 +13059,10 @@ table {
     color: var(--status-info);
     text-decoration: none; }
   .portfolio-card__body {
-    padding: 0.5rem;
-    font-size: 1.2rem; }
+    padding: 0.5em;
+    font-size: 1.2em; }
   .portfolio-card__desc {
-    margin-bottom: 0.7rem; }
+    margin-bottom: 0.7em; }
   .portfolio-card__row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12545,11 +13072,11 @@ table {
   .portfolio-card__cell:before {
     content: '';
     display: inline-block;
-    height: 1.6rem;
-    width: 1.6rem;
-    background-size: 1.6rem 1.6rem;
+    height: 1.6em;
+    width: 1.6em;
+    background-size: 1.6em 1.6em;
     vertical-align: middle;
-    margin-right: 0.5rem; }
+    margin-right: 0.5em; }
   .portfolio-card__purchase:before {
     background-image: url(/public/images/app/portfolio/ic_purchase_light.svg); }
   .portfolio-card__indicative--price-moved-up {
@@ -12668,13 +13195,13 @@ table {
 /** @define chart-marker-line */
 .chart-marker-line {
   height: 94.5%;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.8em;
   z-index: 0 !important;
   bottom: -100%;
   transition: none; }
   .chart-marker-line__wrapper {
     border-left-width: 2px;
-    padding-left: 0.5rem;
+    padding-left: 0.5em;
     height: 100%;
     border-color: var(--text-less-prominent); }
   .chart-marker-line__icon {
@@ -12739,8 +13266,8 @@ table {
   background: var(--general-main-1); }
   .trade-container__fieldset {
     border-radius: 4px;
-    padding: 0.8rem;
-    margin-bottom: 0.4rem;
+    padding: 0.8em;
+    margin-bottom: 0.4em;
     background-color: var(--general-section-1);
     border-color: var(--general-section-1);
     color: var(--text-general); }
@@ -12784,8 +13311,8 @@ table {
       text-transform: none;
       text-align: left;
       line-height: 1.25;
-      padding: 0.8rem;
-      margin-bottom: 0.8rem;
+      padding: 4.16667px 4.16667px 4.16667px 6.66667px;
+      margin-bottom: 8.33333px;
       color: var(--text-general);
       background-color: rgba(255, 68, 79, 0.16);
       display: block;
@@ -12807,7 +13334,7 @@ table {
     z-index: 2;
     color: var(--text-general); }
     .trade-container__currency--symbol {
-      font-size: 1.4rem;
+      font-size: 1.4em;
       line-height: 1.5; }
     .trade-container__currency:before {
       font-size: 1.4rem;
@@ -12838,12 +13365,12 @@ table {
       .trade-container__price-info--fade .trade-container__price-info-movement {
         opacity: 0; }
       .trade-container__price-info-value {
-        font-size: 1.4rem;
+        font-size: 1.4em;
         font-weight: 700;
         text-transform: capitalize;
         text-align: left;
         line-height: 1.25;
-        margin-left: 0.1rem;
+        margin-left: 0.1em;
         color: var(--text-prominent);
         opacity: 1;
         transition: 0.3s; }
@@ -12898,9 +13425,9 @@ table {
   .trade-container__currency-options {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-gap: 0.2rem; }
+    grid-gap: 0.2em; }
     .trade-container__currency-options-dropdown {
-      margin-top: 0.8rem;
+      margin-top: 0.8em;
       min-width: unset;
       /* postcss-bem-linter: ignore */ }
       .trade-container__currency-options-dropdown .dc-dropdown__select-arrow {
@@ -12909,7 +13436,7 @@ table {
       border-radius: 4px 0 0 4px;
       /* postcss-bem-linter: ignore */ }
       .trade-container__currency-options--display .symbols {
-        font-size: 1.4rem; }
+        font-size: 1.4em; }
   .trade-container__amount .trade-container__input {
     padding: 0 30px;
     border-radius: 0 4px 4px 0; }
@@ -12949,5 +13476,5 @@ table {
 .duration-container {
   /* postcss-bem-linter: ignore */ }
   .duration-container .dropdown-container {
-    margin-top: 0.8rem; }
+    margin-top: 0.8em; }
 
