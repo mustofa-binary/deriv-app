@@ -2093,7 +2093,6 @@ table {
 
 .network-status__tooltip {
   left: unset;
-  margin-left: 2em;
   -webkit-text-decoration-line: none;
           text-decoration-line: none; }
 
