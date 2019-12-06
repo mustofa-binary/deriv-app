@@ -5302,17 +5302,20 @@ table {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 0.2em; }
-    .trade-container__currency-options-dropdown {
-      margin-top: 0.8em;
-      min-width: unset;
+    .trade-container__currency-options .dc-dropdown-container {
       /* postcss-bem-linter: ignore */ }
-      .trade-container__currency-options-dropdown .dc-dropdown__select-arrow {
-        top: 9px; }
-    .trade-container__currency-options--display {
-      border-radius: 4px 0 0 4px;
-      /* postcss-bem-linter: ignore */ }
-      .trade-container__currency-options--display .symbols {
-        font-size: 1.4em; }
+      .trade-container__currency-options .dc-dropdown-container__currency {
+        margin-top: 0.8em;
+        min-width: unset;
+        /* postcss-bem-linter: ignore */
+        /* postcss-bem-linter: ignore */ }
+        .trade-container__currency-options .dc-dropdown-container__currency .dc-dropdown__select-arrow {
+          top: 9px; }
+        .trade-container__currency-options .dc-dropdown-container__currency .dc-dropdown__display {
+          border-radius: 4px 0 0 4px;
+          /* postcss-bem-linter: ignore */ }
+          .trade-container__currency-options .dc-dropdown-container__currency .dc-dropdown__display .symbols {
+            font-size: 1.4em; }
   .trade-container__amount .trade-container__input {
     padding: 0 30px;
     border-radius: 0 4px 4px 0; }
