@@ -1710,7 +1710,15 @@ html {
   display: flex;
   align-items: center;
   margin: 0 0.8rem;
-  height: 4rem; }
+  height: 4rem;
+  position: relative; }
+  .acc-switcher--is-loading {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--general-main-2); }
   .acc-switcher__wrapper {
     border-radius: 4px;
     position: absolute;
@@ -1780,7 +1788,8 @@ html {
       padding: 0.4em 0.8em 0.8em; }
   .acc-switcher__accounts {
     border-radius: 4px;
-    background: var(--general-main-2); }
+    background: var(--general-main-2);
+    position: relative; }
     .acc-switcher__accounts .acc-switcher__account {
       background: var(--general-main-2); }
       .acc-switcher__accounts .acc-switcher__account:hover:not(.acc-switcher__account--selected) {
