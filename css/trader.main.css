@@ -936,206 +936,6 @@ table {
 .symbols--ust:before {
   content: '\e903'; }
 
-/** @define icons-underlying */
-.icons-underlying:before {
-  width: 32px;
-  height: 24px; }
-
-.icons-underlying__ic-unknown:before {
-  content: '?';
-  background: #999cac;
-  border-radius: 4px;
-  padding: 4px 12px; }
-
-.icons-underlying__ic-FRXAUDCAD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXAUDCAD.svg); }
-
-.icons-underlying__ic-FRXAUDCHF:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXAUDCHF.svg); }
-
-.icons-underlying__ic-FRXAUDJPY:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXAUDJPY.svg); }
-
-.icons-underlying__ic-FRXAUDNZD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXAUDNZD.svg); }
-
-.icons-underlying__ic-FRXAUDPLN:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXAUDPLN.svg); }
-
-.icons-underlying__ic-FRXAUDUSD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXAUDUSD.svg); }
-
-.icons-underlying__ic-FRXBROUSD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXBROUSD.svg); }
-
-.icons-underlying__ic-FRXEURAUD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXEURAUD.svg); }
-
-.icons-underlying__ic-FRXEURCAD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXEURCAD.svg); }
-
-.icons-underlying__ic-FRXEURCHF:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXEURCHF.svg); }
-
-.icons-underlying__ic-FRXEURGBP:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXEURGBP.svg); }
-
-.icons-underlying__ic-FRXEURJPY:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXEURJPY.svg); }
-
-.icons-underlying__ic-FRXEURNZD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXEURNZD.svg); }
-
-.icons-underlying__ic-FRXEURUSD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXEURUSD.svg); }
-
-.icons-underlying__ic-FRXGBPAUD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXGBPAUD.svg); }
-
-.icons-underlying__ic-FRXGBPCAD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXGBPCAD.svg); }
-
-.icons-underlying__ic-FRXGBPCHF:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXGBPCHF.svg); }
-
-.icons-underlying__ic-FRXGBPJPY:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXGBPJPY.svg); }
-
-.icons-underlying__ic-FRXGBPNOK:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXGBPNOK.svg); }
-
-.icons-underlying__ic-FRXGBPPLN:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXGBPPLN.svg); }
-
-.icons-underlying__ic-FRXGBPUSD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXGBPUSD.svg); }
-
-.icons-underlying__ic-FRXGBPNZD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXGBPNZD.svg); }
-
-.icons-underlying__ic-FRXGBPZD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXGBPZD.svg); }
-
-.icons-underlying__ic-FRXNZDJPY:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXNZDJPY.svg); }
-
-.icons-underlying__ic-FRXNZDUSD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXNZDUSD.svg); }
-
-.icons-underlying__ic-FRXUSDCAD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXUSDCAD.svg); }
-
-.icons-underlying__ic-FRXUSDCHF:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXUSDCHF.svg); }
-
-.icons-underlying__ic-FRXUSDJPY:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXUSDJPY.svg); }
-
-.icons-underlying__ic-FRXUSDMSX:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXUSDMSX.svg); }
-
-.icons-underlying__ic-FRXUSDMXN:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXUSDMXN.svg); }
-
-.icons-underlying__ic-FRXUSDNOK:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXUSDNOK.svg); }
-
-.icons-underlying__ic-FRXUSDPLN:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXUSDPLN.svg); }
-
-.icons-underlying__ic-FRXUSDSEK:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXUSDSEK.svg); }
-
-.icons-underlying__ic-FRXXAGUSD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXXAGUSD.svg); }
-
-.icons-underlying__ic-FRXXAUUSD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXXAUUSD.svg); }
-
-.icons-underlying__ic-FRXXPDUSD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXXPDUSD.svg); }
-
-.icons-underlying__ic-FRXXPTUSD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-FRXXPTUSD.svg); }
-
-.icons-underlying__ic-OTC_AEX:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_AEX.svg); }
-
-.icons-underlying__ic-OTC_AS51:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_AS51.svg); }
-
-.icons-underlying__ic-OTC_DJI:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_DJI.svg); }
-
-.icons-underlying__ic-OTC_FCHI:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_FCHI.svg); }
-
-.icons-underlying__ic-OTC_GDAXI:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_GDAXI.svg); }
-
-.icons-underlying__ic-OTC_HSI:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_HSI.svg); }
-
-.icons-underlying__ic-OTC_N225:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_N225.svg); }
-
-.icons-underlying__ic-OTC_NDX:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_NDX.svg); }
-
-.icons-underlying__ic-OTC_SPC:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_SPC.svg); }
-
-.icons-underlying__ic-R_10:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-R_10.svg); }
-
-.icons-underlying__ic-1HZ10V:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-1HZ10V.svg); }
-
-.icons-underlying__ic-R_25:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-R_25.svg); }
-
-.icons-underlying__ic-R_50:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-R_50.svg); }
-
-.icons-underlying__ic-R_75:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-R_75.svg); }
-
-.icons-underlying__ic-R_100:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-R_100.svg); }
-
-.icons-underlying__ic-1HZ100V:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-1HZ100V.svg); }
-
-.icons-underlying__ic-RDBEAR:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-RDBEAR.svg); }
-
-.icons-underlying__ic-RDBULL:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-RDBULL.svg); }
-
-.icons-underlying__ic-WLDAUD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-WLDAUD.svg); }
-
-.icons-underlying__ic-WLDEUR:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-WLDEUR.svg); }
-
-.icons-underlying__ic-WLDGBP:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-WLDGBP.svg); }
-
-.icons-underlying__ic-WLDUSD:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-WLDUSD.svg); }
-
-.icons-underlying__ic-OTC_SX5E:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_SX5E.svg); }
-
-.icons-underlying__ic-OTC_IBEX35:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_IBEX35.svg); }
-
-.icons-underlying__ic-OTC_SSMI:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_SSMI.svg); }
-
-.icons-underlying__ic-OTC_FTSE:before {
-  content: url(/public/images/app/portfolio/underlying-icons/ic-OTC_FTSE.svg); }
-
 /** @define tooltip */
 .tooltip {
   text-decoration: none;
@@ -2966,7 +2766,7 @@ table {
     top: 2px;
     height: 28px;
     border: none;
-    padding: 0 1.6em;
+    padding: 0;
     margin: 0;
     margin: initial;
     min-width: 3.2em;
@@ -4500,13 +4300,11 @@ table {
     margin-left: 4px; }
   .account-wallet__label {
     margin-left: 16px !important; }
-  .account-wallet .inline-icon {
-    width: 24px;
-    height: 24px;
+  .account-wallet .dc-icon {
     display: inline-block;
     vertical-align: middle;
     margin: 0 8px; }
-    .account-wallet .inline-icon .color1-fill {
+    .account-wallet .dc-icon .color1-fill {
       fill: var(--text-profit-success); }
 
 /** @define mobile-dialog; weak */
