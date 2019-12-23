@@ -319,6 +319,9 @@
   flex-grow: 2;
   text-align: left; }
 
+.dc-popover__bubble__text--error {
+  color: var(--text-colored-background); }
+
 .dc-popover__bubble--error {
   background-color: var(--status-danger); }
 
@@ -2020,6 +2023,9 @@ html {
       height: 46px;
       top: 0;
       background: var(--general-main-1); }
+    .acc-info__preloader--no-currency:before {
+      left: -140px;
+      width: 140px; }
   .acc-info__container {
     align-items: center;
     -webkit-box-align: center;
@@ -2032,9 +2038,11 @@ html {
     justify-content: center;
     position: relative;
     margin-right: 0.8rem; }
-  .acc-info__id-icon {
-    vertical-align: middle;
-    margin-right: 0.8rem; }
+  .acc-info__id {
+    pointer-events: none; }
+    .acc-info__id-icon {
+      vertical-align: middle;
+      margin-right: 0.8rem; }
   .acc-info__separator {
     border-right: 1px solid var(--general-section-1);
     width: 2rem;
@@ -2055,6 +2063,8 @@ html {
     transform: rotate(0);
     transform-origin: 50% 45%;
     transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); }
+    .acc-info__select-arrow--invert {
+      transform: rotate(180deg); }
   .acc-info:hover:not(.show) {
     background: var(--state-hover); }
     .acc-info:hover:not(.show) .symbols {
@@ -2063,6 +2073,8 @@ html {
     color: var(--text-profit-success); }
   .acc-info--show .acc-info__select-arrow {
     transform: rotate(180deg); }
+  .acc-info--show .acc-info__select-arrow--invert {
+    transform: rotate(0deg); }
   .acc-info__button {
     margin: 0 1.6em 0 0 !important; }
     .acc-info__button:not(:last-child) {
@@ -2104,7 +2116,8 @@ html {
       height: 4rem; }
   .acc-switcher__new-account {
     background-color: transparent;
-    border-radius: 4px; }
+    border-radius: 4px;
+    margin: 0 0 16px; }
     .acc-switcher__new-account-link {
       background-color: transparent;
       margin: 0 0 0.8em;
@@ -2149,7 +2162,7 @@ html {
       color: var(--text-prominent);
       flex: 1; }
     .acc-switcher__list-wrapper {
-      padding: 0.4em 0.8em 0.8em; }
+      padding: 0.4em 0.8em 0; }
   .acc-switcher__accounts {
     border-radius: 4px;
     background: var(--general-main-2);
@@ -2178,6 +2191,24 @@ html {
         cursor: default; }
       .acc-switcher__accounts .acc-switcher__account:only-child {
         border-radius: 4px; }
+      .acc-switcher__accounts .acc-switcher__account:last-child {
+        margin-bottom: 16px; }
+      .acc-switcher__accounts .acc-switcher__account-set-currency {
+        justify-content: flex-end;
+        padding: 0.8rem 0.4rem; }
+        .acc-switcher__accounts .acc-switcher__account-set-currency-link {
+          font-size: 1.2rem;
+          color: var(--button-primary-default);
+          font-weight: bold; }
+          .acc-switcher__accounts .acc-switcher__account-set-currency-link:hover {
+            text-decoration: underline;
+            cursor: pointer; }
+        .acc-switcher__accounts .acc-switcher__account-set-currency:hover {
+          background: var(--general-main-2) !important;
+          cursor: auto;
+          cursor: initial; }
+    .acc-switcher__accounts--has-add-account:not(:empty) {
+      margin-bottom: -16px; }
   .acc-switcher__account {
     display: flex;
     align-items: center;
@@ -2186,7 +2217,9 @@ html {
     padding: 0.8em;
     position: relative;
     background: var(--general-main-2);
-    text-decoration: none; }
+    text-decoration: none;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em; }
     .acc-switcher__account .acc-switcher__id {
       font-size: 1.4rem;
       color: var(--text-general);
@@ -2214,9 +2247,11 @@ html {
         .acc-switcher__account--selected .acc-switcher__id--virtual:before {
           color: var(--text-prominent);
           border: 1px solid var(--text-prominent); }
-    .acc-switcher__account--demo-text {
-      padding-top: 0.3em;
-      padding-bottom: 0.3em; }
+      .acc-switcher__account--selected .acc-switcher__loginid-text {
+        color: var(--text-prominent);
+        font-weight: normal; }
+      .acc-switcher__account--selected .no-currency {
+        color: var(--text-prominent); }
   .acc-switcher__logout {
     align-items: center;
     align-self: flex-end;
@@ -2237,25 +2272,30 @@ html {
       cursor: pointer; }
   .acc-switcher__balance {
     color: var(--status-success);
-    margin-left: auto; }
+    margin-left: auto;
+    font-weight: normal; }
     .acc-switcher__balance--virtual {
       color: var(--text-prominent); }
   .acc-switcher__separator {
     height: 4px;
     background-color: var(--general-section-2); }
+    .acc-switcher__separator--no-padding {
+      margin: 0 -8px; }
   .acc-switcher__total {
-    font-size: 1.4rem;
-    height: 4rem;
+    height: 2.6rem;
     margin: 0.4rem 1.6rem;
-    align-items: center;
+    font-size: 1.4rem;
     font-weight: bold;
-    display: flex;
-    color: var(--text-prominent); }
-    .acc-switcher__total-icon {
-      margin: 0 0.4rem; }
-      .acc-switcher__total-icon .color1-fill {
-        fill: var(--text-prominent) !important; }
-  .acc-switcher__demo-text {
+    color: var(--text-prominent);
+    align-items: center;
+    display: flex; }
+    .acc-switcher__total-subtitle {
+      margin: 0 1.6rem 1.2rem;
+      font-size: 1rem;
+      line-height: 1.4rem;
+      font-weight: normal;
+      color: var(--text-less-prominent); }
+  .acc-switcher__loginid-text {
     font-size: 1rem;
     color: var(--text-less-prominent);
     line-height: 1.4; }
@@ -2264,9 +2304,11 @@ html {
     font-size: 0.8rem; }
 
 /** @define set-currency; weak */
-.set-currency .btn {
-  display: flex;
-  align-items: center; }
+.set-currency {
+  margin-right: 8px; }
+  .set-currency .btn {
+    display: flex;
+    align-items: center; }
 
 /** @define no-currency; weak */
 .no-currency {

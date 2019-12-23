@@ -5114,8 +5114,6 @@ table {
     width: calc(100% + 2px);
     height: calc(100% + 2px);
     left: -2px; }
-  .purchase-container__popover-bubble {
-    width: 220px; }
 
 /** @define duration-container */
 .duration-container {
