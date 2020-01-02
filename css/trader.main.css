@@ -2887,7 +2887,7 @@ table {
     transform: scale(1, 0) translate3d(0, 0, 0);
     transition: transform 0.25s ease, opacity 0.25s linear;
     width: 231px;
-    z-index: 1;
+    z-index: 2;
     background-color: var(--general-main-2); }
     .time-picker__dialog--enter, .time-picker__dialog--exit {
       opacity: 0;

@@ -308,7 +308,7 @@
   flex-direction: row;
   background: var(--general-active);
   color: var(--text-prominent);
-  z-index: 999; }
+  z-index: 1; }
 
 .dc-popover__bubble__icon {
   flex-grow: 1;
@@ -2925,7 +2925,7 @@ html {
   top: 4rem;
   text-align: left !important;
   padding-top: 0.4rem;
-  padding-left: 0.4rem;
+  padding-left: 1.2rem;
   color: var(--brand-red-coral);
   font-size: var(--text-size-xxs); }
 
@@ -3348,7 +3348,7 @@ html {
   top: 4rem;
   text-align: left !important;
   padding-top: 0.4rem;
-  padding-left: 0.4rem;
+  padding-left: 1.2rem;
   color: var(--brand-red-coral);
   font-size: var(--text-size-xxs); }
 
