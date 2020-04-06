@@ -3302,7 +3302,10 @@
   .dc-dialog__dialog {
     width: 100vw;
     height: 100vh;
-    min-width: 100vw; } }
+    min-width: 100vw; }
+  .dc-dialog__dialog--has-margin {
+    min-width: unset;
+    width: calc(100vw - 3.2rem); } }
 
 /*------------------------------------*
  *  # Constants
@@ -6919,6 +6922,12 @@ html,
     transform: rotate(0deg); }
   .platform-switcher__arrow .color1-fill {
     fill: var(--text-general); }
+  .platform-switcher__preloader {
+    margin-top: 4px;
+    align-self: center;
+    width: 146px; }
+    .platform-switcher__preloader--is-mobile {
+      width: 162px; }
   .platform-switcher--active .platform-switcher__arrow {
     transform: rotate(180deg); }
   @media (min-width: 320px) and (max-width: 767px) {
@@ -7527,39 +7536,6 @@ html,
   font-size: var(--text-size-xxs);
   line-height: 1.25; }
 
-.dc-icon {
-  --fill-color1: var(--text-general);
-  --fill-color2: var(--text-less-prominent);
-  --fill-color3: var(--general-section-1); }
-
-.dc-icon--disabled {
-  --fill-color1: var(--text-disabled);
-  --fill-color2: var(--text-disabled); }
-
-.dc-icon--active {
-  --fill-color1: #fff;
-  --fill-color2: #fff; }
-
-.dc-icon--green {
-  --fill-color1: var(--text-profit-success);
-  --fill-color2: var(--text-profit-success);
-  --fill-color3: #fff; }
-
-.dc-icon--red {
-  --fill-color1: var(--text-loss-danger);
-  --fill-color2: var(--text-loss-danger);
-  --fill-color3: #fff; }
-
-.dc-icon--secondary {
-  --fill-color1: var(--text-less-prominent);
-  --fill-color2: var(--text-less-prominent);
-  --fill-color3: #fff; }
-
-.dc-icon--brand {
-  --fill-color1: var(--brand-red-coral);
-  --fill-color2: var(--brand-secondary);
-  --fill-color3: #fff; }
-
 .dc-select-native {
   height: 38px;
   width: 100%;
@@ -7592,7 +7568,7 @@ html,
   padding: 0 0.4rem;
   font-size: 1.4rem;
   transform: none;
-  background-color: var(--fill-normal);
+  background-color: var(--general-section-2);
   color: var(--text-less-prominent); }
 
 .dc-select-native__placeholder--has-value {
@@ -8526,7 +8502,7 @@ html,
   @media (min-width: 320px) and (max-width: 767px) {
     .terms-of-use {
       overflow-x: hidden;
-      margin: 70px 0 0;
+      margin: 40px 0 0;
       padding: 0 2.4rem 2.4rem;
       overflow-y: auto; }
       .terms-of-use .dc-checkbox__box {
