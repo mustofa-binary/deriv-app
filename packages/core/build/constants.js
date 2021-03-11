@@ -140,7 +140,7 @@ const plugins = ({ base, is_test_env, env }) => {
         }),
         new CleanWebpackPlugin(),
         new CopyPlugin(copyConfig(base, IS_RELEASE)),
-        new HtmlWebPackPlugin(htmlOutputConfig()),
+        new HtmlWebPackPlugin(htmlOutputConfig(IS_RELEASE)),
         new HtmlWebpackTagsPlugin(htmlInjectConfig()),
         new PreloadWebpackPlugin(htmlPreloadConfig()),
         new IgnorePlugin({ resourceRegExp: /^\.\/locale$/, contextRegExp: /moment$/ }),

@@ -141,10 +141,10 @@ const generateSWConfig = () => ({
     clientsClaim: true,
 });
 
-const htmlOutputConfig = () => ({
+const htmlOutputConfig = is_release => ({
     template: 'index.html',
     filename: 'index.html',
-    minify: !IS_RELEASE
+    minify: !is_release
         ? false
         : {
               collapseWhitespace: true,
